@@ -39,7 +39,7 @@ function About() {
             {/* <div className="absolute top-0 inset-x-0 h-screen bg-hero-img bg-cover bg-no-repeat" style={{ 
                             transform: `translateY(${offsetY * 0.5}px)`
                             }}/> */}
-            <div className=" h-screen w-screen">
+            {/* <div className=" h-screen w-screen">
                 <img src={fajar} className="fixed right-20 top-40  h-20 z-50" 
                     style={{
                         transform:`translate(-${offsetY * 0.5}rem, ${offsetY * 0.5}rem)` 
