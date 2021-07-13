@@ -1,5 +1,6 @@
 {
   "name": "banoo-website-2021",
+  "homepage": "https://adlanhawari.githu.io/banooid_webdemo/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -27,7 +28,7 @@
     "test": "craco test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d -build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
