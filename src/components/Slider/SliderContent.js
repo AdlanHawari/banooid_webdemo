@@ -2,12 +2,12 @@ import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 // import { require } from 'yargs'
-import hary from '../../images/story/hary.jpg'
+// import hary from '../../images/story/hary.jpg'
 import Dots from './Dots';
 
 
 function SliderContent({slideIndex, dataSlider, setSlideIndex}) {
-    const w = '../../images/story/hary.jpg';
+    // const w = '../../images/story/hary.jpg';
     return (
         <div className="flex gap-x-4 md:gap-x-0">
             
@@ -44,7 +44,7 @@ function SliderContent({slideIndex, dataSlider, setSlideIndex}) {
                             {obj.addr}
                         </h3> */}
                         
-                        <img src={obj.url} className="mx-auto object-cover h-60 lg:h-80 xl:h-96 lg:mx-0 rounded-full lg:rounded-l-lg lg:rounded-r-none  lg:w-1/2"/>
+                        <img src={obj.url} alt="" className="mx-auto object-cover h-60 lg:h-80 xl:h-96 lg:mx-0 rounded-full lg:rounded-l-lg lg:rounded-r-none  lg:w-1/2"/>
                         
                         
                         <div className="lg:w-1/2 flex-col py-4 px-6 lg:px-0 lg:py-2">

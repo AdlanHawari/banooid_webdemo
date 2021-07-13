@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 // import { Helmet } from 'react-helmet'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
-import { Link, Router } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import fajar from '../images/fajar.jpg'
 import antaranews from '../images/antaranews.png'
 import gatra from '../images/gatra.png'
@@ -13,11 +13,9 @@ import sindonews from '../images/sindonews.png'
 import media_indo from '../images/media_indonesia.png'
 import cisco from '../images/cisco_gps.png'
 import tff from '../images/TFF.png'
-import { faAngleLeft, faAngleRight, faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
-import hary from '../images/story/hary.jpg'
-import { Parallax } from 'react-parallax'
-import hero from '../images/wew.png'
-import Hero from '../components/Hero'
+// import hary from '../images/story/hary.jpg'
+// import hero from '../images/wew.png'
+// import Hero from '../components/Hero'
 import logo from '../images/logo_main.png'
 import Slider from '../components/Slider/Slider'
 
@@ -160,7 +158,7 @@ function Home() {
                     </h2>
                     <div className="grid gap-y-20 md:gap-y-0 md:grid-flow-col md:grid-cols-3 pt-20">
                         <div className="flex flex-col flex-shrink place-items-center">
-                            <img src={logo} className="h-40 xl:h-60"/>
+                            <img src={logo} alt="" className="h-40 xl:h-60"/>
                             <h3 className="py-6 md:py-10  text-center font-spartan font-extrabold text-base xl:text-lg">
                             Dissolved Oxygen Arouser
                             </h3>
@@ -171,7 +169,7 @@ function Home() {
                         </div>
 
                         <div className="flex flex-col place-items-center">
-                            <img src={logo} className="h-40 xl:h-60"/>
+                            <img src={logo} alt="" className="h-40 xl:h-60"/>
                             <h3 className="py-6 md:py-10  text-center font-spartan font-extrabold text-base xl:text-lg">
                             Fiskö
                             </h3>
@@ -182,7 +180,7 @@ function Home() {
                         </div>
 
                         <div className="flex flex-col place-items-center">
-                            <img src={logo} className="h-40 xl:h-60"/>
+                            <img src={logo} alt="" className="h-40 xl:h-60"/>
                             <h3 className="py-6 md:py-10  text-center font-spartan font-extrabold text-base xl:text-lg">
                             Banoo Mobile App
                             </h3>

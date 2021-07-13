@@ -1,11 +1,9 @@
-import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react'
-import gambar from '../../images/fajar.jpg'
+// import gambar from '../../images/fajar.jpg'
 import BtnSlider from './BtnSlider';
 import dataSlider from './dataSlider'
 import SliderContent from './SliderContent';
-import Dots from './Dots';
+// import Dots from './Dots';
 
 export default function Slider() {
     const[slideIndex, setSlideIndex] = useState(1);

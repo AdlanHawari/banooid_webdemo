@@ -1,8 +1,8 @@
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import emailjs from 'emailjs-com'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
-import ScrollContact from './ScrollContact';
+// import ScrollContact from './ScrollContact';
 
 const scrollToRef = (ref) => window.scrollTo(0,ref.current.offsetTop);
 

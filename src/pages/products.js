@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Parallax } from 'react-parallax'
 import hero from '../images/wew.png'
 
 function Products() {
-    const [offsetY, setOffsetY] = useState(0);
-    const handleScroll = () => setOffsetY(window.pageYOffset);
+    // const [offsetY, setOffsetY] = useState(0);
+    // const handleScroll = () => setOffsetY(window.pageYOffset);
 
-    useEffect(()=>{
-        window.addEventListener("scroll", handleScroll);
+    // useEffect(()=>{
+    //     window.addEventListener("scroll", handleScroll);
 
-        return()=> window.removeEventListener('scroll', handleScroll);
+    //     return()=> window.removeEventListener('scroll', handleScroll);
 
-    },[])
+    // },[])
     return (
         <section>
             <div className="">

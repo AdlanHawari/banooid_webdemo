@@ -1,8 +1,5 @@
-import { faChevronCircleLeft } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useRef, useState } from 'react'
 import { HelmetProvider,Helmet } from 'react-helmet-async'
-import Slider from '../components/Slider/Slider'
 import fajar from '../images/story/fajar2.jpg'
 import hary from '../images/story/hary.jpg'
 
