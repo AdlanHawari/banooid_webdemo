@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { HelmetProvider,Helmet } from 'react-helmet-async'
-import fajar from '../images/story/fajar2.jpg'
+import fajar from '../images/fajar_sweden.jpg'
 import hary from '../images/story/hary.jpg'
 
 function About() {
@@ -32,6 +32,12 @@ function About() {
                 </Helmet>
             </HelmetProvider>
 
+            {/* About Content */}
+            
+            <div className="pb-20">
+
+            
+
             {/* <div className="fixed"> */}
             {/* <div className="absolute top-0 inset-x-0 h-screen bg-hero-img bg-cover bg-no-repeat" style={{ 
                             transform: `translateY(${offsetY * 0.5}px)`
@@ -55,25 +61,59 @@ function About() {
             {/* </div> */}
 
            {/* Headline */}
-           <div className="relative pt-20 h-screen bg-blue-200">
-               <span>test</span>
-               
+           <div className="h-screen bg-blue-200">
+
 
            </div>
            {/* End of Headline */}
 
            {/* Founder Story */}
+           <div className=
+        //    "flex py-20 bg-white sm:py-20 px-14 iphone7:px-10 xl:px-40"
+        "flex items-center space-x-20 py-20 bg-white px-14 xl:px-40"
+        >
+               <img src={fajar} alt="" className="h-80"/>
+               <div className="block space-y-10">
+                <h3>Founder title</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quaerat! Iusto, consequatur adipisci placeat tenetur modi inventore veniam rem eos exercitationem eum corrupti aperiam repellat! Quibusdam obcaecati ratione ab reiciendis labore doloribus? Non delectus minima placeat. Excepturi pariatur rerum reiciendis!</p>
+               </div>
+            
+           </div>
            {/* End of Founder Story */}
 
             {/* Benefit */}
             {/* End of Benefit */}
 
             {/* Gallery */}
+            <div className="py-20 bg-pink-200 px-14 xl:px-40">
+                <div className="grid grid-rows-2 grid-flow-col gap-4">
+                    <span className="h-40 w-80 bg-hero-img bg-cover">1</span>
+                    <div>3</div>
+                    <div className="place-self-center">1</div>
+                    <div>3</div>
+                {/* <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
+                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
+                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
+                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
+                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
+                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
+                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
+                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
+                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
+                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
+                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
+                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/> */}
+                    
+
+                </div>
+            </div>
+
             {/* End of Gallery */}
             
 
-
-
+            </div>
+        
+        {/* End of About Content */}
 
         </div>
     )
