@@ -43,7 +43,7 @@ function contact() {
                         <h4 className="text-sm xl:text-base font-extrabold pt-2 pb-6">
                             Follow Us
                         </h4>
-                        <div className="flex justify-center gap-x-4 ">
+                        <div className="flex justify-center space-x-4 ">
                             <a href="https://web.facebook.com/banooindonesia/" rel="noreferrer" target="_blank" >
                                 <FontAwesomeIcon icon={faFacebookSquare} size="lg"/>
                             </a>

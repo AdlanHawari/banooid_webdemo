@@ -45,21 +45,22 @@ const Footer = () => {
                         <h3>
                             Find Us at
                         </h3>
-                        <div className="flex mt-6 gap-6 ">
-                            <a href="https://web.facebook.com/banooindonesia/" rel="noreferrer" target="_blank" >
+                        {/* <div className="flex mt-6 space-6 "> */}
+                        <div className="flex mt-6">
+                            <a href="https://web.facebook.com/banooindonesia/" className="mx-2" rel="noreferrer" target="_blank" >
                                 <FontAwesomeIcon icon={faFacebookSquare} size="lg"/>
                             </a>
                             
-                            <a href="https://twitter.com/banoo_id" rel="noreferrer" target="_blank" >
+                            <a href="https://twitter.com/banoo_id" rel="noreferrer" className="mx-2" target="_blank" >
                                 <FontAwesomeIcon icon={faTwitter} size="lg"/>
                             </a>
-                            <a href="https://www.instagram.com/banoo.id/" rel="noreferrer" target="_blank" >
+                            <a href="https://www.instagram.com/banoo.id/" className="mx-2" rel="noreferrer" target="_blank" >
                                 <FontAwesomeIcon icon={faInstagram} size="lg"/>
                             </a>
-                            <a href="https://www.linkedin.com/company/banoo-indonesia/" rel="noreferrer" target="_blank" >
+                            <a href="https://www.linkedin.com/company/banoo-indonesia/" className="mx-2" rel="noreferrer" target="_blank" >
                                 <FontAwesomeIcon icon={faLinkedin} size="lg"/>  
                             </a>
-                            <a href="https://www.youtube.com/channel/UCpf-ywAWqQ9gSmqWH6OiCgg" rel="noreferrer" target="_blank" >
+                            <a href="https://www.youtube.com/channel/UCpf-ywAWqQ9gSmqWH6OiCgg" className="mx-2" rel="noreferrer" target="_blank" >
                                 <FontAwesomeIcon icon={faYoutube} size="lg"/>
                             </a>                      
                             

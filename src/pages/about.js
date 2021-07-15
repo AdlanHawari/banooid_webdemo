@@ -64,6 +64,7 @@ function About() {
            <div className="h-screen bg-blue-200">
 
 
+
            </div>
            {/* End of Headline */}
 
@@ -72,9 +73,9 @@ function About() {
         //    "flex py-20 bg-white sm:py-20 px-14 iphone7:px-10 xl:px-40"
         "flex items-center space-x-20 py-20 bg-white px-14 xl:px-40"
         >
-               <img src={fajar} alt="" className="h-80"/>
+               <img src={fajar} alt="" className="h-80 rounded-xl"/>
                <div className="block space-y-10">
-                <h3>Founder title</h3>
+                <h3 className="font-spartan text-3xl font-extrabold tracking-wide">Enhance fish farmers to weatlhy life</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quaerat! Iusto, consequatur adipisci placeat tenetur modi inventore veniam rem eos exercitationem eum corrupti aperiam repellat! Quibusdam obcaecati ratione ab reiciendis labore doloribus? Non delectus minima placeat. Excepturi pariatur rerum reiciendis!</p>
                </div>
             
@@ -86,25 +87,53 @@ function About() {
 
             {/* Gallery */}
             <div className="py-20 bg-pink-200 px-14 xl:px-40">
-                <div className="grid grid-rows-2 grid-flow-col gap-4">
-                    <span className="h-40 w-80 bg-hero-img bg-cover">1</span>
-                    <div>3</div>
-                    <div className="place-self-center">1</div>
-                    <div>3</div>
-                {/* <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
-                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
-                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
-                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
-                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
-                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
-                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
-                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
-                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
-                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
-                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/>
-                <img src={fajar} alt="" className="w-20 place-self-auto object-fit"/> */}
-                    
+            <div className="flex gap-x-6">
+            <div className="flex-1">
+                    <ul className="grid grid-flow-col grid-rows-2 gap-2">
+                        <li className="rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><img src={fajar} className="h-48 object-none"/></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
 
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                    </ul>
+
+                </div>
+                <div className="flex-1">
+                    <ul className="grid grid-flow-col grid-rows-2 gap-2">
+                        <li className="rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><img src={fajar} className="h-48 w-full object-none"/></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                        <li className="bg-blue-200 rounded-lg shadow-xl"><div className="h-48"></div></li>
+                    </ul>
+
+                </div>
                 </div>
             </div>
 

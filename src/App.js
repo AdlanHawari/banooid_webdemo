@@ -39,6 +39,7 @@ function App() {
 
   return (
     <Router>
+    {/* <Router basename={process.env.PUBLIC_URL}> */}
       <Navbar toggle={toggle} isOpen={isOpen}/>
       <DropdownMenu isOpen={isOpen} toggle={toggle}/>
       {/* <Content/> */}
