@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/banooid_webdemo/static/css/main.cb5f54cc.chunk.css",
-    "main.js": "/banooid_webdemo/static/js/main.15b4ae69.chunk.js",
-    "main.js.map": "/banooid_webdemo/static/js/main.15b4ae69.chunk.js.map",
+    "main.css": "/banooid_webdemo/static/css/main.3ff1ab7e.chunk.css",
+    "main.js": "/banooid_webdemo/static/js/main.29a24f9d.chunk.js",
+    "main.js.map": "/banooid_webdemo/static/js/main.29a24f9d.chunk.js.map",
     "runtime-main.js": "/banooid_webdemo/static/js/runtime-main.4f9cf001.js",
     "runtime-main.js.map": "/banooid_webdemo/static/js/runtime-main.4f9cf001.js.map",
     "static/js/2.14866e5d.chunk.js": "/banooid_webdemo/static/js/2.14866e5d.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.7124e0ce.chunk.js": "/banooid_webdemo/static/js/3.7124e0ce.chunk.js",
     "static/js/3.7124e0ce.chunk.js.map": "/banooid_webdemo/static/js/3.7124e0ce.chunk.js.map",
     "index.html": "/banooid_webdemo/index.html",
-    "static/css/main.cb5f54cc.chunk.css.map": "/banooid_webdemo/static/css/main.cb5f54cc.chunk.css.map",
+    "static/css/main.3ff1ab7e.chunk.css.map": "/banooid_webdemo/static/css/main.3ff1ab7e.chunk.css.map",
     "static/js/2.14866e5d.chunk.js.LICENSE.txt": "/banooid_webdemo/static/js/2.14866e5d.chunk.js.LICENSE.txt",
     "static/media/TFF.5b7d96fb.png": "/banooid_webdemo/static/media/TFF.5b7d96fb.png",
     "static/media/bakrie.7601bd9e.jpeg": "/banooid_webdemo/static/media/bakrie.7601bd9e.jpeg",
@@ -30,7 +30,7 @@
   "entrypoints": [
     "static/js/runtime-main.4f9cf001.js",
     "static/js/2.14866e5d.chunk.js",
-    "static/css/main.cb5f54cc.chunk.css",
-    "static/js/main.15b4ae69.chunk.js"
+    "static/css/main.3ff1ab7e.chunk.css",
+    "static/js/main.29a24f9d.chunk.js"
   ]
 }
