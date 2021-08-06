@@ -1,12 +1,20 @@
-import React, { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import logo_text from '../images/logo_teks.png'
 
 const Navbar = ({isOpen,toggle}) => {
 
+    const location = useLocation();
+    // console.log(location.pathname);
+    // if(location.pathname == '/'){
+    //     console.log("ini di home");
+    // }
+    console.log(location.pathname);
+
     const [navbar, setNavbar] = useState(false);
     const changeNavbarBg = () => {
-        if(window.scrollY >=20){
+        if( window.scrollY >20){
+        // if( location.pathname=='/'){
             
             setNavbar(true);
         }else{ 
@@ -14,7 +22,33 @@ const Navbar = ({isOpen,toggle}) => {
         }
     };
 
-    window.addEventListener('scroll',changeNavbarBg);
+    // const [navbar, setNavbar] = useState(true);
+    // useEffect(() =>{
+    //     const changeNavbarBg = () => {
+    //         if(location.pathname == '/'){
+    //             setNavbar(false);
+    //             console.log("ini home")
+    //             // if(window.scrollY >=20){
+    //             //     setNavbar(true);
+    //             // }
+    //             // else{
+    //             //     setNavbar(true);
+    //             // }
+    //         }
+    //         else{
+    //             setNavbar(true);
+    //         }
+    //     };
+        window.addEventListener('scroll',changeNavbarBg);
+        // // window.addEventListener('resize',changeNavbarBg);
+        // return () =>{
+        //     window.removeEventListener('resize',changeNavbarBg);
+            
+        //   }
+
+
+    // });
+    
 
     return (
         <nav className="fixed w-screen z-50" role='navigation'>

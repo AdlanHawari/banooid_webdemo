@@ -1,6 +1,6 @@
 {
   "name": "banoo-website-2021",
-  "homepage": "https://adlanhawari.github.io/banooid_webdemo/",
+  "homepage": "https://sensor.banoo.id/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,10 +9,20 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "@react-three/drei": "^7.3.1",
+    "@react-three/fiber": "^7.0.6",
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/client": "^2.13.0",
+    "@sanity/image-url": "^0.140.22",
+    "@tailwindcss/forms": "^0.3.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "antd": "^4.16.10",
+    "aos": "^2.3.4",
+    "dateformat": "^4.5.1",
     "emailjs-com": "^3.1.0",
+    "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
@@ -20,6 +30,8 @@
     "react-parallax": "^3.3.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-youtube": "^7.13.1",
+    "three": "^0.131.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

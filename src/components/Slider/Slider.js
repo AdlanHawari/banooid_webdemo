@@ -32,7 +32,7 @@ export default function Slider() {
     
     return(
         <section className="block">
-            <div className="relative flex md:justify-center items-center gap-x-10 md:mx-auto overflow-x-auto py-4">
+            <div className="relative flex md:justify-center items-center space-x-10 md:mx-auto overflow-x-auto py-4">
                 <div className="hidden md:flex">
                     <BtnSlider moveSlide={prevSlide} direction={"prev"} />
                 </div>

@@ -156,8 +156,8 @@ function Home() {
                     <h2 className="justify-center text-center font-spartan sm:text-lg xl:text-4xl text-banooGray font-extrabold">
                         Why Banoo?
                     </h2>
-                    <div className="grid gap-y-20 md:gap-y-0 md:grid-flow-col md:grid-cols-3 pt-20">
-                        <div className="flex flex-col flex-shrink place-items-center">
+                    <ul className="grid gap-y-20 md:gap-y-0 md:grid-flow-col md:grid-cols-3 pt-20">
+                        <li className="flex flex-col flex-shrink place-items-center">
                             <img src={logo} alt="" className="h-40 xl:h-60"/>
                             <h3 className="py-6 md:py-10  text-center font-spartan font-extrabold text-base xl:text-lg">
                             Dissolved Oxygen Arouser
@@ -166,9 +166,9 @@ function Home() {
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit reprehenderit magnam similique fugit, deserunt doloribus.
                             </p>
 
-                        </div>
+                        </li>
 
-                        <div className="flex flex-col place-items-center">
+                        <li className="flex flex-col place-items-center">
                             <img src={logo} alt="" className="h-40 xl:h-60"/>
                             <h3 className="py-6 md:py-10  text-center font-spartan font-extrabold text-base xl:text-lg">
                             Fiskö
@@ -177,9 +177,9 @@ function Home() {
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit reprehenderit magnam similique fugit, deserunt doloribus.
                             </p>
 
-                        </div>
+                        </li>
 
-                        <div className="flex flex-col place-items-center">
+                        <li className="flex flex-col place-items-center">
                             <img src={logo} alt="" className="h-40 xl:h-60"/>
                             <h3 className="py-6 md:py-10  text-center font-spartan font-extrabold text-base xl:text-lg">
                             Banoo Mobile App
@@ -188,8 +188,8 @@ function Home() {
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit reprehenderit magnam similique fugit, deserunt doloribus.
                             </p>
 
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
 
                     
 
@@ -199,7 +199,7 @@ function Home() {
                 {/* Shortcut product - Section */}
                 <div className="">
                     {/* 1st content  */}
-                    <div className="flex flex-col-reverse sm:grid sm:grid-cols-2 gap-x-6 gap-x-10 xl:gap-x-20 bg-bluebg to-white py-10 sm:py-20 px-8 sm:px-20 xl:px-40 ">
+                    <div className="flex flex-col-reverse items-start sm:grid sm:grid-cols-2 space-x-0 sm:space-x-10 bg-bluebg to-white py-10 sm:py-20 px-8 sm:px-20 xl:px-40 ">
                         <div className="pt-8 sm:pt-0 font-serif-6  text-banooGray">
                             <h4 className="font-bold text-xs lg:text-sm xl:text-base">
                                         Dissolved Oxygen Arouser
@@ -210,17 +210,20 @@ function Home() {
                             <p className="pt-6 xl:pt-10 text-xs leading-normal lg:text-lg ">
                                     Increase Oxygen rate for better fish and shrimp productions to accelerate your revenue and get better life
                             </p>
-                            <div className="flex justify-center sm:grid sm:grid-cols-2 pt-4 lg:h-30 lg:pt-10 flex-col gap-x-6 gap-y-4">
-                                <div className="flex justify-center py-4 shadow-lg bg-banoo rounded-xl transition duration-700 ease-in-out hover:bg-banoo75">
-                                    <Link to ='/products' className="xl:px-16 font-serif-6 font-bold text-white text-sm ">
+                            <div className="flex justify-center sm:grid sm:grid-cols-2 pt-4 lg:h-30 lg:pt-10 flex-col sm:space-x-4 space-y-4  sm:space-y-0">
+                                <Link to ='/products' className="flex justify-center py-4 shadow-lg bg-banoo rounded-xl transition duration-700 ease-in-out hover:bg-banoo75">
+                                    <span  className="xl:px-16 font-serif-6 font-bold text-white text-sm ">
                                         Learn More
-                                    </Link>
-                                </div>
-                                <div className="flex justify-center py-4 border-2 border-banoo rounded-xl text-banoo transition duration-700 ease-in-out hover:text-banooGray hover:border-banooGray ">
-                                    <Link to='/preorder' className="xl:px-16 font-serif-6 font-bold   text-sm  ">
+                                    </span>
+                                </Link>
+                                <a href="https://preorder.banoo.id " className="flex justify-center py-4 border-2 border-banoo rounded-xl text-banoo transition duration-700 ease-in-out hover:text-banooGray hover:border-banooGray ">
+                                    <span  className="xl:px-16 font-serif-6 font-bold   text-sm  ">
                                         Pre order
-                                    </Link>
-                                </div>
+                                    </span>
+                                    {/* <Link to='/preorder' className="xl:px-16 font-serif-6 font-bold   text-sm  ">
+                                        Pre order
+                                    </Link> */}
+                                </a>
                             </div>
 
                         </div>
@@ -249,10 +252,10 @@ function Home() {
                             </h3>
                             <p className="pt-6 xl:pt-10 text-xs leading-normal lg:text-lg ">
                             Monitor and Control the water quality of your pond 
-                                <br/>to maintain the best performance of your fish
-                                <br/>for maximum productivity
+                            to maintain the best performance of your fish
+                            for maximum productivity
                             </p>
-                            <div className="flex justify-center sm:grid sm:grid-cols-2 pt-4 lg:h-30 lg:pt-10 flex-col gap-x-6 gap-y-4">
+                            <div className="flex justify-center sm:grid sm:grid-cols-2 pt-4 lg:h-30 lg:pt-10 flex-col sm:space-x-4 space-y-4 md:space-y-0">
                                 <div className="flex justify-center py-4 shadow-lg bg-banoo rounded-xl transition duration-700 ease-in-out hover:bg-banoo75">
                                     <Link to ='/products' className="xl:px-16 font-serif-6 font-bold text-white text-sm ">
                                         Learn More
@@ -272,7 +275,7 @@ function Home() {
                     {/* End of 2nd content  */}
 
                     {/* 3rd content  */}
-                    <div className="flex flex-col-reverse sm:grid sm:grid-cols-2 gap-x-6 gap-x-10 xl:gap-x-20 bg-bluebg to-white py-10 sm:py-20 px-8 sm:px-20 xl:px-40 ">
+                    <div className="flex flex-col-reverse sm:grid sm:grid-cols-2 space-x-0 sm:space-x-10 xl:space-x-20 bg-bluebg to-white py-10 sm:py-20 px-8 sm:px-20 xl:px-40 ">
                         <div className="pt-8 sm:pt-0 font-serif-6  text-banooGray">
                             <h4 className="font-bold text-xs lg:text-sm xl:text-base">
                             Mbah Hary
@@ -339,7 +342,8 @@ function Home() {
                         Awards
                     </h2>
                     {/* <div className="pt-10 sm:pt-20 lg:pt-20 grid grid-rows-2 gap-y-6 sm:gap-y-10 md:grid-cols-2 gap-x-2 xl:gap-x-10 place-items-center"> */}
-                    <div className="pt-10 sm:pt-20 flex flex-col justify-center place-items-center xl:flex-row gap-y-6 sm:gap-10 xl:gap-20">
+                    {/* <div className="pt-10 sm:pt-20 flex flex-col justify-center place-items-center xl:flex-row gap-y-6 sm:gap-10 xl:gap-20"> */}
+                    <div className="pt-10 sm:pt-20 flex flex-col justify-center place-items-center xl:flex-row space-y-6 sm:gap-10 xl:space-x-20">
                         <img src={cisco} alt="" className="h-20 sm:h-40"/>
                         <img src={tff} alt="" className="h-20 sm:h-40"/>
                         {/* <img src={cisco} className="h-20 iphone7:h-20 sm:h-40 lg:h-20 xl:h-60"/>

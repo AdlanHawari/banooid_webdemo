@@ -2,11 +2,20 @@ import { faFacebookSquare, faInstagram, faLinkedin, faTwitter, faYoutube } from 
 import { faEnvelope, faThumbsUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import { Helmet, HelmetProvider } from 'react-helmet-async'
 import Contactform from '../components/Contactform'
 
 function contact() {
+    document.title="Banoo - Contact";
     return (
-        <div className="block xl:h-auto lg:flex gap-x-10 xl:gap-x-16 py-20 px-8 md:px-20 xl:px-40">
+        <div>
+            {/* <HelmetProvider>
+                <Helmet>
+                    <title>Banoo - Contact Us</title>
+                    <meta name="description" content="Contact Us" />
+                </Helmet>
+            </HelmetProvider> */}
+        <div className="block xl:h-auto lg:flex lg:space-x-10 xl:space-x-16 py-20 px-8 md:px-20 xl:px-40">
             <div className="lg:w-1/2 pt-10">
                 <h1 className="font-spartan font-extrabold text-lg xl:text-4xl">
                     Contact Us!
@@ -71,6 +80,7 @@ function contact() {
             <div className="lg:w-1/2 pt-10">
                 <Contactform/>
             </div>
+        </div>
         </div>
     )
 }

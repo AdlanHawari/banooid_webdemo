@@ -3,15 +3,20 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      height:{
+        'surfaceduo-gal' : '1080px',
+        '128' : '32rem'
+      },
       zIndex: {
         '-50': '-50',
        },
       screens: {
         'iphone7': '375px',
-        'iphone7plus': '414px'
+        'iphone7plus': '414px',
+        'surfaceDuo': '580px'
       },
       fontFamily: {
-        'spartan': ['spartan', 'sans-serif']
+        'spartan': ['Spartan']
       },
       colors:{
         banoo: "#06B1BA",
@@ -37,6 +42,7 @@ module.exports = {
     },
   },
   plugins: [
+    require('@tailwindcss/forms'),
     require('tailwindcss'),
     require('autoprefixer'),
   ]

@@ -9,7 +9,7 @@ import Dots from './Dots';
 function SliderContent({slideIndex, dataSlider, setSlideIndex}) {
     // const w = '../../images/story/hary.jpg';
     return (
-        <div className="flex gap-x-4 md:gap-x-0">
+        <div className="flex space-x-4 md:space-x-0">
             
             {dataSlider.map((obj,index) =>(
                 <div
@@ -25,7 +25,7 @@ function SliderContent({slideIndex, dataSlider, setSlideIndex}) {
                     
                         
                     {/* <div className=" border-2 border-banoo rounded-3xl p-10 shadow-xl"> */}
-                    <div className="block lg:flex items-center rounded-lg gap-x-4 py-8 lg:py-0 shadow-lg bg-banooWhite">
+                    <div className="block lg:flex items-center rounded-lg space-x-4 py-8 lg:py-0 shadow-lg bg-banooWhite">
                         
                         {/* <img src={obj.url} className="mx-auto rounded-full h-40"/>
                         <h3 className="text-center pt-10">
