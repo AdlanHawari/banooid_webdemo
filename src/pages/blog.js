@@ -1,11 +1,10 @@
-import React, { Suspense, useEffect, useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import sanityClient from '../client.js'
 import Loading from '../components/blog/loading.js';
 import News from '../components/blog/news.js';
 import PostGrid from '../components/blog/post-grid.js';
 
 import Recently from '../components/blog/Recently.js';
-import SmallPost from '../components/blog/smallPost.js';
 
 function Blog() {
 
@@ -15,7 +14,7 @@ function Blog() {
     const [banooEdu, setBanooEdu] = useState(null)
     const [news, setNews] = useState(null)
     const [pressRel, setPressRel] = useState(null)
-    const [blogReq, setBlogReq] = useState(null)
+    
 
     function filterCategory(data,category){
         // console.log("category: ", category)
@@ -92,15 +91,15 @@ function Blog() {
 
 
     return (
-        <section className="py-20 md:px-40 bg-banooWhite">
-            <div className="py-10">
+        <section className="py-20 px-0 sm:px-20 xl:px-40 bg-banooWhite">
+            <div className="sm:py-10">
                 <h2 className="font-spartan font-bold text-center text-2xl py-6">
                     Recently
                 </h2>
                 
                 
                 {postData ? 
-                <div className="py-10">
+                <div className="sm:py-10">
                 <Recently 
                     data={postData[0]}
                     
@@ -178,6 +177,8 @@ function Blog() {
                 
                 }
             </div>
+
+
         </section>
             
     )

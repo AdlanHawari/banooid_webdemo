@@ -3,16 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter} from 'react-router-dom'
-import { HelmetProvider } from 'react-helmet-async';
+import './i18n';
 // import {HashRouter as BrowserRouter} from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <BrowserRouter> */}
-    <HelmetProvider>
+    {/* <HelmetProvider> */}
       <App />
-    </HelmetProvider>
+    {/* </HelmetProvider> */}
     {/* </BrowserRouter> */}
   </React.StrictMode>,
   document.getElementById('root')

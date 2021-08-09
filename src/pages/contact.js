@@ -2,7 +2,7 @@ import { faFacebookSquare, faInstagram, faLinkedin, faTwitter, faYoutube } from 
 import { faEnvelope, faThumbsUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import { Helmet, HelmetProvider } from 'react-helmet-async'
+
 import Contactform from '../components/Contactform'
 
 function contact() {
@@ -54,20 +54,20 @@ function contact() {
                         </h4>
                         <div className="flex justify-center space-x-4 ">
                             <a href="https://web.facebook.com/banooindonesia/" rel="noreferrer" target="_blank" >
-                                <FontAwesomeIcon icon={faFacebookSquare} size="lg"/>
+                                <FontAwesomeIcon icon={faFacebookSquare} size="lg" className="text-black"/>
                             </a>
                             
                             <a href="https://twitter.com/banoo_id" rel="noreferrer" target="_blank" >
-                                <FontAwesomeIcon icon={faTwitter} size="lg"/>
+                                <FontAwesomeIcon icon={faTwitter} size="lg" className="text-black"/>
                             </a>
                             <a href="https://www.instagram.com/banoo.id/" rel="noreferrer" target="_blank" >
-                                <FontAwesomeIcon icon={faInstagram} size="lg"/>
+                                <FontAwesomeIcon icon={faInstagram} size="lg" className="text-black"/>
                             </a>
                             <a href="https://www.linkedin.com/company/banoo-indonesia/" rel="noreferrer" target="_blank" >
-                                <FontAwesomeIcon icon={faLinkedin} size="lg"/>  
+                                <FontAwesomeIcon icon={faLinkedin} size="lg" className="text-black"/>  
                             </a>
                             <a href="https://www.youtube.com/channel/UCpf-ywAWqQ9gSmqWH6OiCgg" rel="noreferrer" target="_blank" >
-                                <FontAwesomeIcon icon={faYoutube} size="lg"/>
+                                <FontAwesomeIcon icon={faYoutube} size="lg" className="text-black"/>
                             </a>                      
                             
                             

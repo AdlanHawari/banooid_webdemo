@@ -18,10 +18,12 @@ import tff from '../images/TFF.png'
 // import Hero from '../components/Hero'
 import logo from '../images/logo_main.png'
 import Slider from '../components/Slider/Slider'
+import { useTranslation } from 'react-i18next'
 
 
 
 function Home() {
+    const {t, i18n}  =useTranslation();
 
     const [offsetY, setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.pageYOffset);
@@ -53,7 +55,8 @@ function Home() {
                 {/* Hero - section */}
 
                 
-                <div className="flex h-screen">
+                {/* <div className="flex h-screen"> */}
+                <div className="relative h-screen bg-black bg-opacity-30">
         
                 {/* Background parallax */}
                     <div className="absolute -z-50 top-0 inset-x-0 h-screen bg-hero-img bg-cover bg-no-repeat" style={{ 
@@ -63,28 +66,33 @@ function Home() {
                 {/* End of Background parallax */}
                 {/* Content Parallax */}
 
-
-                
-                    <div className="pt-60 iphone7:pt-80 iphone7plus:pt-96 xl:pt-80 px-8 sm:px-20 xl:px-40 ">
-                        <h2 className="md:pt-40 lg:pt-96 xl:pt-0 font-spartan text-white text-xl md:text-4xl font-extrabold">
-                            Invest in water<br/>Relieve hunger
+                    <div className="absolute bottom-20 iphone7:top-1/2 xl:bottom-20 px-8 sm:px-20 xl:px-40 space-y-10 ">
+                        <div className="font-spartan text-xl md:text-4xl ">
+                        <h2 className="text-white font-extrabold">
+                            Invest in water
                         </h2>
-                        <h3 className="md:hidden flex pt-10 md:pt-20 leading-loose font-spartan text-white text-xs md:text-lg ">
-                            Papa IoT water quality sensor works with microbubble generator 
-                            to monitor the quality of water and increase the aquaculture yield
-                            in environmentally concern manner
-                        </h3>
-                        <h3 className="hidden md:flex pt-10 md:pt-20 leading-loose font-spartan text-white text-xs md:text-lg ">
-                            Our IoT water quality sensor works with microbubble generator <br/>
-                            to monitor the quality of water and increase the aquaculture yield
-                        <br/>in environmentally concern manner
-                        </h3>
+                        <h2 className="text-white font-extrabold">
+                            Relieve hunger
+
+                        </h2>
+
+                        </div>
+                        
+                        
+                        <div className= "w-full iphone7plus:w-4/5 md:max-w-prose">
+                            <p className="font-spartan text-white text-sm md:text-lg tracking-wide leading-loose">
+                                Our IoT water quality sensor works with microbubble generator
+                                to monitor the quality of water and increase the aquaculture yield
+                                in environmentally concern manner
+                            </p>
+                        </div>
+                                            
 
                     </div>
 
                 {/* End of Content Parallax */}
                  
-                </div>
+            </div>
 
                 
 
@@ -154,7 +162,7 @@ function Home() {
                         Partners and Media Coverage
                     </h2> */}
                     <h2 className="justify-center text-center font-spartan sm:text-lg xl:text-4xl text-banooGray font-extrabold">
-                        Why Banoo?
+                        {t("why_banoo")}?
                     </h2>
                     <ul className="grid gap-y-20 md:gap-y-0 md:grid-flow-col md:grid-cols-3 pt-20">
                         <li className="flex flex-col flex-shrink place-items-center">
@@ -202,7 +210,7 @@ function Home() {
                     <div className="flex flex-col-reverse items-start sm:grid sm:grid-cols-2 space-x-0 sm:space-x-10 bg-bluebg to-white py-10 sm:py-20 px-8 sm:px-20 xl:px-40 ">
                         <div className="pt-8 sm:pt-0 font-serif-6  text-banooGray">
                             <h4 className="font-bold text-xs lg:text-sm xl:text-base">
-                                        Dissolved Oxygen Arouser
+                                        Mycrofish
                             </h4>
                             <h3 className="pt-0 lg:pt-10 font-bold text-lg leading-normal lg:text-2xl xl:text-4xl">
                                         Fullfill oxygen demand in your pond
@@ -213,12 +221,12 @@ function Home() {
                             <div className="flex justify-center sm:grid sm:grid-cols-2 pt-4 lg:h-30 lg:pt-10 flex-col sm:space-x-4 space-y-4  sm:space-y-0">
                                 <Link to ='/products' className="flex justify-center py-4 shadow-lg bg-banoo rounded-xl transition duration-700 ease-in-out hover:bg-banoo75">
                                     <span  className="xl:px-16 font-serif-6 font-bold text-white text-sm ">
-                                        Learn More
+                                        {t("learn_more")}
                                     </span>
                                 </Link>
                                 <a href="https://preorder.banoo.id " className="flex justify-center py-4 border-2 border-banoo rounded-xl text-banoo transition duration-700 ease-in-out hover:text-banooGray hover:border-banooGray ">
                                     <span  className="xl:px-16 font-serif-6 font-bold   text-sm  ">
-                                        Pre order
+                                    {t("preorder")}
                                     </span>
                                     {/* <Link to='/preorder' className="xl:px-16 font-serif-6 font-bold   text-sm  ">
                                         Pre order
@@ -255,18 +263,33 @@ function Home() {
                             to maintain the best performance of your fish
                             for maximum productivity
                             </p>
-                            <div className="flex justify-center sm:grid sm:grid-cols-2 pt-4 lg:h-30 lg:pt-10 flex-col sm:space-x-4 space-y-4 md:space-y-0">
+                            <div className="flex justify-center sm:grid sm:grid-cols-2 pt-4 lg:h-30 lg:pt-10 flex-col sm:space-x-4 space-y-4  sm:space-y-0">
+                                <Link to ='/products' className="flex justify-center py-4 shadow-lg bg-banoo rounded-xl transition duration-700 ease-in-out hover:bg-banoo75">
+                                    <span  className="xl:px-16 font-serif-6 font-bold text-white text-sm ">
+                                        {t("learn_more")}
+                                    </span>
+                                </Link>
+                                <a href="https://preorder.banoo.id " className="flex justify-center py-4 border-2 border-banoo rounded-xl text-banoo transition duration-700 ease-in-out hover:text-banooGray hover:border-banooGray ">
+                                    <span  className="xl:px-16 font-serif-6 font-bold   text-sm  ">
+                                    {t("preorder")}
+                                    </span>
+                                    {/* <Link to='/preorder' className="xl:px-16 font-serif-6 font-bold   text-sm  ">
+                                        Pre order
+                                    </Link> */}
+                                </a>
+                            </div>
+                            {/* <div className="flex justify-center sm:grid sm:grid-cols-2 pt-4 lg:h-30 lg:pt-10 flex-col sm:space-x-4 space-y-4 md:space-y-0">
                                 <div className="flex justify-center py-4 shadow-lg bg-banoo rounded-xl transition duration-700 ease-in-out hover:bg-banoo75">
                                     <Link to ='/products' className="xl:px-16 font-serif-6 font-bold text-white text-sm ">
-                                        Learn More
+                                    {t("learn_more")}
                                     </Link>
                                 </div>
                                 <div className="flex justify-center py-4 border-2 border-banoo rounded-xl text-banoo transition duration-700 ease-in-out hover:text-banooGray hover:border-banooGray ">
                                     <Link to ='/preorder' className="xl:px-16 font-serif-6 font-bold   text-sm  ">
-                                        Pre order
+                                    {t("preorder")}
                                     </Link>
                                 </div>
-                            </div>
+                            </div> */}
 
                         </div>
                         
@@ -288,14 +311,15 @@ function Home() {
                             It is just get easier for you to control your pond condition at its best 
                                 performance to bring maximum revenue to your arms
                             </p>
-                            <div className="flex justify-center sm:grid sm:grid-cols-2 pt-4 lg:h-30 lg:pt-10 flex-col gap-x-6 gap-y-4">
-                                <div className="flex justify-center py-4 shadow-lg bg-banoo rounded-xl transition duration-700 ease-in-out hover:bg-banoo75">
-                                    <Link to ='/products' className="xl:px-16 font-serif-6 font-bold text-white text-sm ">
-                                        Learn More
-                                    </Link>
-                                </div>
-                                
+                            {/* <div className="flex justify-center sm:grid sm:grid-cols-2 pt-4 lg:h-30 lg:pt-10 flex-col gap-x-6 gap-y-4"> */}
+                            <div className="flex justify-center sm:grid sm:grid-cols-2 pt-4 lg:h-30 lg:pt-10 flex-col sm:space-x-4 space-y-4  sm:space-y-0">
+                                <Link to ='/products' className="flex justify-center py-4 shadow-lg bg-banoo rounded-xl transition duration-700 ease-in-out hover:bg-banoo75">
+                                    <span  className="xl:px-16 font-serif-6 font-bold text-white text-sm ">
+                                        {t("learn_more")}
+                                    </span>
+                                </Link>
                             </div>
+                            {/* </div> */}
 
                         </div>
                         <div className="">

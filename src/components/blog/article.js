@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import sanityClient from '../../client'
 import BlockContent from '@sanity/block-content-to-react'
-import client from '../../client'
 import Loading from './loading'
 import urlFor from './urlFor'
 import dateFormatting from './dateFormatting'
@@ -46,15 +45,7 @@ export default function Article() {
         }
     }
 
-    const serializers = {
-        types: {
-          code: (props) => (
-            <pre data-language={props.node.language}>
-              <code>{props.node.code}</code>
-            </pre>
-          ),
-        },
-      }
+    
 
     const highlight = (props) => {
     return <span style={{backgroundColor: props.mark.color}}>{props.children}</span>
@@ -69,43 +60,43 @@ export default function Article() {
             console.log("belom")
         }
         
-    }, [])
+    })
 
     return (
-        <div className="px-40">
+        <div className="pt-20 bg-banooWhite">
             
             {post ?
             <div>
-                {/* <img
-                    src={urlFor(post.authorImage).width(100).url()}
-                    alt=""
-                /> */}
-                 <img src={urlFor(post.mainImage).url()} alt="" className="mx-auto" />
+                 <img src={urlFor(post.mainImage).url()} alt="" className="mx-auto h-128 w-auto object-cover" />
      
+                <div className="px-10 md:px-40">
+                    <h2 className="py-10 font-bold text-3xl text-banooGray text-center font-spartan">
+                        {post.title}
+                    </h2>
 
-                <h2 className="font-bold text-3xl text-banooGray text-center">
-                    {post.title}
-                </h2>
-
-                <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-x-6">
-                        <img className=" w-10 h-10 rounded-full" src={urlFor(post.authorImage).url()} alt=""/>                
+                    <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-x-6">
+                            <img className=" w-14 h-14 rounded-full" src={urlFor(post.authorImage).url()} alt=""/>                
+                            <span className="text-base ">
+                                {post.name}
+                            </span>
+                        </div>
                         <span>
-                            {post.name}
+                            {dateFormatting(post.publishedAt)}
                         </span>
                     </div>
-                    <span>
-                        {dateFormatting(post.publishedAt)}
-                    </span>
+                    
+                    <div className="py-10">
+                        <BlockContent
+                        className="leading-loose text-base text-banooGray text-justify"
+                        blocks={post.body}
+                        serializers={{marks: {highlight}}}
+                    
+                        />
+
+                    </div>
                 </div>
                 
-
-                <BlockContent
-                className="leading-loose text-base text-banooGray text-justify"
-                blocks={post.body}
-                serializers={{marks: {highlight}}}
-            
-                />
             </div>
              
             :

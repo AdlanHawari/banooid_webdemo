@@ -10,7 +10,7 @@ export default function Model3D() {
         <>
             <Canvas
                 // camera={{position:[-5,4,4], fov:40}}>
-                camera={{position:[-10,4,-5], fov:80}}>
+                camera={{position:[-10,4,-5], fov:40}}>
                     {/* <Lights/> */}
                     <OrbitControls/>
                     <ambientLight intensity={0.5}/>

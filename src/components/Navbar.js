@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next';
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import logo_text from '../images/logo_teks.png'
+import LanguageDropDown from './languageDropDown';
+
 
 const Navbar = ({isOpen,toggle}) => {
+    const {t, i18n}  =useTranslation();
 
     const location = useLocation();
     // console.log(location.pathname);
@@ -11,7 +15,7 @@ const Navbar = ({isOpen,toggle}) => {
     // }
     console.log(location.pathname);
 
-    const [navbar, setNavbar] = useState(false);
+    const [navbar, setNavbar] = useState(true);
     const changeNavbarBg = () => {
         if( window.scrollY >20){
         // if( location.pathname=='/'){
@@ -39,7 +43,7 @@ const Navbar = ({isOpen,toggle}) => {
     //             setNavbar(true);
     //         }
     //     };
-        window.addEventListener('scroll',changeNavbarBg);
+        // window.addEventListener('scroll',changeNavbarBg);
         // // window.addEventListener('resize',changeNavbarBg);
         // return () =>{
         //     window.removeEventListener('resize',changeNavbarBg);
@@ -64,17 +68,6 @@ const Navbar = ({isOpen,toggle}) => {
                     <img src={logo_text} alt='logo' className='h-6 lg:h-8'/>
                 </Link>
 
-{/* Language */}
-                
-                {/* <button className="items-center ml-6 lg:flex"> */}
-                    {/* <p className="text-xs md:text-sm">English</p>
-                    <div className="pl-2 cursor-pointer">
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </div> */}
-
-                {/* </button> */}
                 
             </div>
 
@@ -92,20 +85,38 @@ const Navbar = ({isOpen,toggle}) => {
             </svg>
             </div>
 
-            <div className="justify-between text-sm lg:block hidden">
-                <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 ' exact to='/'>Home</NavLink>
-                <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6' to='/products'>Products</NavLink>
-                <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6' to='/about'>About Us</NavLink>
-                <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6' to='/solutions'>Solutions</NavLink>
-                <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6' to='/blog'>Blog</NavLink>
-                <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6' to='/contact'>Contact Us</NavLink>
-                {/* <Link className='p-4 hover:text-blue-500 xl:p-6 ' to='/'>Home</Link>
-                <Link className='p-4 hover:text-blue-500 xl:p-6' to='/products'>Products</Link>
-                <Link className='p-4 hover:text-blue-500 xl:p-6' to='/about'>About Us</Link>
-                <Link className='p-4 hover:text-blue-500 xl:p-6' to='/solutions'>Solutions</Link>
-                <Link className='p-4 hover:text-blue-500 xl:p-6' to='/blog'>Blog</Link>
-                <Link className='p-4 hover:text-blue-500 xl:p-6' to='/contact'>Contact Us</Link> */}
-             </div>
+            {/* <div className="justify-between text-sm lg:block hidden "> */}
+
+            {/* <div class="grid grid-cols-3 divide-x divide-green-500 bg-green-200 gap-2">
+                <div className="">1</div>
+                <div>2</div>
+                <div></div>
+            </div> */}
+
+
+
+
+            <div className="text-sm hidden lg:flex divide-x-2 items-center divide-banooGray10 space-x-8">
+                <div className=" space-x-8 ">
+                    <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-gray-500 font-bold' exact to='/'>{t("home")}</NavLink>
+                    <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-gray-500 font-bold' to='/products'>{t("products")}</NavLink>
+                    <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-gray-500 font-bold' to='/about'>{t("about")}</NavLink>
+                    
+                    <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-gray-500 font-bold' to='/blog'>{t("blog")}</NavLink>
+                    <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-gray-500 font-bold' to='/contact'>{t("contact_us")}</NavLink>
+                    
+                </div>
+
+                <div className="px-10">
+                    <LanguageDropDown/>
+                    {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, iure? */}
+                    
+                    
+
+                </div>
+
+            </div>
+            
         </div>
         </nav>
     )

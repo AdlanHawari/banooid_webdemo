@@ -69,22 +69,22 @@ export default function News({data}) {
     [
         
         [
-            "row-start-1 row-span-2",
-            "col-span-2",
+            "lg:row-start-1 lg:row-span-2",
+            "lg:col-start-2 lg:col-span-2",
             "",
             "" 
         ],
         [
-            "row-start-1 row-span-2",
+            "lg:row-start-1 lg:row-span-2",
             "",
             "",
-            "col-span-2" 
+            "lg:col-start-2 lg:col-span-2" 
         ]
     ]
 
     return (
         <section ref={newsref} className="">
-            <section className="grid md:grid-cols-3 gap-10 md:gap-4 h-auto md:h-128 ">
+            <section className="grid lg:grid-cols-3 gap-10 lg:gap-4 h-auto lg:h-128 ">
             {paginatedPosts.map((post,index) =>(
               
                 
@@ -93,11 +93,14 @@ export default function News({data}) {
                     className={
                         `relative 
                         transition duration-500 ease-in-out transform z-10 hover:z-50 hover:-translate-y-1 hover:scale-105 
-                        md:rounded-lg border shadow-sm bg-center h-128 md:h-auto md:${span[current%2][index]}`}
+                        md:rounded-lg border shadow-sm bg-center h-128 lg:h-auto lg:${span[current%2][index]}
+                        ` 
+                         
+                    }
                     style={{backgroundImage: `url( ${urlFor(post.mainImage).url()} )` }}
                         
                     
-                    key={index}>
+                    >
                         
                         <div className="absolute w-full bottom-0 py-5 bg-black bg-opacity-60 md:rounded-b-lg">
                             <div className="px-4">

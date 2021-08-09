@@ -1,29 +1,27 @@
-import React, { useEffect } from 'react'
+import React, {  } from 'react'
 import urlFor from './urlFor'
 import dateFormatting from './dateFormatting'
 import { Link } from 'react-router-dom'
 
 export default function Recently({data}) {
-    // useEffect(() => {
-    //     console.log("date: ",data.publishedAt)
-    // }, [])
+    
 
 
     return (
-        <ul className="grid md:grid-cols-2 xl:gap-x-14">
-            <li className="xl:order-last">
+        <ul className="grid lg:grid-cols-2 space-y-0 sm:space-y-12 lg:space-y-0 lg:gap-x-8 xl:gap-x-14">
+            <li className="lg:order-last">
                 <img 
                 className="w-full object-cover md:rounded-xl"
                 src={urlFor(data.mainImage).url()} alt=""
                 style={{ height: "400px" }}/>
             </li>
             
-            <li className="block pt-10 md:pt-0 px-10 md:px-0 space-y-10">
+            <li className="block pt-10 md:pt-0 px-4 md:px-0 space-y-10">
 
-                <h2 className="font-bold text-3xl text-banooGray">
+                <h2 className="text-center md:text-left font-bold text-2xl md:text-3xl text-banooGray">
                     {data.title}
                 </h2>
-                <p className="text-base text-justify">
+                <p className="text-sm sm:text-base text-justify">
                     {data.body.children[0].text.substr(0,400)}
                     . . .
                 </p>

@@ -1,5 +1,5 @@
 import { Pagination } from 'antd'
-import React, { useState, useEffect, useMemo, useRef } from 'react'
+import React, { useState, useMemo, useRef } from 'react'
 import 'antd/dist/antd.css'
 import urlFor from './urlFor';
 import dateFormatting from './dateFormatting';
@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 export default function PostGrid({data}) {
     const [pageSize, setPageSize] = useState(6);
     const [current, setCurrent] = useState(1);
-    const [msg, setmsg] = useState("awal");
+    
 
     const paginatedPosts = useMemo(() =>{
         const lastIndex = current * pageSize
@@ -32,32 +32,20 @@ export default function PostGrid({data}) {
     
     }
 
-    useEffect(() => {
-        // window.scroll({
-        //     top:0,
-        //     left:0,
-        //     behavior: 'smooth'
-        // })
-        // console.log(msg);
-        // console.log(paginatedPosts.title);
-        // console.log("current: ",current)
-        // console.log("pageSize: ",pageSize)
-        // console.log(paginatedPosts)
-        
-    }, [current, pageSize])
+    
 
     return (
         <section ref={postref} className="">
-            <section className="grid md:grid-cols-3 gap-20 md:gap-4">
+            <section className="grid lg:grid-cols-2 xl:grid-cols-3 gap-10 xl:gap-4">
                 {paginatedPosts.map((post,index) =>(
                     <div
                     className="md:rounded-lg border shadow-lg bg-white pb-4"
                     key={index}>
-                        <img src={urlFor(post.mainImage).url()} alt="" className="w-full md:h-52 shadow-lg object-cover md:rounded-lg"/>
+                        <img src={urlFor(post.mainImage).url()} alt="" className="w-full h-80 xl:h-52 shadow-lg object-cover md:rounded-lg"/>
                         
                         
-                        <div className="px-4 pt-4">
-                            <h2 className="text-lg">
+                        <div className="px-4 pt-4 space-y-6">
+                            <h2 className="text-xl xl:text-lg">
                                 {post.title}
                             </h2>
                             

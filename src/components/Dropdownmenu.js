@@ -18,7 +18,7 @@ const DropdownMenu = ({isOpen, toggle}) => {
                 <NavLink activeClassName="text-banoo" className='pt-3' exact to='/'>Home</NavLink>
                 <NavLink activeClassName="text-banoo" className='pt-6' to='/products'>Products</NavLink>
                 <NavLink activeClassName="text-banoo" className='pt-6' to='/about'>About Us</NavLink>
-                <NavLink activeClassName="text-banoo" className='pt-6 items-center' to='/solutions'>Solutions</NavLink>
+                {/* <NavLink activeClassName="text-banoo" className='pt-6 items-center' to='/solutions'>Solutions</NavLink> */}
                 <NavLink activeClassName="text-banoo" className='pt-6' to='/blog'>Blog</NavLink>
                 <NavLink activeClassName="text-banoo" className='pt-6 pb-3' to='/contact'>Contact Us</NavLink>
             </div> 
