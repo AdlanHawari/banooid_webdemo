@@ -9,6 +9,9 @@ import Gallery from '../components/gallery'
 import fajar from '../images/fajar_sweden.jpg'
 import GalleryMobile from '../components/galleryMobile'
 
+import GalMob from '../components/GalMob'
+import Gal from '../components/Gal'
+
 
 
 function About() {
@@ -36,7 +39,7 @@ function About() {
     })
     
     return (
-        <div>
+        <div className="overscroll-x-none">
             {/* <HelmetProvider> */}
                 {/* <Helmet>
                     <title>Banoo - About</title>
@@ -162,11 +165,19 @@ function About() {
 
             
             {/* Gallery */}
-            <div className="flex-1 px-10 py-20 xl:px-40">
+            {/* <div className="flex-1 px-10 py-20 xl:px-40">
                 {isMobile?
                 <GalleryMobile/>
                 :<Gallery/>}
                 
+
+            </div> */}
+            <div className="px-10 xl:px-40 ">
+            {isMobile?
+               <GalMob/>
+               :
+               <Gal/>
+            }
 
             </div>
  

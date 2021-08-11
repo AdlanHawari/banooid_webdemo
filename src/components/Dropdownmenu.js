@@ -1,5 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom'
+import LanguageDropDown from './languageDropDown';
 
 const DropdownMenu = ({isOpen, toggle}) => {
     return (
@@ -21,6 +22,8 @@ const DropdownMenu = ({isOpen, toggle}) => {
                 {/* <NavLink activeClassName="text-banoo" className='pt-6 items-center' to='/solutions'>Solutions</NavLink> */}
                 <NavLink activeClassName="text-banoo" className='pt-6' to='/blog'>Blog</NavLink>
                 <NavLink activeClassName="text-banoo" className='pt-6 pb-3' to='/contact'>Contact Us</NavLink>
+                {/* <LanguageDropDown/> */}
+                {/* <div> mantap</div> */}
             </div> 
         </div>
         

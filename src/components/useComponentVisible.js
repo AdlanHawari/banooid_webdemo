@@ -22,7 +22,7 @@ export default function UseComponentVisible(initialIsVisible) {
       useEffect(() => {
         document.addEventListener("keydown", handleHideDropdown, true);
         document.addEventListener("click", handleClickOutside, true);
-        console.log("ref: ",ref.current)
+        // console.log("ref: ",ref.current)
         return () => {
           document.removeEventListener("keydown", handleHideDropdown, true);
           document.removeEventListener("click", handleClickOutside, true);

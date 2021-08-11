@@ -58,7 +58,7 @@ export default function News({data}) {
         // console.log(newsref.current)
         // gotonewsSection() 
         
-        console.log("current: ",current)
+        // console.log("current: ",current)
         // console.log("pageSize: ",pageSize)
         // console.log("type: ", urlFor(data[0].mainImage).url())
         // console.log(paginatedPosts)
