@@ -1,6 +1,7 @@
 import { faFacebookSquare, faInstagram, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import logo_footer from '../images/logo_footer.png'
 
@@ -11,6 +12,8 @@ const address3 =  'Daerah Istimewa Yogyakarta 55584';
 const full_addr= 'Jl. Cindelaras 7 Wedomartani, Kec. Ngemplak, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55584';
 
 const Footer = () => {
+    const {t, i18n}  =useTranslation();
+
     return (
         <footer className="relative bg-banoo pt-12 items-center pb-6 px-10 inset-x-0 bottom-0">
             <div>
@@ -20,33 +23,42 @@ const Footer = () => {
                 <div className="grid justify-between gap-y-10 lg:grid-cols-3 gap-x-30 text-white  font-spartan">
                     <div className=" block justify-start">
                         <h3 className="text-white font-spartan font-bold">
-                            PT Banoo Inovasi Indonesia
+                            {t("footer.legal")}
+                            {/* PT Banoo Inovasi Indonesia */}
                         </h3>
                         <div className="text-xs mt-6 leading-relaxed">
                         <p>
-                            {address1}
+                            {/* {address1} */}
+                            {t("footer.address.0")}
                         </p>
                         <p>
-                            {address2}
+                            {/* {address2} */}
+                            {t("footer.address.1")}
                         </p>
                         <p>
-                            {address3}
+                            {/* {address3} */}
+                            {t("footer.address.2")}
                         </p>
                         {/* <p className="w-60">{full_addr}</p> */}
                         </div>
                     </div>
                     <div className="block lg:ml-20">
                         <h3 className="font-bold text-white">
-                            Contact 
+                            {/* Contact */}
+                            {t("footer.contact")} 
                         </h3>
                         <Link to='/contact' className="text-xs  text-white hover:text-blue-500" >
-                            <p className="mt-6">Contact Us</p>
+                            <p className="mt-6">
+                                {/* Contact Us */}
+                                {t("contact.title")} 
+                            </p>
                         </Link>
                         
                     </div>
                     <div className=" block lg:mx-20">
                         <h3 className="font-bold text-white">
-                            Find Us at
+                            {/* Find Us at */}
+                            {t("footer.find")}
                         </h3>
                         {/* <div className="flex mt-6 space-6 "> */}
                         <div className="flex mt-6 text-white">

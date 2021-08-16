@@ -3,27 +3,28 @@ import mvp from '../../images/products/mycro.png'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-export default function Feature() {
+export default function Feature({t}) {
 
     const featureContent = [
         {
-            title : "Performa",
-            subtitle : "DO semakin tinggi, ikan semakin sehat",
-            desc : " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore cupiditate iure. Tempora delectus exercitationem deleniti magni rem reiciendis praesentium, accusamus quod illo omnis laboriosam saepe ullam veniam doloremque vel id nihil a atque animi similique? Corporis maxime tempora illo.",
+            // title : "Performa",
+            title : t("products.feature.0.title"),
+            subtitle : t("products.feature.0.subtitle"),
+            desc : t("products.feature.0.desc"),
             order:"",
             effect:"fade-up"
         },
         {
-            title : "Hemat listrik",
-            subtitle : "Konsumsi listrik yg minimal",
-            desc : " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore cupiditate iure. Tempora delectus exercitationem deleniti magni rem reiciendis praesentium, accusamus quod illo omnis laboriosam saepe ullam veniam doloremque vel id nihil a atque animi similique? Corporis maxime tempora illo.",
+            title : t("products.feature.1.title"),
+            subtitle : t("products.feature.1.subtitle"),
+            desc : t("products.feature.1.desc"),
             order:"lg:order-first",
             effect:"fade-right"
         },
         {
-            title : "Seimbang dan fleksibel",
-            subtitle : "Floating system didesain agar sesuai kondisi kolam anda",
-            desc : " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore cupiditate iure. Tempora delectus exercitationem deleniti magni rem reiciendis praesentium, accusamus quod illo omnis laboriosam saepe ullam veniam doloremque vel id nihil a atque animi similique? Corporis maxime tempora illo.",
+            title : t("products.feature.2.title"),
+            subtitle : t("products.feature.2.subtitle"),
+            desc : t("products.feature.2.desc"),
             order:"",
             effect:"fade-up"
         },

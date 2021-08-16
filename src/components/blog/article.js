@@ -33,7 +33,7 @@ export default function Article() {
                             
                         }`
                     );
-                console.log(data)
+                // console.log(data)
                 setPost(data[0])
                 // console.log(typeof()
                
@@ -52,12 +52,13 @@ export default function Article() {
     }
 
     useEffect(() => {
-        sanityGet();
+        // sanityGet();
         if(post!==null){
-            console.log("isinya: ",post)
-            console.log("body: ",post.body)
+            // console.log("isinya: ",post)
+            // console.log("body: ",post.body)
         }else{
-            console.log("belom")
+            sanityGet();
+            // console.log("belom")
         }
         
     })

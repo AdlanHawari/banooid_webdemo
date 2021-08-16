@@ -98,12 +98,12 @@ const Navbar = ({isOpen,toggle}) => {
 
             <div className="text-sm hidden lg:flex divide-x-2 items-center divide-banooGray10 space-x-4 xl:space-x-8">
                 <div className="space-x-4 xl:space-x-8 ">
-                    <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-xs xl:text-sm text-gray-500 font-bold' exact to='/'>{t("home")}</NavLink>
-                    <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-xs xl:text-sm text-gray-500 font-bold' to='/products'>{t("products")}</NavLink>
-                    <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-xs xl:text-sm text-gray-500 font-bold' to='/about'>{t("about")}</NavLink>
+                    <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-xs xl:text-sm text-gray-500 font-bold' exact to='/'>{t("navbar.home")}</NavLink>
+                    <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-xs xl:text-sm text-gray-500 font-bold' to='/products'>{t("navbar.products")}</NavLink>
+                    <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-xs xl:text-sm text-gray-500 font-bold' to='/about'>{t("navbar.about")}</NavLink>
                     
-                    <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-xs xl:text-sm text-gray-500 font-bold' to='/blog'>{t("blog")}</NavLink>
-                    <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-xs xl:text-sm text-gray-500 font-bold' to='/contact'>{t("contact_us")}</NavLink>
+                    <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-xs xl:text-sm text-gray-500 font-bold' to='/blog'>{t("navbar.blog")}</NavLink>
+                    <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-xs xl:text-sm text-gray-500 font-bold' to='/contact'>{t("navbar.contact_us")}</NavLink>
                     
                 </div>
 

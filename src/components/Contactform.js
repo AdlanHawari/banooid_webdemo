@@ -6,7 +6,7 @@ import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 const scrollToRef = (ref) => window.scrollTo(0,ref.current.offsetTop);
 
-export default function Contactform() {
+export default function Contactform({t}) {
 
     // const messageSection = useRef(null);
 
@@ -65,9 +65,11 @@ export default function Contactform() {
                 <form className="space-y-6" onSubmit={sendEmail}>
                 {/* <form className="space-y-6" onSubmit={clickBtn}> */}
                     <div>
-                        <label htmlFor="name" className="block text-sm font-bold text-gray-700">Name</label>
+                        <label htmlFor="name" className="block text-sm font-bold text-gray-700">
+                            {t("contact.form.name")}
+                        </label>
                         <div className="mt-1">
-                            <input id="name" name="name" placeholder="Enter your name" type="text" autoComplete="" required className=" text-sm w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark"/>
+                            <input id="name" name="name" placeholder={t("contact.form.name_p")} type="text" autoComplete="" required className=" text-sm w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark"/>
 
                         </div>
                         
@@ -75,38 +77,44 @@ export default function Contactform() {
 
                     <div>
                         <div className="flex">
-                            <label htmlFor="email" className="text-sm font-bold text-gray-700">Email address</label>
-                            <label htmlFor="email" className="text-sm italic text-gray-700 pl-2"> (optional)</label>
+                            <label htmlFor="email" className="text-sm font-bold text-gray-700">
+                                {t("contact.form.email")}
+                            </label>
+                            <label htmlFor="email" className="text-sm italic text-gray-700 pl-2">
+                                ({t("contact.form.optional")})
+                            </label>
                             
                             
                         </div>
                         
                         
                         <div className="mt-1">
-                            <input id="email" name="email" placeholder="Enter your email address" type="email" autoComplete="email" className="text-sm  w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark"/>
+                            <input id="email" name="email" placeholder={t("contact.form.email_p")} type="email" autoComplete="email" className="text-sm  w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark"/>
 
                         </div>
                         
                     </div>
 
                     <div>
-                        <label htmlFor="subject" className="block text-sm font-bold text-gray-700">Subject</label>
+                        <label htmlFor="subject" className="block text-sm font-bold text-gray-700">
+                            {t("contact.form.subject")}
+                        </label>
                         <div className="mt-1">
-                            <input id="subject" name="subject" placeholder="Enter your message subject" type="" autoComplete="" required className=" text-sm  w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark"/>
+                            <input id="subject" name="subject" placeholder={t("contact.form.subject_p")} type="" autoComplete="" required className=" text-sm  w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark"/>
                         </div>
                     </div>
 
                     <div>
-                        <label htmlFor="phone" className="block text-sm font-bold text-gray-700">Phone number</label>
+                        <label htmlFor="phone" className="block text-sm font-bold text-gray-700">{t("contact.form.phone")}</label>
                         <div className="mt-1">
-                            <input id="phone" name="phone" placeholder="Include your country code" type="number" autoComplete="" required className=" text-sm w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark "/>
+                            <input id="phone" name="phone" placeholder={t("contact.form.phone_p")} type="number" autoComplete="" required className=" text-sm w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark "/>
                         </div>
                     </div>
 
                     <div>
-                        <label htmlFor="message" className="block text-sm font-bold text-gray-700">Message</label>
+                        <label htmlFor="message" className="block text-sm font-bold text-gray-700">{t("contact.form.message")}</label>
                         <div className="mt-1">
-                            <textarea id="message" name="message" placeholder="Type your message" type="text" autoComplete="" required className="h-40 text-sm w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark"/>
+                            <textarea id="message" name="message" placeholder={t("contact.form.message_p")} type="text" autoComplete="" required className="h-40 text-sm w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark"/>
 
                         </div>
                         
@@ -119,7 +127,8 @@ export default function Contactform() {
                         >
                             {btnClicked ? 
                             <FontAwesomeIcon icon={faSpinner} className="animate-spin"></FontAwesomeIcon>:
-                            'Send Message'}
+                            `${t("contact.form.button")}`
+                            }
                             
 
                             {/* </svg> */}

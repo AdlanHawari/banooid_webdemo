@@ -3,18 +3,16 @@ import value from '../images/banoo1.png'
 import un2 from '../images/values/UN2.png'
 import un14 from '../images/values/UN14.png'
 import un7 from '../images/values/UN7.png'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
-import Gallery from '../components/gallery'
 import fajar from '../images/fajar_sweden.jpg'
-import GalleryMobile from '../components/galleryMobile'
 
 import GalMob from '../components/GalMob'
 import Gal from '../components/Gal'
+import { useTranslation } from 'react-i18next'
 
 
 
 function About() {
+    const {t, i18n}  =useTranslation();
 
     const [isMobile, setMobile] = useState(false);
 
@@ -25,7 +23,7 @@ function About() {
         }else{
             setMobile(false);
         }
-        console.log("rendered")
+        // console.log("rendered")
     }
     useEffect(() => {
         // Aos.init();
@@ -63,10 +61,12 @@ function About() {
                                     Bersama kami memperbaiki kualitas air yang sehat untuk kehidupan ikan budidaya
                                 </h2> */}
                                 <h2 className="text-center lg:text-left uppercase font-spartan font-extrabold text-2xl  leading-loose xl:leading-loose"> {/*leadingloose harus diset di responsive*/}
-                                BERSAMA kami tingkatkan produktifitas dan kesehatan lingkungan
+                                {t("about.hero.title")}
+                                {/* BERSAMA kami tingkatkan produktifitas dan kesehatan lingkungan */}
                                 </h2>
                                 <p className="text-base text-center lg:text-left">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora saepe, rerum suscipit distinctio natus corporis vitae temporibus dolores sunt laboriosam?
+                                {t("about.hero.desc")}
+                                    {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora saepe, rerum suscipit distinctio natus corporis vitae temporibus dolores sunt laboriosam? */}
                                 </p>
 
                             </div>
@@ -97,7 +97,10 @@ function About() {
                     <div className="block text-center lg:text-left space-y-10">
                         <h3 className="uppercase font-spartan text-2xl font-extrabold tracking-wide">Petani kuat,
                         <br className="md:hidden lg:flex xl:hidden"></br> rakyat sehat</h3>
-                        <p className="text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quaerat! Iusto, consequatur adipisci placeat tenetur modi inventore veniam rem eos exercitationem eum corrupti aperiam repellat! Quibusdam obcaecati ratione ab reiciendis labore doloribus? Non delectus minima placeat.</p>
+                        <p className="text-base">
+                        {t("about.founder.desc")}    
+                        {/* Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quaerat! Iusto, consequatur adipisci placeat tenetur modi inventore veniam rem eos exercitationem eum corrupti aperiam repellat! Quibusdam obcaecati ratione ab reiciendis labore doloribus? Non delectus minima placeat. */}
+                        </p>
                     </div>
                 
                </div>
@@ -108,7 +111,8 @@ function About() {
             <div className="py-20 px-10 lg:px-40">
                 <div className="block">
                     <h2 className="font-sans-6 text-center pb-10 text-4xl">
-                        Our Goals
+                        {t("about.goals.title")}
+                        {/* Our Goals */}
                     </h2>
                     <ul className="grid sm:grid-cols-3 gap-4 xl:gap-8">
                         <li className=" rounded-lg shadow-xl p-6">
@@ -117,11 +121,13 @@ function About() {
                                 <img src={un2} className="h-40 mx-auto" alt=""/>
                                 {/* <div className="h-20 shadow-xl bg-no-repeat"
                                     style={{backgroundImage: `url(${fajar})`}}></div> */}
-                                <h4 className="text-lg xl:text-base font-bold">
-                                Achieve national and regional<br/> food security
+                                <h4 className="px-4 text-lg xl:text-base font-bold">
+                                    {/* Achieve national and regional<br/> food security */}
+                                    {t("about.goals.point.0.title")}
                                 </h4>
                                 <p className="text-sm">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum provident optio dignissimos beatae nemo corporis ipsam totam quae.
+                                {t("about.goals.point.0.desc")}
+                                    {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum provident optio dignissimos beatae nemo corporis ipsam totam quae. */}
                                 </p>
 
                             </div>
@@ -131,11 +137,13 @@ function About() {
                         <li className="rounded-lg shadow-xl p-6">
                             <div className="flex-col  text-center space-y-4">
                                 <img src={un14} className="h-40 mx-auto" alt=""/>
-                                <h4 className="text-lg xl:text-base font-bold">
-                                    Improving water environment<br/> and life below water
+                                <h4 className="px-4 text-lg xl:text-base font-bold">
+                                    {/* Improving water environment<br/> and life below water */}
+                                    {t("about.goals.point.1.title")}
                                 </h4>
                                 <p className="text-sm">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum provident optio dignissimos beatae nemo corporis ipsam totam quae.
+                                {t("about.goals.point.1.desc")}
+                                    {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum provident optio dignissimos beatae nemo corporis ipsam totam quae. */}
                                 </p>
 
                             </div>
@@ -144,13 +152,15 @@ function About() {
 
                         <li className=" rounded-lg shadow-xl p-6">
                             <div className="text-center space-y-4">
-                            <img src={un7} className="h-40 mx-auto" alt=""/>
-                            <h4 className="text-lg xl:text-base font-bold">
-                                    Increasing yield of aquaculture  
-                                    <br className="hidden xl:flex"></br> and fish farmer income
+                                <img src={un7} className="h-40 mx-auto" alt=""/>
+                                <h4 className="px-4 text-lg xl:text-base font-bold">
+                                    {/* Increasing yield of aquaculture  
+                                    <br className="hidden xl:flex"></br> and fish farmer income */}
+                                    {t("about.goals.point.2.title")}
                                 </h4>
                                 <p className="text-sm">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum provident optio dignissimos beatae nemo corporis ipsam totam quae.
+                                {t("about.goals.point.2.desc")}
+                                    {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum provident optio dignissimos beatae nemo corporis ipsam totam quae. */}
                                 </p>
 
                             </div>

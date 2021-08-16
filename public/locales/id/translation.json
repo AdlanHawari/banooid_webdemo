@@ -1,15 +1,201 @@
 {
-    "home": "Beranda",
-    "products": "Produk",
-    "about": "Tentang Kami",
-    "contact_us": "Kontak",
-    "blog": "Blog",
+    "navbar":
+    {
+        "home": "Beranda",
+        "products": "Produk",
+        "about": "Tentang Kami",
+        "contact_us": "Kontak",
+        "blog": "Blog"
+    },
 
     
     "why_banoo": "Mengapa Banoo",
     
     "learn_more":"Pelajari",
-    "preorder":"Pesan"
+    "preorder":"Pesan",
+
+    "home":{
+        "product":[
+            {
+                "title":"Mycrofish",
+                "subtitle":"Penuhi kebutuhan oksigen di kolam anda",
+                "desc":"Tingkatkan kadar oksigen terlarut untuk meningkatkan produksi ikan dan udang anda sehingga pendapatan akan semakin meningkat"
+            },
+            {
+                "title":"Fiskö",
+                "subtitle":"Asisten kolam anda",
+                "desc":"Pantau dan kendalikan kualitas air kolam untuk mempertahankan performa terbaik dan memaksimalkan produktivitas kolam"
+            },
+            {
+                "title":"Mbah Hary",
+                "subtitle":"Laporan kolam anda langsung melalui ponsel",
+                "desc":"Semakin mudah mengendalikan kondisi kolam sehingga anda tak perlu khawatir"
+            }
+        ],
+        "story":"Cerita Kawan Banoo",
+        "awards":"Penghargaan",
+        "partners":"Rekanan dan Liputan Media"
+    },
+
+    "products": {
+        "top":
+        {
+            "product" : "Mycrofish",
+            "subtitle": "Oksigen maksimal, Dengan biaya listrik minimal",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis expedita perferendis voluptatibus nobis iste ducimus ab aliquid amet voluptates corporis.",
+            "button": "Beli sekarang"
+        },
+        "feature":[
+            {
+                "title" : "Performa",
+                "subtitle" : "DO semakin tinggi, ikan semakin sehat",
+                "desc" : " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore cupiditate iure. Tempora delectus exercitationem deleniti magni rem reiciendis praesentium, accusamus quod illo omnis laboriosam saepe ullam veniam doloremque vel id nihil a atque animi similique? Corporis maxime tempora illo."
+            },
+            {
+                "title" : "Hemat listrik",
+                "subtitle" : "Konsumsi listrik yg minimal",
+                "desc" : " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore cupiditate iure. Tempora delectus exercitationem deleniti magni rem reiciendis praesentium, accusamus quod illo omnis laboriosam saepe ullam veniam doloremque vel id nihil a atque animi similique? Corporis maxime tempora illo."
+            },
+            {
+                "title" : "Seimbang dan fleksibel",
+                "subtitle" : "Floating system didesain agar sesuai kondisi kolam anda",
+                "desc" : " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore cupiditate iure. Tempora delectus exercitationem deleniti magni rem reiciendis praesentium, accusamus quod illo omnis laboriosam saepe ullam veniam doloremque vel id nihil a atque animi similique? Corporis maxime tempora illo."
+            }
+        ],
+        "descSec":{
+            "title":"Dapatkan mycrofish sekarang",
+            "desc":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo excepturi rerum autem quas corrupti, blanditiis a, recusandae eligendi ea sequi iure quasi pariatur saepe, commodi est eos vero non! Deleniti voluptate tempore porro nostrum possimus dolorem asperiores cumque quam velit vero omnis doloremque similique voluptatum accusantium corrupti dolores iusto neque, reiciendis nam quae dolor adipisci! Nemo possimus itaque perspiciatis vero culpa, odio nihil quos repellat nam voluptate exercitationem totam labore modi quo voluptatem a explicabo dolores quia veniam voluptates hic ipsam earum est. Saepe, corporis modi."
+        },
+        "sec3d":{
+            "title":"3D View",
+            "subtitle":"Mycrofish hadir dengan desain sesuai kebutuhan anda",
+            "desc":"Dengan perhitungan dan simulasi yang matang, kami membantu anda memenuhi kebutuhan oksigen anda tanpa perlu khawatir. Klik gambar untuk melihat 3d desain, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, temporibus!",
+            "click":"Klik untuk melihat",
+            "note":"Catatan",
+            "rotate":"Tahan dan geser klik kiri untuk memutar",
+            "move":"Tahan dan geser klik kanan untuk menggeser",
+            "zoom":"Scroll untuk zoom"
+        },
+        "spec":[
+            {
+                "title" : "Berat",
+                "spec" : "11 kg"
+            },
+            {  
+                "title":"Jangkauan",
+                "spec":"500 cm"
+            },
+            {  
+                "title":"Kenaikan DO",
+                "spec":"2 mg/L"
+    
+            },
+            {  
+                "title":"Konsumsi listrik",
+                "spec":"110 watt"
+    
+            },
+            {  
+                "title":"Ukuran gelembung",
+                "spec":"40 µm"
+    
+            },
+            {  
+                "title":"Jenis pompa",
+                "spec":"Submersible"
+    
+            },
+            {  
+                "title":"Dimensi",
+                "spec":"17 cm x 17 cm x 11 cm"
+    
+            },
+            {  
+                "title":"Cakupan sembur",
+                "spec":"10 m²"
+    
+            },
+            {  
+                "title":"Penurunan DO",
+                "spec":"0.2 mg/L /s "
+    
+            }
+        ]
+    },
+
+    "about":{
+        "hero":{
+            "title":"BERSAMA kami tingkatkan produktifitas dan kesehatan lingkungan",
+            "desc":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora saepe, rerum suscipit distinctio natus corporis vitae temporibus dolores sunt laboriosam?"
+        },
+        "founder":{
+            "title":"Petani kuat, rakyat sehat",
+            "desc":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quaerat! Iusto, consequatur adipisci placeat tenetur modi inventore veniam rem eos exercitationem eum corrupti aperiam repellat! Quibusdam obcaecati ratione ab reiciendis labore doloribus? Non delectus minima placeat."
+
+        },
+        "goals":{
+            "title":"Misi Kami",
+            "point":
+            [   
+                {
+                    "title":"Mewujudkan ketahanan pangan nasional dan regional",
+                    "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum provident optio dignissimos beatae nemo corporis ipsam totam quae."
+                },
+                {
+                    "title":"Memperbaiki kualitas air dan lingkungan",
+                    "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum provident optio dignissimos beatae nemo corporis ipsam totam quae."
+                },
+                {
+                    "title":"Meningkatkan pendapatan pembudidaya",
+                    "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum provident optio dignissimos beatae nemo corporis ipsam totam quae."
+                }
+
+            ]
+        }
+    },
+
+    "contact":{
+        "title": "Hubungi Kami",
+        "desc": "Jika anda adalah pembudidaya, perusahaan akuakultur, institusi yang memiliki program di sektor akuakultur, atau orang yang tertarik dengan kami, jangan ragu untuk menghubungi kami, kami akan menghubungi anda kembali secepat mungkin.",
+        "email": "Email kami",
+        "follow": "Ikuti kami",
+        "form":{
+            "name":"Nama",
+            "name_p":"Masukkan nama anda",
+            "email":"Alamat email",
+            "optional":"opsional",
+            "email_p":"Masukkan alamat email",
+            "subject":"Subjek",
+            "subject_p":"Masukkan subjek pesan",
+            "phone":"Telepon",
+            "phone_p":"Sertakan kode negara",
+            "message":"Pesan",
+            "message_p":"Tulis pesan anda",
+            "button":"Kirim pesan"
+        }
+
+    },
+
+    "blog":{
+        "recently":"Terbaru",
+        "news":"Berita",
+        "edu":"Banoo Edu",
+        "press":"Liputan Media",
+        "read":"Selengkapnya",
+        "loading":"Memuat Konten"
+    },
+    "footer":{
+        "legal":"PT Banoo Inovasi Indonesia",
+        "address":{
+            "0":"Jl. Cindelaras 7 Wedomartani,",
+            "1":"Kec. Ngemplak, Kabupaten Sleman,",
+            "2":"Daerah Istimewa Yogyakarta 55584"
+        },
+        "find":"Temukan Kami di",
+        "contact":"Kontak"
+            
+        
+    }
 
 
 }

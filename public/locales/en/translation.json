@@ -1,10 +1,205 @@
 {
-    "home": "Home",
-    "products": "Products",
-    "about": "About Us",
-    "contact_us": "Contact Us",
-    "blog": "Blog",
-    "why_banoo": "Why Banoo"
+    "navbar":
+    {
+        "home": "Home",
+        "products": "Products",
+        "about": "About Us",
+        "contact_us": "Contact Us",
+        "blog": "Blog"
+    },
+
+    "why_banoo": "Why Banoo",
+
+    "learn_more":"Learn more",
+    "preorder":"Pre order",
+
+    "home":{
+        "product":[
+            {
+                "title":"Mycrofish",
+                "subtitle":"Fullfill oxygen demand in your pond",
+                "desc":"Increase Oxygen rate for better fish and shrimp productions to accelerate your revenue and get better life"
+            },
+            {
+                "title":"Fiskö",
+                "subtitle":"Your Pond Assistant",
+                "desc":"Monitor and Control the water quality of your pond to maintain the best performance of your fish for maximum productivity"
+            },
+            {
+                "title":"Mbah Hary",
+                "subtitle":"Your Pond Report directly to Your Hand",
+                "desc":"It is just get easier for you to control your pond condition at its best performance to bring maximum revenue to your arms"
+            }
+        ],
+        "story":"Kawan Banoo Story",
+        "awards":"Awards",
+        "partners":"Partners and Media Coverage"
+
+
+    },
+
+    "products": {
+        "top":
+        {
+            "product" : "Mycrofish",
+            "subtitle": "Maximum oxygen, with minimum cost",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis expedita perferendis voluptatibus nobis iste ducimus ab aliquid amet voluptates corporis.",
+            "button": "Buy now"
+        },
+        "feature":[
+            {
+                "title" : "Performance",
+                "subtitle" : "Higher DO, Healthier fish",
+                "desc" : " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore cupiditate iure. Tempora delectus exercitationem deleniti magni rem reiciendis praesentium, accusamus quod illo omnis laboriosam saepe ullam veniam doloremque vel id nihil a atque animi similique? Corporis maxime tempora illo."
+            },
+            {
+                "title" : "Low Cost",
+                "subtitle" : "Minimum electricity cost",
+                "desc" : " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore cupiditate iure. Tempora delectus exercitationem deleniti magni rem reiciendis praesentium, accusamus quod illo omnis laboriosam saepe ullam veniam doloremque vel id nihil a atque animi similique? Corporis maxime tempora illo."
+            },
+            {
+                "title" : "Balance dan Flex",
+                "subtitle" : "Floating system fits your pond",
+                "desc" : " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore cupiditate iure. Tempora delectus exercitationem deleniti magni rem reiciendis praesentium, accusamus quod illo omnis laboriosam saepe ullam veniam doloremque vel id nihil a atque animi similique? Corporis maxime tempora illo."
+            }
+        ],
+        "descSec":{
+            "title":"Get your mycrofish now",
+            "desc":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo excepturi rerum autem quas corrupti, blanditiis a, recusandae eligendi ea sequi iure quasi pariatur saepe, commodi est eos vero non! Deleniti voluptate tempore porro nostrum possimus dolorem asperiores cumque quam velit vero omnis doloremque similique voluptatum accusantium corrupti dolores iusto neque, reiciendis nam quae dolor adipisci! Nemo possimus itaque perspiciatis vero culpa, odio nihil quos repellat nam voluptate exercitationem totam labore modi quo voluptatem a explicabo dolores quia veniam voluptates hic ipsam earum est. Saepe, corporis modi."
+        },
+        "sec3d":{
+            "title":"3D View",
+            "subtitle":"Mycrofish fits your needs",
+            "desc":"Calculation and simulation, we help you fulfill oxygen demand. Click the image to view 3d design, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, temporibus!",
+            "click":"Click to view",
+            "note":"Note",
+            "rotate":"Hold and drag left clik to rotate",
+            "move":"Hold and drag right click to move",
+            "zoom":"Scroll to zoom"
+        },
+        "spec":[
+            {
+                "title" : "Weight",
+                "spec" : "11 kg"
+            },
+            {  
+                "title":"Range",
+                "spec":"500 cm"
+            },
+            {  
+                "title":"DO Increase",
+                "spec":"2 mg/L"
+    
+            },
+            {  
+                "title":"Power Consumption",
+                "spec":"110 watt"
+    
+            },
+            {  
+                "title":"Bubble Size",
+                "spec":"40 µm"
+    
+            },
+            {  
+                "title":"Pump type",
+                "spec":"Submersible"
+    
+            },
+            {  
+                "title":"Dimension",
+                "spec":"17 cm x 17 cm x 11 cm"
+    
+            },
+            {  
+                "title":"Spread Area",
+                "spec":"10 m²"
+    
+            },
+            {  
+                "title":"DO decrease rate",
+                "spec":"0.2 mg/L /s "
+    
+            }
+        ]
+    },
+
+    "about":{
+        "hero":{
+            "title":"Together we improve productivity and healthy environment",
+            "desc":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora saepe, rerum suscipit distinctio natus corporis vitae temporibus dolores sunt laboriosam?"
+        },
+        "founder":{
+            "title":"Stronger Farmers, Healthier people",
+            "desc":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quaerat! Iusto, consequatur adipisci placeat tenetur modi inventore veniam rem eos exercitationem eum corrupti aperiam repellat! Quibusdam obcaecati ratione ab reiciendis labore doloribus? Non delectus minima placeat."
+
+        },
+        "goals":{
+            "title":"Our Goals",
+            "point":
+            [   
+                {
+                    "title":"Achieve national and regional food security",
+                    "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum provident optio dignissimos beatae nemo corporis ipsam totam quae."
+                },
+                {
+                    "title":"Improving water environment and life below water",
+                    "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum provident optio dignissimos beatae nemo corporis ipsam totam quae."
+                },
+                {
+                    "title":"Increasing yield of aquaculture and fish farmer income",
+                    "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum provident optio dignissimos beatae nemo corporis ipsam totam quae."
+                }
+
+            ]
+        }
+    },
+
+    "contact":{
+        "title": "Contact Us",
+        "desc": "If you are a fish farmer, an aquaculture company, an institution or company who have programme in aquaculture sector, or just someone interested in what we are doing, don’t hesitate to reach out and we will get back to you as soon as possible.",
+        "email": "Email Us",
+        "follow": "Follow Us",
+        "form":{
+            "name":"Name",
+            "name_p":"Enter your name",
+            "email":"Email address",
+            "optional":"optional",
+            "email_p":"Enter your email address",
+            "subject":"Subject",
+            "subject_p":"Enter your message subject",
+            "phone":"Phone number",
+            "phone_p":"Include your country code",
+            "message":"Message",
+            "message_p":"Type your message",
+            "button":"Send Message"
+        }
+
+    },
+
+    "blog":{
+        "recently":"Recently",
+        "news":"News",
+        "edu":"Banoo Edu",
+        "press":"Press Release",
+        "read":"Read more",
+        "loading":"Loading Content"
+    },
+
+    "footer":{
+        "legal":"PT Banoo Inovasi Indonesia",
+        "address":{
+            "0":"Cindelaras 7 St.",
+            "1":"Yogyakarta Special Region 55584",
+            "2":"Indonesia"
+        },
+        "find":"Find Us at",
+        "contact":"Contact"
+            
+        
+    }
+
+    
 
 
 }

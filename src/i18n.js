@@ -22,6 +22,10 @@ i18n
   .init({
     fallbackLng: 'en',
     // debug: true,
+    detection:{
+      order:['queryString', 'cookie'],
+      caches:['cookie']
+    },
 
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default

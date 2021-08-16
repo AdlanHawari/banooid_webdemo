@@ -9,6 +9,7 @@ module.exports = {
       },
       zIndex: {
         '-50': '-50',
+        '60':'60'
        },
       screens: {
         'iphone7': '375px',

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Model3D from '../Model3D'
 
 
-export default function Section3d() {
+export default function Section3d({t}) {
 
     const [view3d, setView3d] = useState(false)  
     return (
@@ -16,7 +16,9 @@ export default function Section3d() {
                 (
                     <div className="absolute inset-0 bg-black bg-opacity-60 cursor-pointer rounded-lg" onClick={(e)=>{setView3d(true)}}>
                         <h3 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-white text-sm xl:text-xl "> 
-                            Click to view
+                            {t("products.sec3d.click")}
+                            
+
                         </h3>
                     
                     </div>
@@ -43,10 +45,11 @@ export default function Section3d() {
                                 </div>
                                 <div className="">
                                     <ul className="text-xs md:text-base text-white italic">
-                                    Note:
-                                        <li className=" pl-10">hold and drag left clik to rotate</li>
-                                        <li className=" pl-10"> hold and drag right click to move</li>
-                                        <li className=" pl-10">scroll to zoom</li>
+                                    {t("products.sec3d.note")} :
+                                    {/* Note: */}
+                                        <li className=" pl-10">{t("products.sec3d.rotate")}</li>
+                                        <li className=" pl-10">{t("products.sec3d.move")}</li>
+                                        <li className=" pl-10">{t("products.sec3d.zoom")}</li>
                                     </ul>
                                 
                                 </div>
@@ -64,13 +67,14 @@ export default function Section3d() {
 
             <div className="md:order-1 block space-y-2 sm:space-y-4 xl:space-y-8 max-w-prose">
                 <h2 className="text-banooGray font-semibold">
-                        3D View
+                    {t("products.sec3d.title")}
+                        {/* 3D View */}
                     </h2>
                     <h3 className="text-black font-bold text-2xl xl:text-4xl">
-                    Mycrofish hadir dengan desain sesuai kebutuhan anda
+                    {t("products.sec3d.subtitle")}
                 </h3>
                 <p>
-                    Dengan perhitungan dan simulasi yang matang, kami membantu anda memenuhi kebutuhan oksigen anda tanpa perlu khawatir. Klik gambar untuk melihat 3d desain, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, temporibus!
+                {t("products.sec3d.desc")}
                 </p>
 
             </div>

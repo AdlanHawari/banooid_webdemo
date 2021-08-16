@@ -9,12 +9,15 @@ import About from './pages/About';
 import Products from './pages/Products';
 // import Solutions from './pages/solutions';
 import Blog from './pages/blog';
-import Contact from './pages/contact';
+import Contact from './pages/Contact';
 import DropdownMenu from './components/Dropdownmenu';
 import Footer from './components/Footer';
 
 import ScrollToTop from './components/ScrollToTop';
 import Article from './components/blog/article';
+import MobileMenu from './components/mobileMenu';
+import Notfound from './pages/Notfound';
+
 
 
 
@@ -54,7 +57,8 @@ function App() {
           <ScrollToTop/>
         {/* <Router basename={process.env.PUBLIC_URL}> */}
           <Navbar toggle={toggle} isOpen={isOpen}/>
-          <DropdownMenu isOpen={isOpen} toggle={toggle}/>
+          <MobileMenu isOpen={isOpen} toggle={toggle}/>
+          {/* <DropdownMenu isOpen={isOpen} toggle={toggle}/> */}
           {/* <Content/> */}
           <Switch>
           {/* <div className="max-w-screen-xl mx-auto"> */}
@@ -67,6 +71,8 @@ function App() {
               <Route path='/contact' component={Contact}/>
               
               <Route path="/blog/:slug" component={Article}/>
+              <Route component={Notfound}/>
+
 
             {/* </div> */}
             

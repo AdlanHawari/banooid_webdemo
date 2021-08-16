@@ -1,40 +1,19 @@
-import React, { useEffect } from 'react'
-import { useState } from 'react';
-import { Helmet } from 'react-helmet-async'
-import { Parallax } from 'react-parallax'
-import YouTube from 'react-youtube';
-import Model3D from '../components/Model3D';
+import React from 'react'
 import Feature from '../components/products/feature';
 import Spec from '../components/products/Spec';
 import Top from '../components/products/top';
-import Aos from 'aos'
-import 'aos/dist/aos.css'
 import Section3d from '../components/products/section3d';
-import VideoPlayer from '../components/products/videoPlayer';
-import YoutubeEmbed from '../components/products/youtubeembed';
 import DescriptionSection from '../components/products/descriptionSection';
+import TechSpec from '../components/products/techSpec';
+import { useTranslation } from 'react-i18next';
+
 
 
 
 function Products() {
 
     
-
-    
-
-    // const checkMobile = () =>{
-    //     if(window.innerWidth<768){
-            
-    //     }
-    // }
-    
-    useEffect(() => {
-        // checkMobile();
-        console.log("view:", view3d)
-        Aos.init();
-        
-    }, [])
-    const [view3d, setView3d] = useState(false)    
+    const {t, i18n}  =useTranslation();
 
     document.title= "Banoo - Products";
     return (
@@ -44,11 +23,11 @@ function Products() {
             <div className="pt-20 bg-banooWhite">
 
                 {/* Gambar */}
-                <Top/>
+                <Top t={t}/>
 
                 {/* Feature */}
                 <div className="px-10 lg:px-40 py-8 lg:py-10">
-                    <Feature/>
+                    <Feature t={t}/>
 
                 </div>
                 
@@ -56,7 +35,7 @@ function Products() {
               
                 {/* Deskripsi */}
                 
-                <DescriptionSection/>
+                <DescriptionSection t={t}/>
                 
 
                
@@ -64,17 +43,18 @@ function Products() {
                
 
                 <div className="px-10 lg:px-40">
-                    <Section3d/>
+                    <Section3d t={t}/>
                 </div>
                 {/* end of 3D model */}
 
 
                 {/* Spesifikasi */}
-                <div className="block px-10 md:px-40 items-center justify-center h-screen bg-yellow-200">
-                    <div className="">
-                        Spesifikasi
+                <div className="block py-10 sm:py-20 px-10 lg:px-40 items-center justify-center">
+                    <div className="text-center text-black font-bold text-xl iphone7:text-3xl  sm:text-4xl py-14">
+                        Mycrofish Technical Specification
                     </div>
-                    <Spec/>
+                    {/* <Spec/> */}
+                    <TechSpec t={t}/>
                 </div>
 
                 {/* FAQ */}

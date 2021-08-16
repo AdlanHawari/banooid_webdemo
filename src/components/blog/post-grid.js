@@ -4,9 +4,12 @@ import 'antd/dist/antd.css'
 import urlFor from './urlFor';
 import dateFormatting from './dateFormatting';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 export default function PostGrid({data}) {
+
+    const {t, i18n}  =useTranslation();
     const [pageSize, setPageSize] = useState(6);
     const [current, setCurrent] = useState(1);
     
@@ -67,7 +70,7 @@ export default function PostGrid({data}) {
                                 </div>
                                 <Link to={"/blog/" + post.slug.current} key={post.slug.current}>
                                 <div className="hover:text-banoo hover:border-banoo flex items-center border-b-2 border-black py-2 text-banooGray hover:text-banoo">
-                                <button className="px-2 font-bold  font-spartan text-xs">Read more</button>
+                                <button className="px-2 font-bold  font-spartan text-xs">{t("blog.read")}</button>
                                 </div>
                                
                                     
