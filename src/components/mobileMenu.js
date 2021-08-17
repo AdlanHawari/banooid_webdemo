@@ -67,7 +67,7 @@ export default function MobileMenu({isOpen, toggle}) {
                     {navmenu.map((menu, index) =>(
                         <li 
                         key={index}
-                        className="flex items-center py-4 font-spartan text-sm text-left text-white">
+                        className="flex items-center py-2 sm:py-4 font-spartan text-sm text-left text-white">
                             {page === menu.to?
                             
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +79,7 @@ export default function MobileMenu({isOpen, toggle}) {
                             <div/>
                             }
                             
-                            <NavLink activeClassName="text-white" className="py-4 pl-2 text-white font-bold" exact={menu.exact} to={menu.to} onClick={toggle}>
+                            <NavLink activeClassName="text-white" className="py-2 sm:py-4 pl-2 text-white font-bold" exact={menu.exact} to={menu.to} onClick={toggle}>
                                 {menu.title}
                                 
                             </NavLink>

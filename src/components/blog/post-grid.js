@@ -48,7 +48,7 @@ export default function PostGrid({data}) {
                         
                         
                         <div className="px-4 pt-4 space-y-6">
-                            <h2 className="text-xl xl:text-lg">
+                            <h2 className="font-bold text-xl xl:text-lg">
                                 {post.title}
                             </h2>
                             
