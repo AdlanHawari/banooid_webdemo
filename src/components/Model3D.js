@@ -2,7 +2,7 @@ import React, { Suspense, useRef, useState  } from 'react'
 import ReactDOM from 'react-dom'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
-import Model from './Three/Mycrofish'
+import Model from './Three/Mf_1021'
 import Lights from './Three/lights'
 
 export default function Model3D({view}) {
@@ -13,7 +13,8 @@ export default function Model3D({view}) {
         <>
             <Canvas
                 // camera={{position:[-5,4,4], fov:40}}>
-                camera={{position:[-10,4,-5], fov:40}}>
+                // camera={{position:[-10,4,-5], fov:40}}>
+                camera={{position:[10,4,-5], fov:40}}>
                     {/* <Lights/> */}
                     
                     

@@ -74,10 +74,13 @@ function Home() {
                         data-aos-duration="1000"
                         data-aos-delay="0">
                             <h2 className="text-white font-extrabold">
-                                Invest in water
+                                {/* {t("about.goals.title")} */}
+                                {t("home.hero.title_line_1")}
+                                {/* Invest in water */}
                             </h2>
                             <h2 className="text-white font-extrabold">
-                                Relieve hunger
+                                {t("home.hero.title_line_2")}
+                                {/* Relieve hunger */}
 
                             </h2>
 
@@ -90,9 +93,10 @@ function Home() {
                         data-aos-duration="1000"
                         data-aos-delay="0">
                             <p className="font-spartan text-white text-sm md:text-lg tracking-wide leading-loose">
-                                Our IoT water quality sensor works with microbubble generator
+                                {t("home.hero.subtitle")}
+                                {/* Our IoT water quality sensor works with microbubble generator
                                 to monitor the quality of water and increase the aquaculture yield
-                                in environmentally concern manner
+                                in environmentally conscious manner */}
                             </p>
                         </div>
 
@@ -111,38 +115,45 @@ function Home() {
                 <div className="py-20 bg-white sm:py-20 px-14 iphone7:px-10 xl:px-40">
                
                     <h2 className="justify-center text-center font-spartan sm:text-lg xl:text-4xl text-banooGray font-extrabold">
-                        {t("why_banoo")}?
+                        {t("home.why_banoo.title")}?
+                        {/* {t("home.product.0.desc")} */}
                     </h2>
                     <ul className="grid gap-y-20 md:gap-y-0 md:grid-flow-col md:grid-cols-3 pt-20">
                         <li className="flex flex-col flex-shrink place-items-center">
-                            <img src={logo} alt="" className="h-40 xl:h-60"/>
+                            <img src={logo} alt="" className="h-40 xl:h-40"/>
                             <h3 className="py-6 md:py-10  text-center font-spartan font-extrabold text-base xl:text-lg">
-                            Dissolved Oxygen Arouser
+                            {/* Dissolved Oxygen Arouser */}
+                            {t("home.why_banoo.content.0.title")}
                             </h3>
                             <p className="text-center px-2 text-xs lg:text-base xl:px-6">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit reprehenderit magnam similique fugit, deserunt doloribus.
+                                {t("home.why_banoo.content.0.desc")}
+                                {/* Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit reprehenderit magnam similique fugit, deserunt doloribus. */}
                             </p>
 
                         </li>
 
                         <li className="flex flex-col place-items-center">
-                            <img src={logo} alt="" className="h-40 xl:h-60"/>
+                            <img src={logo} alt="" className="h-40 xl:h-40"/>
                             <h3 className="py-6 md:py-10  text-center font-spartan font-extrabold text-base xl:text-lg">
-                            Fiskö
+                            {/* Fiskö */}
+                            {t("home.why_banoo.content.1.title")}
                             </h3>
                             <p className="text-center px-2 text-xs lg:text-base xl:px-6">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit reprehenderit magnam similique fugit, deserunt doloribus.
+                                {t("home.why_banoo.content.1.desc")}
+                                {/* Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit reprehenderit magnam similique fugit, deserunt doloribus. */}
                             </p>
 
                         </li>
 
                         <li className="flex flex-col place-items-center">
-                            <img src={logo} alt="" className="h-40 xl:h-60"/>
+                            <img src={logo} alt="" className="h-40"/>
                             <h3 className="py-6 md:py-10  text-center font-spartan font-extrabold text-base xl:text-lg">
-                            Banoo Mobile App
+                            {/* Banoo Mobile App */}
+                            {t("home.why_banoo.content.2.title")}
                             </h3>
                             <p className="text-center px-2 text-xs lg:text-base xl:px-6">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit reprehenderit magnam similique fugit, deserunt doloribus.
+                                {t("home.why_banoo.content.2.desc")}
+                                {/* Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit reprehenderit magnam similique fugit, deserunt doloribus. */}
                             </p>
 
                         </li>
@@ -272,19 +283,17 @@ function Home() {
                 {/* End of Shortcut product - Section */}
 
                 {/* Kawan Banoo Story - Section */}
-                <div className="py-20 xl:h-screen md:px-20 xl:px-40 bg-gradient-to-b from-bluebg to-white">
+                {/* <div className="py-20 xl:h-screen md:px-20 xl:px-40 bg-gradient-to-b from-bluebg to-white">
                     <h2 className="flex justify-center font-spartan sm:text-lg lg:text-2xl xl:text-4xl text-banooGray font-extrabold">
-                        {/* Kawan Banoo Story */}
+                        
                         {t("home.story")}
                         
                     </h2>
-                    {/* <div className="py-10 xl:py-20 relative w-auto overflow-x-auto"> */}
-                    {/* <div className="py-10 xl:py-20 relative w-auto"> */}
                     <div className="pt-10 xl:pt-20 relative w-auto">
                        <Slider />
                     </div>
                     
-                </div>
+                </div> */}
                 
                         {/* End of Slider */}
 

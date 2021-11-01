@@ -7,29 +7,48 @@
         "contact_us": "Kontak",
         "blog": "Blog"
     },
-
-    
-    "why_banoo": "Mengapa Banoo",
     
     "learn_more":"Pelajari",
     "preorder":"Pesan",
 
     "home":{
+        "hero":{
+            "title_line_1" : "Investasi Teknologi untuk",
+            "title_line_2" : "Kolam Budidaya Anda",
+            "subtitle" : "Sensor kualitas air IoT kami bekerja dengan generator gelembung mikro untuk memantau kualitas air kolam dan meningkatkan hasil budidaya perikanan dengan cara yang ramah lingkungan"
+        },
+        "why_banoo" : {
+            "title": "Mengapa Banoo",
+            "content": [
+                {
+                    "title":"Tingkatkan Produktivitas Hingga 78%",
+                    "desc":"Aerator MycroFish kami memiliki teknologi microbubble yang menyuplai oksigen terlarut hingga ke dasar kolam"
+                },
+                {
+                    "title":"Budidaya Ikan Jadi Digital",
+                    "desc":"Pantau dan kendalikan kolam budidaya lebih mudah #dirumahaja"
+                },
+                {
+                    "title":"Mati Listrik, Banoo Tetap Menyala",
+                    "desc":"Kurangi kerugian produksi akibat ketidakstabilan listrik dengan sumber energi terbarukan"
+                }
+            ]
+        },
         "product":[
             {
-                "title":"Mycrofish",
+                "title":"Produktivitas",
                 "subtitle":"Penuhi kebutuhan oksigen di kolam anda",
-                "desc":"Tingkatkan kadar oksigen terlarut untuk meningkatkan produksi ikan dan udang anda sehingga pendapatan akan semakin meningkat"
+                "desc":"Tingkatkan kadar oksigen terlarut untuk meningkatkan produksi ikan dan udang anda sehingga pendapatan turut naik"
             },
             {
                 "title":"Fiskö",
                 "subtitle":"Asisten kolam anda",
-                "desc":"Pantau dan kendalikan kualitas air kolam untuk mempertahankan performa terbaik dan memaksimalkan produktivitas kolam"
+                "desc":"Sensor IoT Banoo dapat mendeteksi tingkat oksigen terlarut, pH, dan suhu dalam air serta penggunaan listrik kolam secara real-time sekaligus mengotomasi aerator microbubble"
             },
             {
-                "title":"Mbah Hary",
+                "title":"Banoo Mobile App",
                 "subtitle":"Laporan kolam anda langsung melalui ponsel",
-                "desc":"Semakin mudah mengendalikan kondisi kolam sehingga anda tak perlu khawatir"
+                "desc":"Pantau dan kendalikan kualitas air kolam untuk mempertahankan performa terbaik dan memaksimalkan produktivitas kolam"
             }
         ],
         "story":"Cerita Kawan Banoo",
@@ -41,25 +60,25 @@
         "top":
         {
             "product" : "Mycrofish",
-            "subtitle": "Oksigen maksimal, Dengan biaya listrik minimal",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis expedita perferendis voluptatibus nobis iste ducimus ab aliquid amet voluptates corporis.",
+            "subtitle": "Jadilah Bagian dari Perjalanan Kami Sebagai Aerator Digital Pertama",
+            "desc": "Ingin tingkatkan kualitas air tanpa boros listrik dengan MycroFish?",
             "button": "Beli sekarang"
         },
         "feature":[
             {
                 "title" : "Performa",
                 "subtitle" : "DO semakin tinggi, ikan semakin sehat",
-                "desc" : " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore cupiditate iure. Tempora delectus exercitationem deleniti magni rem reiciendis praesentium, accusamus quod illo omnis laboriosam saepe ullam veniam doloremque vel id nihil a atque animi similique? Corporis maxime tempora illo."
+                "desc" : "Dengan teknologi microbubble, aerator MycroFish dapat meningkatkan kadar oksigen terlarut hingga 6 PPM secara merata dan otomatis "
             },
             {
                 "title" : "Hemat listrik",
-                "subtitle" : "Konsumsi listrik yg minimal",
-                "desc" : " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore cupiditate iure. Tempora delectus exercitationem deleniti magni rem reiciendis praesentium, accusamus quod illo omnis laboriosam saepe ullam veniam doloremque vel id nihil a atque animi similique? Corporis maxime tempora illo."
+                "subtitle" : "Konsumsi listrik yg lebih efisien",
+                "desc" : "Hanya dengan 110 watt, performa MycroFish setara dengan aerator berkebutuhan daya 4x lipat lebih besar"
             },
             {
                 "title" : "Seimbang dan fleksibel",
-                "subtitle" : "Floating system didesain agar sesuai kondisi kolam anda",
-                "desc" : " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore cupiditate iure. Tempora delectus exercitationem deleniti magni rem reiciendis praesentium, accusamus quod illo omnis laboriosam saepe ullam veniam doloremque vel id nihil a atque animi similique? Corporis maxime tempora illo."
+                "subtitle" : "Desain pelampung agar sesuai kondisi kolam Anda",
+                "desc" : "Sistem pompa celup yang terapung di kedalaman tengah kolam membuat MycroFish dapat menghasilkan arus tanpa menyebabkan upwelling"
             }
         ],
         "descSec":{
@@ -69,8 +88,8 @@
         "sec3d":{
             "title":"3D View",
             "subtitle":"Mycrofish hadir dengan desain sesuai kebutuhan anda",
-            "desc":"Dengan perhitungan dan simulasi yang matang, kami membantu anda memenuhi kebutuhan oksigen anda tanpa perlu khawatir. Klik gambar untuk melihat 3d desain, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, temporibus!",
-            "click":"Klik untuk melihat",
+            "desc":"Dengan perhitungan dan simulasi yang matang, kami hadirkan desain 360 derajat agar Anda dapat melihat bagaimana MycroFish menjadi bagian dari kolam Anda.",
+            "click":"Lihat Mycrofish dalam 360",
             "note":"Catatan",
             "rotate":"Tahan dan geser klik kiri untuk memutar",
             "move":"Tahan dan geser klik kanan untuk menggeser",
@@ -82,12 +101,8 @@
                 "spec" : "11 kg"
             },
             {  
-                "title":"Jangkauan",
-                "spec":"500 cm"
-            },
-            {  
                 "title":"Kenaikan DO",
-                "spec":"2 mg/L"
+                "spec":"6 ppm ()"
     
             },
             {  
@@ -96,23 +111,18 @@
     
             },
             {  
-                "title":"Ukuran gelembung",
-                "spec":"40 µm"
-    
-            },
-            {  
                 "title":"Jenis pompa",
-                "spec":"Submersible"
+                "spec":"Celup"
     
             },
             {  
                 "title":"Dimensi",
-                "spec":"17 cm x 17 cm x 11 cm"
+                "spec":"68 cm x 68 cm x 60 cm"
     
             },
             {  
-                "title":"Cakupan sembur",
-                "spec":"10 m²"
+                "title":"Jangkauan maksimal",
+                "spec":"6 m²"
     
             },
             {  
@@ -125,12 +135,13 @@
 
     "about":{
         "hero":{
-            "title":"BERSAMA kami tingkatkan produktifitas dan kesehatan lingkungan",
-            "desc":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora saepe, rerum suscipit distinctio natus corporis vitae temporibus dolores sunt laboriosam?"
+            "title":"Investasi Teknologi Terbaik untuk Kedua Dunia ",
+            "desc":"Bersama Banoo Tingkatkan Produktivitas Perikanan Budidaya dan Jaga Ekosistem Perairan"
         },
         "founder":{
-            "title":"Petani kuat, rakyat sehat",
-            "desc":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quaerat! Iusto, consequatur adipisci placeat tenetur modi inventore veniam rem eos exercitationem eum corrupti aperiam repellat! Quibusdam obcaecati ratione ab reiciendis labore doloribus? Non delectus minima placeat."
+            "title_1":"Pemuda BERKARYA,",
+            "title_2":"PEMBUDIDAYA SEJAHTERA",
+            "desc":"Fajar Sidik Abdullah Kelana lahir dan tumbuh di Sragen, Jawa Tengah dari keluarga petani. Setelah lulus dari Teknik Mesin UGM, Fajar melanjutkan studi di bidang Innovation Management & Product Development di KTH Royal Institute of Technologi di Swedia. Ilmu yang didapat ia gunakan untuk kembali dan memperbaiki sistem pangan di Indonesia dengan menciptakan teknologi inovasi dalam produksi pertanian dan perikanan, yaitu Banoo. "
 
         },
         "goals":{
@@ -139,15 +150,16 @@
             [   
                 {
                     "title":"Mewujudkan ketahanan pangan nasional dan regional",
-                    "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum provident optio dignissimos beatae nemo corporis ipsam totam quae."
+                    "desc":"Selaras dengan poin SDG pertama serta program Gemar Makan Ikan (GEMARIKAN) yang dicanangkan pemerintah, Banoo memiliki misi untuk menjadikan perikanan budidaya sebagai sektor pangan unggulan Indonesia sehingga masyarakat dapat menikmati sumber protein hasil produksi sendiri dengan kuantitas melimpah dan kualitas tinggi"
                 },
                 {
-                    "title":"Memperbaiki kualitas air dan lingkungan",
-                    "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum provident optio dignissimos beatae nemo corporis ipsam totam quae."
+                    "title":"Memperbaiki kualitas, melestarikan lingkungan",
+                    "desc":"Fokus pengembangan kami tidak hanya pada keuntungan, tetapi juga pada pelestarian lingkungan, baik bagi kehidupan manusia maupun kehidupan bawah air."
                 },
                 {
-                    "title":"Meningkatkan pendapatan pembudidaya",
-                    "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum provident optio dignissimos beatae nemo corporis ipsam totam quae."
+                    "title_1":"Energi bersih,",
+                    "title_2":"produksi melimpah",
+                    "desc":"Sekali mendayung, dua tiga pulau terlewati. Peribahasa ini kami manifestasikan dengan menciptakan inovasi yang hemat energi serta menggunakan energi alternatif agar pembudidaya dapat memotong biaya produksi sekaligus menciptakan sistem budidaya yang berkelanjutan."
                 }
 
             ]

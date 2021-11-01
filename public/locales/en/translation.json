@@ -8,27 +8,47 @@
         "blog": "Blog"
     },
 
-    "why_banoo": "Why Banoo",
-
     "learn_more":"Learn more",
     "preorder":"Pre order",
 
     "home":{
+        "hero":{
+            "title_line_1" : "Invest in Water,",
+            "title_line_2" : "Relieve Hunger",
+            "subtitle" : "Our IoT water quality sensor works with microbubble generator to monitor the quality of water and increase the aquaculture yield in environmentally conscious manner"
+        },
+        "why_banoo" : {
+            "title": "Why Banoo",
+            "content": [
+                {
+                    "title":"Increase Productivity Up To 78%",
+                    "desc":"Our MycroFish aerator is equipped with microbubble technology to supply dissolved oxygen evenly down to the bottom of the pond"
+                },
+                {
+                    "title":"Digitalizing Aquaculture",
+                    "desc":"Easily monitor and control your pond from home, or anywhere"
+                },
+                {
+                    "title":"No Electricity, No Problem",
+                    "desc":"Minimize production loss due to frequent electricity blackout with sustainable energy source"
+                }
+            ]
+        },
         "product":[
             {
-                "title":"Mycrofish",
-                "subtitle":"Fullfill oxygen demand in your pond",
-                "desc":"Increase Oxygen rate for better fish and shrimp productions to accelerate your revenue and get better life"
+                "title":"Productivity",
+                "subtitle":"Meet the oxygen needs of your pond",
+                "desc":"Increase dissolved oxygen levels to increase your fish and shrimp production for better profitability"
             },
             {
                 "title":"Fiskö",
-                "subtitle":"Your Pond Assistant",
-                "desc":"Monitor and Control the water quality of your pond to maintain the best performance of your fish for maximum productivity"
+                "subtitle":"Your best pond assistant",
+                "desc":"Banoo's IoT sensors can detect dissolved oxygen levels, pH, and temperature in water as well as its electricity usage in real-time while automatically operates our microbubble aerators"
             },
             {
-                "title":"Mbah Hary",
-                "subtitle":"Your Pond Report directly to Your Hand",
-                "desc":"It is just get easier for you to control your pond condition at its best performance to bring maximum revenue to your arms"
+                "title":"Banoo Mobile App",
+                "subtitle":"Your pond report, on your phone",
+                "desc":"Monitor and control pond water quality to maintain the best performance and maximize pond productivity"
             }
         ],
         "story":"Kawan Banoo Story",
@@ -42,25 +62,25 @@
         "top":
         {
             "product" : "Mycrofish",
-            "subtitle": "Maximum oxygen, with minimum cost",
-            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis expedita perferendis voluptatibus nobis iste ducimus ab aliquid amet voluptates corporis.",
+            "subtitle": "Be A Part of Our Journey As The First Digital Aerator",
+            "desc": "Want to improve water quality without electricity splurging with MycroFish?",
             "button": "Buy now"
         },
         "feature":[
             {
                 "title" : "Performance",
                 "subtitle" : "Higher DO, Healthier fish",
-                "desc" : " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore cupiditate iure. Tempora delectus exercitationem deleniti magni rem reiciendis praesentium, accusamus quod illo omnis laboriosam saepe ullam veniam doloremque vel id nihil a atque animi similique? Corporis maxime tempora illo."
+                "desc" : "With microbubble technology, our MycroFish aerator can increase dissolved oxygen levels up to 6 PPM evenly and automatically"
             },
             {
                 "title" : "Low Cost",
-                "subtitle" : "Minimum electricity cost",
-                "desc" : " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore cupiditate iure. Tempora delectus exercitationem deleniti magni rem reiciendis praesentium, accusamus quod illo omnis laboriosam saepe ullam veniam doloremque vel id nihil a atque animi similique? Corporis maxime tempora illo."
+                "subtitle" : "Efficient energy usage",
+                "desc" : "With only 110 watts, MycroFish's performance is equivalent to an aerator requiring 4x more power"
             },
             {
                 "title" : "Balance dan Flex",
-                "subtitle" : "Floating system fits your pond",
-                "desc" : " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore cupiditate iure. Tempora delectus exercitationem deleniti magni rem reiciendis praesentium, accusamus quod illo omnis laboriosam saepe ullam veniam doloremque vel id nihil a atque animi similique? Corporis maxime tempora illo."
+                "subtitle" : "Floating system designed to fit every pond condition",
+                "desc" : "The submersible pump installation which floats in the middle of the pond allows MycroFish to generate current without causing upwelling"
             }
         ],
         "descSec":{
@@ -70,8 +90,8 @@
         "sec3d":{
             "title":"3D View",
             "subtitle":"Mycrofish fits your needs",
-            "desc":"Calculation and simulation, we help you fulfill oxygen demand. Click the image to view 3d design, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, temporibus!",
-            "click":"Click to view",
+            "desc":"With careful calculations and simulations, we present a 360-degree design for you to see how MycroFish will become a part of your pond.",
+            "click":"See MycroFish in 360",
             "note":"Note",
             "rotate":"Hold and drag left clik to rotate",
             "move":"Hold and drag right click to move",
@@ -83,22 +103,13 @@
                 "spec" : "11 kg"
             },
             {  
-                "title":"Range",
-                "spec":"500 cm"
-            },
-            {  
                 "title":"DO Increase",
-                "spec":"2 mg/L"
+                "spec":"6 ppm ()"
     
             },
             {  
                 "title":"Power Consumption",
                 "spec":"110 watt"
-    
-            },
-            {  
-                "title":"Bubble Size",
-                "spec":"40 µm"
     
             },
             {  
@@ -108,12 +119,12 @@
             },
             {  
                 "title":"Dimension",
-                "spec":"17 cm x 17 cm x 11 cm"
+                "spec":"68 cm x 68 cm x 60 cm"
     
             },
             {  
                 "title":"Spread Area",
-                "spec":"10 m²"
+                "spec":"6 m²"
     
             },
             {  
@@ -126,12 +137,13 @@
 
     "about":{
         "hero":{
-            "title":"Together we improve productivity and healthy environment",
-            "desc":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora saepe, rerum suscipit distinctio natus corporis vitae temporibus dolores sunt laboriosam?"
+            "title":"An Investment For The Best of Both Worlds",
+            "desc":"Increase Aquaculture Productivity and Protect Aquatic Ecosystems With Us"
         },
         "founder":{
-            "title":"Stronger Farmers, Healthier people",
-            "desc":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quaerat! Iusto, consequatur adipisci placeat tenetur modi inventore veniam rem eos exercitationem eum corrupti aperiam repellat! Quibusdam obcaecati ratione ab reiciendis labore doloribus? Non delectus minima placeat."
+            "title_1":"A WORK OF THE",
+            "title_2":"NATION'S YOUTH",
+            "desc":"Fajar Sidik Abdullah Kelana was a son of a farmer who was born and raised in Sragen, Central Java. After graduating from Mechanical Engineering UGM, Fajar continued his studies in the field of Innovation Management & Product Development at the KTH Royal Institute of Technology in Sweden. He uses the knowledge he gained to come back to his nation and improve the food system in Indonesia by creating innovative technologies in agricultural and fishery production, namely Banoo."
 
         },
         "goals":{
@@ -139,16 +151,17 @@
             "point":
             [   
                 {
-                    "title":"Achieve national and regional food security",
-                    "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum provident optio dignissimos beatae nemo corporis ipsam totam quae."
+                    "title":"Realizing national and regional food security",
+                    "desc":"In line with the first SDG point and the Government's Gemar Makan Ikan (GEMARIKAN) program, Banoo has a mission to make aquaculture as Indonesia's leading food sector so that people can enjoy a high quality, high quantity source of protein produced by themselves."
                 },
                 {
-                    "title":"Improving water environment and life below water",
-                    "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum provident optio dignissimos beatae nemo corporis ipsam totam quae."
+                    "title":"Improving water quality, preserving the planet",
+                    "desc":"Our development focus is not only on profit, but also on preserving the environment, both for life above and below water."
                 },
                 {
-                    "title":"Increasing yield of aquaculture and fish farmer income",
-                    "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore earum provident optio dignissimos beatae nemo corporis ipsam totam quae."
+                    "title_1":"Clean energy,",
+                    "title_2":"abundant production",
+                    "desc":"Killing two birds with one stone. We manifest this proverb by creating energy-efficient innovations and using alternative energy so that farmers can cut production costs while creating a sustainable cultivation system."
                 }
 
             ]

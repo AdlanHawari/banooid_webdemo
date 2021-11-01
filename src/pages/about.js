@@ -95,9 +95,12 @@ function About() {
                     <img src={fajar} alt="" className="mx-auto lg:mx-0 w-60 h-auto xl:w-auto xl:h-80 rounded-xl"/> 
                     
                     <div className="block text-center lg:text-left space-y-10">
-                        <h3 className="uppercase font-spartan text-2xl font-extrabold tracking-wide">Petani kuat,
-                        <br className="md:hidden lg:flex xl:hidden"></br> rakyat sehat</h3>
-                        <p className="text-base">
+                        {/* <h3 className="uppercase font-spartan text-2xl font-extrabold tracking-wide">Petani kuat, */}
+                        <h3 className="uppercase font-spartan text-xl xl:text-2xl font-extrabold tracking-wide">{t("about.founder.title_1")}
+                        {/* <br className="md:hidden lg:flex xl:hidden"></br> rakyat sehat</h3> */}
+                        <br className="md:hidden lg:flex xl:hidden"></br> {t("about.founder.title_2")}</h3>
+                        
+                        <p className="text-base text-center">
                         {t("about.founder.desc")}    
                         {/* Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quaerat! Iusto, consequatur adipisci placeat tenetur modi inventore veniam rem eos exercitationem eum corrupti aperiam repellat! Quibusdam obcaecati ratione ab reiciendis labore doloribus? Non delectus minima placeat. */}
                         </p>
@@ -153,10 +156,12 @@ function About() {
                         <li className=" rounded-lg shadow-xl p-6">
                             <div className="text-center space-y-4">
                                 <img src={un7} className="h-40 mx-auto" alt=""/>
+
                                 <h4 className="px-4 text-lg xl:text-base font-bold">
                                     {/* Increasing yield of aquaculture  
                                     <br className="hidden xl:flex"></br> and fish farmer income */}
-                                    {t("about.goals.point.2.title")}
+                                    {t("about.goals.point.2.title_1")}
+                                <br/> {t("about.goals.point.2.title_2")}
                                 </h4>
                                 <p className="text-sm">
                                 {t("about.goals.point.2.desc")}

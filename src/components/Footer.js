@@ -63,20 +63,20 @@ const Footer = () => {
                         {/* <div className="flex mt-6 space-6 "> */}
                         <div className="flex mt-6 text-white">
                             <a href="https://web.facebook.com/banooindonesia/" className="mx-2" rel="noreferrer" target="_blank" >
-                                <FontAwesomeIcon icon={faFacebookSquare} size="lg" className="text-white"/>
+                                <FontAwesomeIcon icon={faFacebookSquare} size="2x" className="text-white"/>
                             </a>
                             
                             <a href="https://twitter.com/banoo_id" rel="noreferrer" className="mx-2" target="_blank" >
-                                <FontAwesomeIcon icon={faTwitter} size="lg" className="text-white"/>
+                                <FontAwesomeIcon icon={faTwitter} size="2x" className="text-white"/>
                             </a>
                             <a href="https://www.instagram.com/banoo.id/" className="mx-2" rel="noreferrer" target="_blank" >
-                                <FontAwesomeIcon icon={faInstagram} size="lg" className="text-white"/>
+                                <FontAwesomeIcon icon={faInstagram} size="2x" className="text-white"/>
                             </a>
                             <a href="https://www.linkedin.com/company/banoo-indonesia/" className="mx-2" rel="noreferrer" target="_blank" >
-                                <FontAwesomeIcon icon={faLinkedin} size="lg" className="text-white"/>  
+                                <FontAwesomeIcon icon={faLinkedin} size="2x" className="text-white"/>  
                             </a>
                             <a href="https://www.youtube.com/channel/UCpf-ywAWqQ9gSmqWH6OiCgg" className="mx-2" rel="noreferrer" target="_blank" >
-                                <FontAwesomeIcon icon={faYoutube} size="lg" className="text-white"/>
+                                <FontAwesomeIcon icon={faYoutube} size="2x" className="text-white"/>
                             </a>                      
                             
                             

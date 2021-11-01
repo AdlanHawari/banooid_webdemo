@@ -60,20 +60,20 @@ function Contact() {
                         </h4>
                         <div className="flex justify-center space-x-4 ">
                             <a href="https://web.facebook.com/banooindonesia/" rel="noreferrer" target="_blank" >
-                                <FontAwesomeIcon icon={faFacebookSquare} size="lg" className="text-black"/>
+                                <FontAwesomeIcon icon={faFacebookSquare} size="2x" className="text-black"/>
                             </a>
                             
                             <a href="https://twitter.com/banoo_id" rel="noreferrer" target="_blank" >
-                                <FontAwesomeIcon icon={faTwitter} size="lg" className="text-black"/>
+                                <FontAwesomeIcon icon={faTwitter} size="2x" className="text-black"/>
                             </a>
                             <a href="https://www.instagram.com/banoo.id/" rel="noreferrer" target="_blank" >
-                                <FontAwesomeIcon icon={faInstagram} size="lg" className="text-black"/>
+                                <FontAwesomeIcon icon={faInstagram} size="2x" className="text-black"/>
                             </a>
                             <a href="https://www.linkedin.com/company/banoo-indonesia/" rel="noreferrer" target="_blank" >
-                                <FontAwesomeIcon icon={faLinkedin} size="lg" className="text-black"/>  
+                                <FontAwesomeIcon icon={faLinkedin} size="2x" className="text-black"/>  
                             </a>
                             <a href="https://www.youtube.com/channel/UCpf-ywAWqQ9gSmqWH6OiCgg" rel="noreferrer" target="_blank" >
-                                <FontAwesomeIcon icon={faYoutube} size="lg" className="text-black"/>
+                                <FontAwesomeIcon icon={faYoutube} size="2x" className="text-black"/>
                             </a>                      
                             
                             
