@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import fajar from '../images/fajar.jpg'
+import prod1 from '../images/home/test.jpg'
 import antaranews from '../images/antaranews.png'
 import gatra from '../images/gatra.png'
 import kickandy from '../images/kickandy.png'
@@ -36,6 +37,8 @@ function Home() {
 
     },[])
 
+    document.title="Banoo - Home";
+
     return (
         <div>
             {/* <Helmet>
@@ -43,12 +46,12 @@ function Home() {
                     Banoo - Home
                 </title>
             </Helmet> */}
-            <HelmetProvider>
+            {/* <HelmetProvider>
                 <Helmet>
                     <title>Home</title>
                     <meta name="description" content="Home" />
                 </Helmet>
-            </HelmetProvider>
+            </HelmetProvider> */}
             
             {/* HomePage -Content */}
             <div className="pb-20">
@@ -200,7 +203,8 @@ function Home() {
 
                         </div>
                         <div className="">
-                            <img src={fajar} alt=""className="rounded-xl"/>
+                            {/* <img src={fajar} alt=""className="rounded-xl"/> */}
+                            <img src={prod1} alt=""className="rounded-xl"/>
 
                         </div>
 

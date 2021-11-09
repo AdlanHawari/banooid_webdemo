@@ -1,6 +1,6 @@
 import React from 'react'
 // import mvp from '../../images/products/mycro.png'
-import mvp from '../../images/products/mycro.png'
+import mvp from '../../images/products/main_mf.PNG'
 
 export default function Top({t}) {
     return (
@@ -46,7 +46,8 @@ export default function Top({t}) {
                     </a>
                 </div>
 
-                <img src={mvp} alt="" className="pt-10 h-48 md:h-96 mx-auto"/>
+                <img src={mvp} alt="" className="pt-10 h-64 md:h-96 mx-auto"/>
+                {/* <img src={mvp} alt="" className=" h-128 mx-auto"/> */}
 
 
             </div>
