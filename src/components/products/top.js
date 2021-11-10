@@ -26,12 +26,12 @@ export default function Top({t}) {
                 </div>
                 
                 <div className="block py-2">
-                    <del className="text-red-500 font-spartan text-sm md:text-lg ">
+                    {/* <del className="text-red-500 font-spartan text-sm md:text-lg ">
                         Rp2.299.000
 
-                    </del>
+                    </del> */}
                     <p className="font-bold text-lg text-banooWhite md:text-2xl font-spartan">
-                        Rp1.700.000
+                        Rp2.800.000
 
                     </p>
                 </div>

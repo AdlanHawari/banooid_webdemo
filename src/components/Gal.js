@@ -8,8 +8,9 @@ import gal3 from '../images/gallery/10.png'
 import gal4 from '../images/gallery/site_2.JPG'
 import gal5 from '../images/gallery/kick_andy.jpeg'
 import gal6 from '../images/gallery/pancasila.JPG'
-import fajar from '../images/fajar_sweden.jpg'
-import hary from '../images/story/hary.jpg'
+import gal7 from '../images/gallery/launch_1.JPG'
+import gal8 from '../images/gallery/launch_2.JPG'
+import gal9 from '../images/gallery/launch_3.JPG'
 
 
 
@@ -45,7 +46,7 @@ export default function Gal() {
 
         },
         {
-            img : fajar,
+            img : gal9,
             span : "row-span-2",
             effect: "zoom-in",
             delay:"0"
@@ -67,14 +68,14 @@ export default function Gal() {
 
         },
         {
-            img : hary,
+            img : gal8,
             span : "col-span-2",
             effect: "fade-down",
             delay:"500"
 
         },
         {
-            img : fajar,
+            img : gal7,
             span : "",
             effect: "fade-up",
             delay:"200"
