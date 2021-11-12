@@ -148,10 +148,10 @@ export default function Contactform({t}) {
                 "items-center":
                 "hidden"}>
                 <h2 className="font-spartan font-extrabold text-lg xl:text-4xl" >
-                    Hello, Kawan Banoo!
+                    {t("contact.sent.title")}
                 </h2>
                 <p className="font-spartan pt-10 lg:pt-14 xl:pt-20 text-sm xl:text-base text-justify leading-loose">
-                Thanks for approaching us! Your message has been sent. We will get back to you shortly
+                    {t("contact.sent.msg")}
                 </p>
             </div>
         </div>

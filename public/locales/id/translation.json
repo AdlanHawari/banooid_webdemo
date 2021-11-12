@@ -37,17 +37,17 @@
         "product":[
             {
                 "title":"Produktivitas",
-                "subtitle":"Penuhi kebutuhan oksigen di kolam anda",
-                "desc":"Tingkatkan kadar oksigen terlarut untuk meningkatkan produksi ikan dan udang anda sehingga pendapatan turut naik"
+                "subtitle":"Penuhi kebutuhan oksigen di kolam Anda",
+                "desc":"Tingkatkan kadar oksigen terlarut untuk meningkatkan produksi ikan dan udang Anda sehingga pendapatan turut naik"
             },
             {
                 "title":"Fiskö",
-                "subtitle":"Asisten kolam anda",
+                "subtitle":"Asisten kolam Anda",
                 "desc":"Sensor IoT Banoo dapat mendeteksi tingkat oksigen terlarut, pH, dan suhu dalam air serta penggunaan listrik kolam secara real-time sekaligus mengotomasi aerator microbubble"
             },
             {
                 "title":"Banoo Mobile App",
-                "subtitle":"Laporan kolam anda langsung melalui ponsel",
+                "subtitle":"Laporan kolam Anda langsung melalui ponsel",
                 "desc":"Pantau dan kendalikan kualitas air kolam untuk mempertahankan performa terbaik dan memaksimalkan produktivitas kolam"
             }
         ],
@@ -59,7 +59,7 @@
     "products": {
         "top":
         {
-            "product" : "Mycrofish",
+            "product" : "MycroFish",
             "subtitle": "Jadilah Bagian dari Perjalanan Kami Sebagai Aerator Digital Pertama",
             "desc": "Ingin tingkatkan kualitas air tanpa boros listrik dengan MycroFish?",
             "button": "Beli sekarang"
@@ -82,14 +82,14 @@
             }
         ],
         "descSec":{
-            "title":"Dapatkan mycrofish sekarang",
+            "title":"Dapatkan MycroFish sekarang",
             "desc":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo excepturi rerum autem quas corrupti, blanditiis a, recusandae eligendi ea sequi iure quasi pariatur saepe, commodi est eos vero non! Deleniti voluptate tempore porro nostrum possimus dolorem asperiores cumque quam velit vero omnis doloremque similique voluptatum accusantium corrupti dolores iusto neque, reiciendis nam quae dolor adipisci! Nemo possimus itaque perspiciatis vero culpa, odio nihil quos repellat nam voluptate exercitationem totam labore modi quo voluptatem a explicabo dolores quia veniam voluptates hic ipsam earum est. Saepe, corporis modi."
         },
         "sec3d":{
             "title":"3D View",
-            "subtitle":"Mycrofish hadir dengan desain sesuai kebutuhan anda",
+            "subtitle":"MycroFish hadir dengan desain sesuai kebutuhan Anda",
             "desc":"Dengan perhitungan dan simulasi yang matang, kami hadirkan desain 360 derajat agar Anda dapat melihat bagaimana MycroFish menjadi bagian dari kolam Anda.",
-            "click":"Lihat Mycrofish dalam 360",
+            "click":"Lihat MycroFish dalam 360",
             "note":"Catatan",
             "rotate":"Tahan dan geser klik kiri untuk memutar",
             "move":"Tahan dan geser klik kanan untuk menggeser",
@@ -168,12 +168,12 @@
 
     "contact":{
         "title": "Hubungi Kami",
-        "desc": "Jika anda adalah pembudidaya, perusahaan akuakultur, institusi yang memiliki program di sektor akuakultur, atau orang yang tertarik dengan kami, jangan ragu untuk menghubungi kami, kami akan menghubungi anda kembali secepat mungkin.",
+        "desc": "Jika Anda adalah pembudidaya, perusahaan akuakultur, institusi yang memiliki program di sektor akuakultur, atau orang yang tertarik dengan kami, jangan ragu untuk menghubungi kami, kami akan menghubungi Anda kembali secepat mungkin.",
         "email": "Email kami",
         "follow": "Ikuti kami",
         "form":{
             "name":"Nama",
-            "name_p":"Masukkan nama anda",
+            "name_p":"Masukkan nama Anda",
             "email":"Alamat email",
             "optional":"opsional",
             "email_p":"Masukkan alamat email",
@@ -182,8 +182,12 @@
             "phone":"Telepon",
             "phone_p":"Sertakan kode negara",
             "message":"Pesan",
-            "message_p":"Tulis pesan anda",
+            "message_p":"Tulis pesan Anda",
             "button":"Kirim pesan"
+        },
+        "sent":{
+            "title":"Hello, Kawan Banoo!",
+            "msg":"Terima kasih sudah menghubungi kami. Pesanmu sudah terkirim. Kami akan segera menghubungi Anda"
         }
 
     },

@@ -51,38 +51,49 @@ function About() {
 
            {/* Headline */}
                 {/* <div className="block sm:flex py-40 xl:py-0 xl:h-screen lg:items-center lg:justify-center "> */}
-                <div className=" h-auto xl:h-screen pt-20">
+                {/* <div className="absolute inset-0 bg-black bg-opacity-30"/> */}
+               
+               
+               <div className="bg-hero-about bg-cover bg-no-repeat relative h-screen pt-20">
+                   
+                   <div className="absolute bg-black inset-0 bg-opacity-50"/>
+                   <div className="absolute top-1/2 transform -translate-y-1/2 left-0 w-full">
+                       <div className="block space-y-10 px-4 md:px-20 lg:px-0">
+                        <h2 className="text-white text-center uppercase font-spartan font-extrabold text-2xl md:leading-loose">
+                                {t("about.hero.title")}
+                            </h2>
+                            <p className="text-white text-lg text-center">
+                                {t("about.hero.desc")}
+                            </p>
+                       </div>
+                   </div>
+                   {/* <div className="absolute top-0 left-0 bg-gray-500 h-screen">
+                        <h2 className="text-white text-center uppercase font-spartan font-extrabold text-2xl leading-loose">
+                            {t("about.hero.title")}
+                        </h2>
+                        <p className="text-white text-lg text-center">
+                            {t("about.hero.desc")}
+                        </p>
 
-                    
-                    {/* <div className="bg-blue-300 block sm:flex py-16 md:py-20 xl:py-40 h-auto xl:h-full sm:items-center lg:justify-center "> */}
+                   </div> */}
+
+               </div>
+
+
+               {/* <div className="relative h-auto xl:h-screen pt-20">
                     <div className="bg-hero-about block sm:flex py-16 md:py-20 xl:py-40 h-auto xl:h-full sm:items-center lg:justify-center ">
                         <div className=" flex flex-col-reverse items-center lg:flex-row lg:justify-between px-10 lg:px-40  lg:space-x-10 xl:space-x-40 ">
                             <div className="flex-col block space-y-10">
-                                {/* <h2 className="leading-loose xl:leading-loose xl:text-2xl">
-                                    Bersama kami memperbaiki kualitas air yang sehat untuk kehidupan ikan budidaya
-                                </h2> */}
-                                <h2 className="text-white text-center lg:text-left uppercase font-spartan font-extrabold text-2xl  leading-loose xl:leading-loose"> {/*leadingloose harus diset di responsive*/}
+                                <h2 className="text-white text-center uppercase font-spartan font-extrabold text-2xl  leading-loose xl:leading-loose">
                                 {t("about.hero.title")}
-                                {/* BERSAMA kami tingkatkan produktifitas dan kesehatan lingkungan */}
                                 </h2>
-                                <p className="text-white text-base text-center lg:text-left">
+                                <p className="text-white text-base text-center">
                                 {t("about.hero.desc")}
-                                    {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora saepe, rerum suscipit distinctio natus corporis vitae temporibus dolores sunt laboriosam? */}
                                 </p>
-
                             </div>
-                            
-                            {/* <img src={value} className="pb-10 lg:pb-0 mx-auto sm:mx-0 w-60 sm:w-auto sm:h-40 md:h-80 xl:h-96" /> */}
-
-                            {/* <img src={value} className="lg:mx-auto pb-10 lg:pb-0 w-60 sm:w-80 h-auto lg:w-auto lg:h-80 xl:h-96 " alt=""/> */}
-
                         </div>
                     </div>
-                    
-
-
-
-                </div>
+                </div> */}
            {/* End of Headline */}
 
            {/* Founder Story */}

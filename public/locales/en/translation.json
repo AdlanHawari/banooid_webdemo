@@ -61,7 +61,7 @@
     "products": {
         "top":
         {
-            "product" : "Mycrofish",
+            "product" : "MycroFish",
             "subtitle": "Be A Part of Our Journey As The First Digital Aerator",
             "desc": "Want to improve water quality without electricity splurging with MycroFish?",
             "button": "Buy now"
@@ -84,12 +84,12 @@
             }
         ],
         "descSec":{
-            "title":"Get your mycrofish now",
+            "title":"Get your MycroFish now",
             "desc":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo excepturi rerum autem quas corrupti, blanditiis a, recusandae eligendi ea sequi iure quasi pariatur saepe, commodi est eos vero non! Deleniti voluptate tempore porro nostrum possimus dolorem asperiores cumque quam velit vero omnis doloremque similique voluptatum accusantium corrupti dolores iusto neque, reiciendis nam quae dolor adipisci! Nemo possimus itaque perspiciatis vero culpa, odio nihil quos repellat nam voluptate exercitationem totam labore modi quo voluptatem a explicabo dolores quia veniam voluptates hic ipsam earum est. Saepe, corporis modi."
         },
         "sec3d":{
             "title":"3D View",
-            "subtitle":"Mycrofish fits your needs",
+            "subtitle":"MycroFish fits your needs",
             "desc":"With careful calculations and simulations, we present a 360-degree design for you to see how MycroFish will become a part of your pond.",
             "click":"See MycroFish in 360",
             "note":"Note",
@@ -186,6 +186,10 @@
             "message":"Message",
             "message_p":"Type your message",
             "button":"Send Message"
+        },
+        "sent":{
+            "title":"Hello, Kawan Banoo!",
+            "msg":"Thanks for approaching us! Your message has been sent. We will get back to you shortly"
         }
 
     },

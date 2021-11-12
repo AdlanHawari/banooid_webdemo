@@ -4,6 +4,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import fajar from '../images/fajar.jpg'
 import prod1 from '../images/home/test.jpg'
+import prod2 from '../images/home/fisko.jpg'
 import antaranews from '../images/antaranews.png'
 import gatra from '../images/gatra.png'
 import kickandy from '../images/kickandy.png'
@@ -20,6 +21,9 @@ import { useTranslation } from 'react-i18next'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import LanguageDropDown from '../components/languageDropDown'
+import digital from '../images/home/vision/digitalxhdpi.png'
+import productivity from '../images/home/vision/productivityxhdpi.png'
+import renewable from '../images/home/vision/renewablexhdpi.png'
 
 
 
@@ -123,7 +127,7 @@ function Home() {
                     </h2>
                     <ul className="grid gap-y-20 md:gap-y-0 md:grid-flow-col md:grid-cols-3 pt-20">
                         <li className="flex flex-col flex-shrink place-items-center">
-                            <img src={logo} alt="" className="h-40 xl:h-40"/>
+                            <img src={productivity} alt="" className="h-24"/>
                             <h3 className="py-6 md:py-10  text-center font-spartan font-extrabold text-base xl:text-lg">
                             {/* Dissolved Oxygen Arouser */}
                             {t("home.why_banoo.content.0.title")}
@@ -136,7 +140,7 @@ function Home() {
                         </li>
 
                         <li className="flex flex-col place-items-center">
-                            <img src={logo} alt="" className="h-40 xl:h-40"/>
+                            <img src={digital} alt="" className="h-24"/>
                             <h3 className="py-6 md:py-10  text-center font-spartan font-extrabold text-base xl:text-lg">
                             {/* Fiskö */}
                             {t("home.why_banoo.content.1.title")}
@@ -149,7 +153,7 @@ function Home() {
                         </li>
 
                         <li className="flex flex-col place-items-center">
-                            <img src={logo} alt="" className="h-40"/>
+                            <img src={renewable} alt="" className="h-24"/>
                             <h3 className="py-6 md:py-10  text-center font-spartan font-extrabold text-base xl:text-lg">
                             {/* Banoo Mobile App */}
                             {t("home.why_banoo.content.2.title")}
@@ -215,7 +219,7 @@ function Home() {
                     <div className="flex flex-col sm:grid sm:grid-cols-2 gap-x-6 gap-x-10 xl:gap-x-20 bg-white to-white py-10 sm:py-20 px-8 sm:px-20 xl:px-40 ">
 
                         <div className="">
-                            <img src={fajar} alt="" className="rounded-xl"/>
+                            <img src={prod2} alt="" className="rounded-xl"/>
 
                         </div>
 
@@ -229,7 +233,8 @@ function Home() {
                             <p className="pt-6 xl:pt-10 text-xs leading-normal lg:text-lg ">
                             {t("home.product.1.desc")}
                             </p>
-                            <div className="flex justify-center sm:grid sm:grid-cols-2 pt-4 lg:h-30 lg:pt-10 flex-col sm:space-x-4 space-y-4  sm:space-y-0">
+
+                            {/* <div className="flex justify-center sm:grid sm:grid-cols-2 pt-4 lg:h-30 lg:pt-10 flex-col sm:space-x-4 space-y-4  sm:space-y-0">
                                 <Link to ='/products' className="flex justify-center py-4 shadow-lg bg-banoo rounded-xl transition duration-700 ease-in-out hover:bg-banoo75">
                                     <span  className="xl:px-16 font-serif-6 font-bold text-white text-sm ">
                                         {t("learn_more")}
@@ -239,11 +244,8 @@ function Home() {
                                     <span  className="xl:px-16 font-serif-6 font-bold   text-sm  ">
                                     {t("preorder")}
                                     </span>
-                                    {/* <Link to='/preorder' className="xl:px-16 font-serif-6 font-bold   text-sm  ">
-                                        Pre order
-                                    </Link> */}
                                 </a>
-                            </div>
+                            </div> */}
 
                         </div>
                         
@@ -264,19 +266,18 @@ function Home() {
                             <p className="pt-6 xl:pt-10 text-xs leading-normal lg:text-lg ">
                             {t("home.product.2.desc")}
                             </p>
-                            {/* <div className="flex justify-center sm:grid sm:grid-cols-2 pt-4 lg:h-30 lg:pt-10 flex-col gap-x-6 gap-y-4"> */}
-                            <div className="flex justify-center sm:grid sm:grid-cols-2 pt-4 lg:h-30 lg:pt-10 flex-col sm:space-x-4 space-y-4  sm:space-y-0">
+                            
+                            {/* <div className="flex justify-center sm:grid sm:grid-cols-2 pt-4 lg:h-30 lg:pt-10 flex-col sm:space-x-4 space-y-4  sm:space-y-0">
                                 <Link to ='/products' className="flex justify-center py-4 shadow-lg bg-banoo rounded-xl transition duration-700 ease-in-out hover:bg-banoo75">
                                     <span  className="xl:px-16 font-serif-6 font-bold text-white text-sm ">
                                         {t("learn_more")}
                                     </span>
                                 </Link>
-                            </div>
-                            {/* </div> */}
+                            </div> */}
 
                         </div>
                         <div className="">
-                            <img src={fajar} alt="" className="rounded-xl"/>
+                            <img src={prod2} alt="" className="rounded-xl"/>
 
                         </div>
 
