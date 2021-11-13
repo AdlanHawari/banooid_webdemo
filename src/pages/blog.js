@@ -94,34 +94,27 @@ function Blog() {
 
     return (
         <section className="py-20 px-0 sm:px-20 xl:px-40 bg-banooWhite">
-            <div className="sm:py-10">
+            {/* <div className="sm:py-10">
                 <h2 className="font-spartan font-bold text-center text-2xl py-6">
-                    {/* Recently */}
+                    
                     {t("blog.recently")}
                 </h2>
-                
-                
                 {postData ? 
                 <div className="sm:py-10">
                 <Recently 
                     data={postData[0]}
-                    
-                    // body={postData[0].body}
                     />
-                    {/* <p>{postData[0].body.children[0].text}</p> */}
+                    
                 </div>
                 :
                 <Loading/>
-                    
-
-                
                 }
-                
-                
-            </div>
-            <div className="py-10">
+            </div> */}
+
+
+            {/* <div className="py-10">
                 <h2 className="font-spartan font-bold text-center text-2xl py-6">
-                    {/* News */}
+                    
                     {t("blog.news")}
                 </h2>
                 
@@ -131,41 +124,20 @@ function Blog() {
                 </div>
                 :
                 <Loading/>
-                
-                
-                
                 }
-            </div>
+            </div> */}
             
-            <div className="py-10 ">
+            {/* <div className="py-10 ">
                 <h2 className="font-spartan font-bold text-center text-2xl py-6">
-                    {/* Banoo Edu */}
                     {t("blog.edu")}
                 </h2>
                 {banooEdu ?
                 <PostGrid data={banooEdu}/>
                 :
                 <Loading/>
-
-                
-                // <div className="grid grid-cols-3 gap-4">
-                //     {banooEdu.map((post,index) =>
-                //         <div 
-                //             key={index}
-                            
-                //             >
-                //                 <SmallPost 
-                //                 data={post}/>
-
-                //         </div>
-                    
-                //     )}
-                    
-                //     {/* <p>{postData[0].body.children[0].text}</p> */}
-                // </div>
                 
                 }
-            </div>
+            </div> */}
 
             <div className="py-10">
                 <h2 className="font-spartan font-bold text-center text-2xl py-6">
