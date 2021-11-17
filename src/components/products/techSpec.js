@@ -38,11 +38,6 @@ export default function TechSpec({t}) {
             title : t("products.spec.5.title"),
             spec : t("products.spec.5.spec")
 
-        },
-        {  
-            title : t("products.spec.6.title"),
-            spec : t("products.spec.6.spec")
-
         }
 
     ]

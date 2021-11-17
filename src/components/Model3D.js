@@ -18,18 +18,21 @@ export default function Model3D({view}) {
                     {/* <Lights/> */}
                     
                     
-                    <OrbitControls/>
-                    
-                    
-                    <ambientLight intensity={0.5}/>
-                    <directionalLight intensity={0.5} />
+                <OrbitControls/>
+                
+                
+                <ambientLight intensity={0.5}/>
+                <directionalLight intensity={0.5} />
 
-                    
+                
 
-                    <Suspense fallback={<div>Constructing...</div>}>
+                {/* <Suspense 
+                fallback={
+                    <div>Constructing...</div>
+                }> */}
                     <Model/>
 
-                </Suspense>
+                {/* </Suspense> */}
             </Canvas>
             
         </>

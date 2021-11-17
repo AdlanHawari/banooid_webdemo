@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import value from '../images/banoo1.png'
 import un2 from '../images/values/UN2.png'
 import un14 from '../images/values/UN14.png'
 import un7 from '../images/values/UN7.png'

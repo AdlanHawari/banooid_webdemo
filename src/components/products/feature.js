@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import mvp from '../../images/products/mycro.png'
 import img1 from '../../images/products/nozzle.png'
 import img2 from '../../images/products/elecbox.png'
 import img3 from '../../images/products/balance.png'
