@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import prod1 from '../images/home/test.jpg'
 import prod2 from '../images/home/fisko.jpg'
+import prod3 from '../images/home/apps.jpg'
 import antaranews from '../images/media/antaranews.png'
 import gatra from '../images/media/gatra.png'
 import kickandy from '../images/media/kickandy.png'
@@ -274,7 +275,7 @@ function Home() {
 
                         </div>
                         <div className="">
-                            <img src={prod2} alt="" className="rounded-xl"/>
+                            <img src={prod3} alt="" className="rounded-xl"/>
 
                         </div>
 
