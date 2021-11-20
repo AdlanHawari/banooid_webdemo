@@ -12,6 +12,8 @@ import Blog from './pages/blog';
 import Contact from './pages/Contact';
 import DropdownMenu from './components/Dropdownmenu';
 import Footer from './components/Footer';
+import Career from './pages/Career';
+import Intern from "./pages/Intern";
 
 import ScrollToTop from './components/ScrollToTop';
 import Article from './components/blog/article';
@@ -66,6 +68,8 @@ function App() {
             {/* <div className="pt-20"> */}
               <Route path='/about' component={About}/>
               <Route path='/products' component={Products}/>
+              <Route path='/career' component={Career}/>
+              <Route exact path='/internship' component={Intern}/>
               {/* <Route path='/solutions' component={Solutions}/> */}
               <Route path='/blog' exact component={Blog}/>
               <Route path='/contact' component={Contact}/>

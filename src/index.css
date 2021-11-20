@@ -3,15 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    #hero{
-        /* background-color: #000000; */
-        background-image: url("images/wew.png");
-        /* background-position-y: 32px; */
-    }
-
-    
-}
 
 @layer utilities{
     input[type=number]::-webkit-inner-spin-button, 
@@ -20,6 +11,11 @@
         margin: 0; 
     }
 
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+      }
+      
     .dropdown {
         /* width: 400px; */
         user-select: none;
@@ -43,6 +39,7 @@
     .dropdown .dropdown-content {
         position: absolute;
         top: 110%;
+        right:0;
         /* padding-top:10px; */
         /* top:100%; */
         /* padding: 15px; */
@@ -51,7 +48,14 @@
         /* font-weight: bold; */
         color: #333;
         /* box-sizing: border-box; */
-        width: 100%;
+        width: 250%;
+    }
+
+    .dropdown .dropdownMobile-content {
+        position: absolute;
+        top:110%;
+        color: #333;
+        width: 360%;
     }
 
     .dropdown .dropdown-content .dropdown-item {

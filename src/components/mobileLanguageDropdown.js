@@ -8,7 +8,7 @@ export default function MobileLanguageDropDown({func}) {
 
     const clicked = () => {
         setSelected(choice);
-        changeLanguage(choice);
+        changeLanguage(choice.lang);
         setIsComponentVisible(false);
     }
     const a = () =>{
@@ -24,16 +24,16 @@ export default function MobileLanguageDropDown({func}) {
       } = UseComponentVisible(false);
 
     // const [isDDActive, setIsDDActive] = useState(false);
-    const [selected, setSelected] = useState("");
-    const [choice, setChoice] = useState("");
+    const [selected, setSelected] = useState();
+    const [choice, setChoice] = useState();
     // const langOptText = ["Bahasa Indonesia", "English"];
     const langOpt = [
         {
-            text:"id",
+            text:"Bahasa Indonesia",
             lang: "id"
         },
         {
-            text:"en",
+            text:"English",
             lang:"en"
         }
     ];
@@ -45,19 +45,20 @@ export default function MobileLanguageDropDown({func}) {
     useEffect(() => {
         // console.log(i18next.languages);
         if(i18next.languages[0] === langOpt[0].lang){
-            setSelected(langOpt[0].text);
-            setChoice(langOpt[1].text);
+            setSelected(langOpt[0]);
+            setChoice(langOpt[1]);
         }
         else{
-            setSelected(langOpt[1].text);
-            setChoice(langOpt[0].text);
+            setSelected(langOpt[1]);
+            setChoice(langOpt[0]);
         }
 
         // recaptchaRef.current.execute();
 
         // console.log(captchaLang);
             
-    },[langOpt])
+    // },[langOpt])
+    })
 
 
     return (
@@ -71,7 +72,8 @@ export default function MobileLanguageDropDown({func}) {
                 <div className=" dropdown w-20 text-sm font-bold font-spartan text-white  focus:ring-1 focus:ring-banooDark">
                     {/* <div className="dropdown-btn items-center " onClick={(e) => setIsDDActive(!isDDActive)}> */}
                     <div className="dropdown-btn py-2 items-center " onClick={(e) => setIsComponentVisible(!isComponentVisible)}>   
-                        {selected === "" ? `` : `${selected}`}
+                        {/* {selected === "" ? `` : `${selected.lang}`} */}
+                        {selected&& (selected.lang)}
                         <span>
                             {isComponentVisible ?
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
@@ -88,13 +90,15 @@ export default function MobileLanguageDropDown({func}) {
                         {isComponentVisible &&(
                             <div 
                             
-                            className=" dropdown-content py-2">
+                            // className=" dropdown-content py-2">
+                            className="dropdownMobile-content py-2">
+                                
                                 <div
                                 className="dropdown-item py-2 px-3 hover:bg-banoo font-semibold text-white"
                                 onClick={()=>{func();clicked()}}
                                  
                                 >
-                                    {choice}
+                                    {choice.text}
 
                                 </div>
                                 {/* {langOpt.map((option) => (

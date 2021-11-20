@@ -101,7 +101,7 @@ const Navbar = ({isOpen,toggle}) => {
                     <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-xs xl:text-sm text-gray-500 font-bold' exact to='/'>{t("navbar.home")}</NavLink>
                     <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-xs xl:text-sm text-gray-500 font-bold' to='/products'>{t("navbar.products")}</NavLink>
                     <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-xs xl:text-sm text-gray-500 font-bold' to='/about'>{t("navbar.about")}</NavLink>
-                    
+                    <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-xs xl:text-sm text-gray-500 font-bold' to='/career'>{t("navbar.career")}</NavLink>
                     <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-xs xl:text-sm text-gray-500 font-bold' to='/blog'>{t("navbar.blog")}</NavLink>
                     <NavLink activeClassName="text-banoo" className='px-4 hover:text-blue-500 xl:px-6 text-xs xl:text-sm text-gray-500 font-bold' to='/contact'>{t("navbar.contact_us")}</NavLink>
                     

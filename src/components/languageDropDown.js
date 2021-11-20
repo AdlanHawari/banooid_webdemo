@@ -17,11 +17,11 @@ export default function LanguageDropDown() {
     // const langOptText = ["Bahasa Indonesia", "English"];
     const langOpt = [
         {
-            text:"id",
+            text:"Bahasa Indonesia",
             lang: "id"
         },
         {
-            text:"en",
+            text:"English",
             lang:"en"
         }
     ];
@@ -33,10 +33,10 @@ export default function LanguageDropDown() {
     useEffect(() => {
         // console.log(i18next.languages[0]);
         if(i18next.languages[0] === langOpt[0].lang){
-            setSelected(langOpt[0].text);
+            setSelected(langOpt[0].lang);
         }
         else{
-            setSelected(langOpt[1].text);
+            setSelected(langOpt[1].lang);
         }
 
         // recaptchaRef.current.execute();
@@ -79,7 +79,7 @@ export default function LanguageDropDown() {
                                     <div
                                     
                                         onClick={(e) => {
-                                            setSelected(option.text);
+                                            setSelected(option.lang);
                                             // setIsDDActive(false);
                                             changeLanguage(option.lang);
                                             setIsComponentVisible(false);
