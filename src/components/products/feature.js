@@ -52,10 +52,10 @@ export default function Feature({t}) {
                     <li 
                     key={index}
                     className="block lg:flex py-10 lg:py-20  space-y-10 lg:space-y-0 lg:gap-x-6" 
-                    data-aos= {content.effect}
-                    data-aos-easing="ease-in-sine" 
-                    data-aos-duration="1000"
-                    data-aos-delay="0"
+                    // data-aos= {content.effect}
+                    // data-aos-easing="ease-in-sine" 
+                    // data-aos-duration="1000"
+                    // data-aos-delay="0"
                     >
                         <div className="w-full md:w-1/2   mx-auto"
                         >
@@ -79,7 +79,7 @@ export default function Feature({t}) {
 
                             
                             
-                            <p>
+                            <p className="text-lg">
                                {content.desc}
 
                             </p>

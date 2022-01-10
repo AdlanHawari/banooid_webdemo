@@ -43,7 +43,7 @@ export default function LanguageDropDown() {
 
         // console.log(captchaLang);
             
-    },[langOpt])
+    })
 
 
     return (

@@ -16,7 +16,7 @@
         "hero":{
             "title_line_1" : "Invest in Water,",
             "title_line_2" : "Relieve Hunger",
-            "subtitle" : "Our IoT water quality sensor works with microbubble generator to monitor the quality of water and increase the aquaculture yield in environmentally conscious manner"
+            "subtitle" : "Our IoT water quality sensor works with MycroFish to monitor the quality of water and increase the aquaculture yield in environmentally conscious manner"
         },
         "why_banoo" : {
             "title": "Why Banoo",
@@ -65,6 +65,7 @@
             "product" : "MycroFish",
             "subtitle": "Be A Part of Our Journey As The First Digital Aerator",
             "desc": "Want to improve water quality without electricity splurging with MycroFish?",
+            "promo_period":"*discount until January 20th 2021",
             "button": "Buy now"
         },
         "feature":[
@@ -91,8 +92,8 @@
         "sec3d":{
             "title":"3D View",
             "subtitle":"MycroFish fits your needs",
-            "desc":"With careful calculations and simulations, we present a 360-degree design for you to see how MycroFish will become a part of your pond.",
-            "click":"See MycroFish in 360",
+            "desc":"With careful calculations and simulations, we present a 3D View design for you to see how MycroFish will become a part of your pond.",
+            "click":"See MycroFish in 3D View",
             "note":"Note",
             "rotate":"Hold and drag left clik to rotate",
             "move":"Hold and drag right click to move",
@@ -202,6 +203,108 @@
         "press":"Press Release",
         "read":"Read more",
         "loading":"Loading Content"
+    },
+
+    "career":{
+        "title":"Internship Opportunity at Banoo",
+        "subtitle":"Banoo Inovasi Indonesia opens opportunities for Internship or Fieldwork Study according to the needs of students which will be matched with available positions and ongoing projects.",
+        "desc_0":"Internship positions currently available at Banoo are",
+        "desc_1":"Project Design & Numerical Simulation, Project Research & Marketing in Aquaculture, Finance,",
+        "desc_conn":"and",
+        "desc_2":"Human Resources Generalist",
+
+        "qualification":{
+            "title":"Required qualifications:",
+            "desc_00":"Active university students in Indonesia (preferably domiciled or currently residing in Yogyakarta and Klaten)",
+            "desc_01":"at least in semester 5.",
+            "desc_10":"Have a background majoring in",
+            "desc_11":"Fisheries, Mechanical Engineering, Accounting, Economics, Management, Psychology",
+            "desc_12":"or",
+            "desc_13":"an interest in the world of fisheries.",
+            "desc_2":"AGILE AND ENTHUSIASTIC."
+        },
+        "procedure":{
+            "title":"Registration process:",
+            "desc_00":"Fill out the internship application form",
+            "desc_01":"below.",
+            "desc_10":"Include one of the programs you are interested in",
+            "desc_11":"(Project Design & Numerical Simulation, Research & Marketing Project in Aquaculture, Finance,",
+            "desc_12":"or",
+            "desc_13":"Human Resources Generalist)",
+            "desc_14":"on the",
+            "desc_15":"Cover Letter.",
+            "desc_20":"CV,",
+            "desc_21":"Cover Letter,",
+            "desc_22":"Internship Proposal,",
+            "desc_23":"and",
+            "desc_24":"scanned KTM",
+            "desc_25":"are sent in",
+            "desc_26":"PDF format",
+            "desc_27":"can be in Indonesian or English.",
+            "desc_30":"After the submission process, the Banoo recruitment team will select and contact qualified candidates for the next process."
+            
+        },
+        "button_apply":"Apply now",
+        "notes":{
+            "title":"NOTES:",
+            "desc_0":"There is no deadline or time limit for registration, but student quota restrictions apply for each project.",
+            "desc_1":"The duration of the KL/KP/Internship is according to the needs of the student or the Banoo program.",
+            "desc_20":"KL/KP/Internship opportunities are voluntary or",
+            "desc_21":"unpaid.",
+            "desc_22":"Interns will get certificates, experience working in",
+            "desc_23":"start-up",
+            "desc_24":"and mentoring with Banoo founders.",
+            "desc_30":"If there are still questions or unclear information, please contact",
+            "desc_31":"recruitment@banoo.id",
+            "desc_32":"or Banoo's social media."
+        }
+    },
+    "internship_form":{
+        "title":"Internship Applicant Form",
+        "name":"Full Name",
+        "hint_name":"Enter your full name",
+        "email":"Active Email",
+        "hint_email":"Enter your email address",
+        "phone":"Phone/ WA",
+        "hint_phone":"Enter your WA number",
+        "univ":"University",
+        "hint_univ":"Enter your university",
+        "major":"Major",
+        "hint_major":"Enter your major",
+        "semester":"Semester",
+        "file":[
+            {
+                "type":"Student Card",
+                "add":""
+            },
+            {
+                "type":"CV",
+                "add":""
+            },
+            {
+                "type":"Cover Letter",
+                "add":""
+            },
+            {
+                "type":"KP/KL/Internship Proposal",
+                "add":"(with Internship letter attached)"
+            }
+        ],
+       "file_type_0":"Only",
+        "file_type_1":"is allowed",
+        "max_size_0":"Max. size",
+        "max_size_1":"MB",
+        "button":"Send",
+        "file_rejected":"File rejected",
+        "sending":"Sending your data . . .",
+        "success":{
+            "title":"We've received your application",
+            "desc":"Prepare yourself to be a part of an adventurous journey, good luck 😄"
+        },
+        "fail":{
+            "title":"Something went wrong",
+            "desc":"Please resend and check your connection"
+        }
     },
 
     "footer":{

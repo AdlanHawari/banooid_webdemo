@@ -3,7 +3,6 @@ import Feature from '../components/products/feature';
 import Spec from '../components/products/Spec';
 import Top from '../components/products/top';
 import Section3d from '../components/products/section3d';
-import DescriptionSection from '../components/products/descriptionSection';
 import TechSpec from '../components/products/techSpec';
 import { useTranslation } from 'react-i18next';
 
@@ -35,16 +34,16 @@ function Products() {
               
                 {/* Deskripsi */}
                 
-                <DescriptionSection t={t}/>
+                {/* <DescriptionSection t={t}/> */}
                 
 
                
                   {/* 3D model */}
                
 
-                <div className="px-10 lg:px-40">
+                {/* <div className="px-10 lg:px-40">
                     <Section3d t={t}/>
-                </div>
+                </div> */}
                 {/* end of 3D model */}
 
 

@@ -5,11 +5,11 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import logo_footer from '../images/logo_footer.png'
 
-const address1 = 'Jl. Cindelaras 7 Wedomartani,'
-const address2 = 'Kec. Ngemplak, Kabupaten Sleman,'
-const address3 =  'Daerah Istimewa Yogyakarta 55584';
+// const address1 = 'Jl. Cindelaras 7 Wedomartani,'
+// const address2 = 'Kec. Ngemplak, Kabupaten Sleman,'
+// const address3 =  'Daerah Istimewa Yogyakarta 55584';
 
-const full_addr= 'Jl. Cindelaras 7 Wedomartani, Kec. Ngemplak, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55584';
+// const full_addr= 'Jl. Cindelaras 7 Wedomartani, Kec. Ngemplak, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55584';
 
 const Footer = () => {
     const {t, i18n}  =useTranslation();

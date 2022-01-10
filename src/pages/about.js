@@ -3,7 +3,7 @@ import un2 from '../images/values/UN2.png'
 import un14 from '../images/values/UN14.png'
 import un7 from '../images/values/UN7.png'
 import fajar from '../images/fajar_sweden.jpg'
-
+import DescriptionSection from '../components/about/descriptionSection';
 import GalMob from '../components/GalMob'
 import Gal from '../components/Gal'
 import { useTranslation } from 'react-i18next'
@@ -14,6 +14,7 @@ function About() {
     const {t, i18n}  =useTranslation();
 
     const [isMobile, setMobile] = useState(false);
+    const [isIpad, setiPad] = useState(false);
 
     document.title="Banoo - About";
     const changeMobile = () =>{
@@ -24,9 +25,19 @@ function About() {
         }
         // console.log("rendered")
     }
+
+    const changeiPad = () => {
+        if(window.innerWidth>=768&&window.innerWidth<1022){
+            setiPad(true);
+        }else{
+            setiPad(false);
+        }
+    }
+
     useEffect(() => {
         // Aos.init();
         changeMobile();
+        changeiPad();
         window.addEventListener('resize',changeMobile)
 
         return () =>{
@@ -55,7 +66,7 @@ function About() {
                
                <div className="bg-hero-about bg-cover bg-no-repeat relative h-screen pt-20">
                    
-                   <div className="absolute bg-black inset-0 bg-opacity-50"/>
+                   <div className="absolute bg-black inset-0 bg-opacity-40"/>
                    <div className="absolute top-1/2 transform -translate-y-1/2 left-0 w-full">
                        <div className="block space-y-10 px-4 md:px-20 lg:px-0">
                         <h2 className="text-white text-center uppercase font-spartan font-extrabold text-2xl md:leading-loose">
@@ -101,7 +112,7 @@ function About() {
         
         >
                 {/* <div className="block lg:flex lg:items-start xl:items-center space-y-10 lg:space-y-0 lg:space-x-20 xl:space-x-20 bg-white px-10 lg:px-40" > */}
-                <div className="block lg:flex lg:items-start xl:items-center space-y-10 lg:space-y-0 lg:space-x-10 xl:space-x-20 bg-white px-10 lg:px-20 xl:px-40" >
+                <div className="lg:pt-20 block lg:flex lg:items-start xl:items-center space-y-10 lg:space-y-0 lg:space-x-10 xl:space-x-20 bg-white px-10 lg:px-20 xl:px-40" >
 
                 
                     {/* <img src={fajar} alt="" className="mx-auto lg:mx-0 w-60 h-auto xl:w-auto xl:h-80 rounded-xl"/>  */}
@@ -124,20 +135,20 @@ function About() {
            {/* End of Founder Story */}
 
             {/* Value */}
-            <div className="py-20 px-10 lg:px-40">
+            <div className="py-20 px-10 xl:px-40">
                 <div className="block">
-                    <h2 className="font-sans-6 text-center pb-10 text-4xl">
+                    <h2 className="font-sans-6 text-xl xl:text-4xl font-extrabold text-center pb-10 text-4xl">
                         {t("about.goals.title")}
                         {/* Our Goals */}
                     </h2>
-                    <ul className="grid sm:grid-cols-3 gap-4 xl:gap-8">
+                    <ul className="grid lg:grid-cols-3 gap-4 xl:gap-8">
                         <li className=" rounded-lg shadow-xl p-6">
                             <div className="flex-col text-center space-y-4">
 
                                 <img src={un2} className="h-40 mx-auto" alt=""/>
                                 {/* <div className="h-20 shadow-xl bg-no-repeat"
                                     style={{backgroundImage: `url(${fajar})`}}></div> */}
-                                <h4 className="px-4 text-lg xl:text-base font-bold">
+                                <h4 className="px-4 capitalize text-lg xl:text-base font-bold">
                                     {/* Achieve national and regional<br/> food security */}
                                     {t("about.goals.point.0.title")}
                                 </h4>
@@ -153,7 +164,7 @@ function About() {
                         <li className="rounded-lg shadow-xl p-6">
                             <div className="flex-col  text-center space-y-4">
                                 <img src={un14} className="h-40 mx-auto" alt=""/>
-                                <h4 className="px-4 text-lg xl:text-base font-bold">
+                                <h4 className="px-4 capitalize text-lg xl:text-base font-bold">
                                     {/* Improving water environment<br/> and life below water */}
                                     {t("about.goals.point.1.title")}
                                 </h4>
@@ -170,11 +181,16 @@ function About() {
                             <div className="text-center space-y-4">
                                 <img src={un7} className="h-40 mx-auto" alt=""/>
 
-                                <h4 className="px-4 text-lg xl:text-base font-bold">
+                                <h4 className="px-4 capitalize text-lg xl:text-base font-bold">
                                     {/* Increasing yield of aquaculture  
                                     <br className="hidden xl:flex"></br> and fish farmer income */}
                                     {t("about.goals.point.2.title_1")}
-                                <br/> {t("about.goals.point.2.title_2")}
+                                    {!isIpad?
+                                        <br/>
+                                        :
+                                        ` ` 
+                                    }
+                                    {t("about.goals.point.2.title_2")}
                                 </h4>
                                 <p className="text-sm">
                                 {t("about.goals.point.2.desc")}
@@ -197,10 +213,14 @@ function About() {
                 {isMobile?
                 <GalleryMobile/>
                 :<Gallery/>}
-                
 
             </div> */}
-            <div className="px-10 xl:px-40 ">
+
+
+            <DescriptionSection t={t}/>
+            
+
+            <div className="py-20 px-10 xl:px-40 ">
             {isMobile?
                <GalMob/>
                :

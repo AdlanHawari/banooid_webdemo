@@ -2,12 +2,12 @@ import React, {  useCallback, useEffect, useState } from 'react'
 import { useDropzone } from 'react-dropzone'
 import { ACTIONS } from '../FormIntern'
 import pdf_icon from '../../images/form/pdf.png'
-
+import { useTranslation } from 'react-i18next'
 
 export default function Dropzone({filetype, dispatch, berkas}) {
 
     const [oversize, setoversize] = useState(false)
-    
+    const {t, i18n}  =useTranslation();
     var maxS=0;
     if(berkas==="prop"){
         maxS = 5e6;
@@ -33,7 +33,7 @@ export default function Dropzone({filetype, dispatch, berkas}) {
                 
                 setRejected(false);
                 dispatch({ type: ACTIONS.ADD_FILE, payload: {berkas:berkas, content: acceptedFile[0] }})
-            }else if(acceptedFile.length==0){
+            }else if(acceptedFile.length===0){
                 console.log("wadidaw: ",fileRejection);
                 // setoversize(true);
                 setRejected(true);
@@ -70,13 +70,13 @@ export default function Dropzone({filetype, dispatch, berkas}) {
                 <div className="border-dashed border-2 border-white h-full w-full ">
                     {isDragReject ? 
                     <div className="flex flex-col justify-center items-center h-full">
-                        <p className="text-center text-red-600 font-bold font-spartan text-lg">Berkas ditolak</p>
+                        <p className="text-center text-red-600 font-bold font-spartan text-lg">{t("internship_form.file_rejected")}</p>
                 </div>
                     :
                     <div className="flex flex-col justify-center items-center h-full space-y-4">
                         {rejected&&(
                         <div className="text-center text-red-600 font-bold font-spartan text-lg">
-                            <p>Berkas ditolak</p>
+                            <p>{t("internship_form.file_rejected")}</p>
                         </div>
                         )}
                         <img src={pdf_icon} className="h-10"/>
@@ -84,8 +84,8 @@ export default function Dropzone({filetype, dispatch, berkas}) {
 
                         <p className="font-spartan text-banooGray text-xs md:text-sm text-center font-bold">Drag and drop file here, <br/>or click to select file</p>
                         <div className="block text-center font-serif-6 text-banooGray font-bold">
-                            <p className="text-xs">Hanya berkas {filetype} yang diizinkan</p>
-                            <p className="text-xs">Ukuran maksimal {(maxS/1e6).toFixed(0)} MB  </p>
+                            <p className="text-xs">{t("internship_form.file_type_0")} {filetype} {t("internship_form.file_type_1")}</p>
+                            <p className="text-xs">{t("internship_form.max_size_0")} {(maxS/1e6).toFixed(0)} {t("internship_form.max_size_1")}  </p>
 
                         </div>
                     </div>

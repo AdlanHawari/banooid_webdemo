@@ -16,7 +16,7 @@ export default function Section3d({t}) {
                 (
                     <div className="absolute inset-0 bg-black bg-opacity-60 cursor-pointer rounded-lg" onClick={(e)=>{setView3d(true)}}>
                         <h3 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-white text-sm xl:text-lg  text-center"> 
-                            {t("products.sec3d.click")}&deg;
+                            {t("products.sec3d.click")}
                             
 
                         </h3>

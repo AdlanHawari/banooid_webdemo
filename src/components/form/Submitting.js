@@ -1,8 +1,10 @@
 import React from 'react'
 import loading from '../../images/form/loading.gif'
 import interwind from '../../images/form/interwind.gif'
+import { useTranslation } from 'react-i18next'
 
 export default function Submitting() {
+    const {t, i18n}  =useTranslation();
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50">
             
@@ -11,7 +13,7 @@ export default function Submitting() {
                     <img src={interwind} alt="loading" className=" mx-auto w-60"/>
                     
                     <h3 className="text-center font-spartan text-banooGray text-sm iphone5:text-base font-semibold">
-                        Mengirim data anda . . .
+                    {t("internship_form.sending")}
                     </h3>
                     
                 </div>

@@ -1,9 +1,12 @@
 import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 // import Footer from '../components/footer'
 // import { Link } from 'react-router-dom'
 
 export default function Mainpage() {
+    const {t, i18n}  =useTranslation();
+    document.title="Banoo - Career";
 
     const refdest = useRef()
     const btnScroll = () => 
@@ -21,14 +24,15 @@ export default function Mainpage() {
 
             
             <h1 className=" font-spartan text-center font-bold text-banooDark text-2xl iphone7plus:text-3xl ">
-                KESEMPATAN MAGANG DI BANOO
+                {t("career.title")}
             </h1>
             <h2 className="pt-10 lg:px-10 font-serif-6 font-bold text-lg md:text-xl text-banooGray text-center tracking-wide lg:leading-relaxed">
-                Banoo Inovasi Indonesia membuka kesempatan Kuliah Lapangan atau Kerja Praktik atau Magang sesuai dengan kebutuhan Mahasiswa dan program Banoo yang tersedia.
+            {t("career.subtitle")}
             </h2>
             <h2 className="font-serif-6 font-semibold text-banooGray text-center text-base pt-4">
-            Program Magang yang sedang tersedia di Banoo yaitu &nbsp;
-            <strong>Project Design &amp; Numerical Simulation, Project Riset &amp; Pemasaran Bidang Akuakultur, Finance,</strong> dan <strong>Human Resources Generalist.</strong> 
+            {t("career.desc_0")} &nbsp;
+            <strong>{t("career.desc_1")}</strong> {t("career.desc_conn")} <strong>{t("career.desc_2")}</strong> 
+            {/* <strong>Project Design &amp; Numerical Simulation, Project Riset &amp; Pemasaran Bidang Akuakultur, Finance,</strong> dan <strong>Human Resources Generalist.</strong>  */}
 
             </h2>
 
@@ -36,23 +40,23 @@ export default function Mainpage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 lg:gap-y-0 lg:gap-x-8 xl:gap-x-14 pt-20">
             <div className="rounded-lg bg-yellow-100 py-14 px-8 shadow-lg">
                 <h2 className="text-lg font-spartan font-bold text-banoo pb-4">
-                    Kualifikasi yang dibutuhkan:
+                    {t("career.qualification.title")}
                 </h2>
                 <ul className="list-disc font-serif-6 text-base pl-6 space-y-2 text-banoo">
                     <li>
-                    <p className=" text-gray-600">
-                            Mahasiswa aktif Perguruan Tinggi di Indonesia (diutamakan berdomisili atau sedang berada di Yogyakarta dan Klaten) <strong>minimal semester 5.</strong>
+                        <p className=" text-gray-600">
+                            {t("career.qualification.desc_00")}<strong> {t("career.qualification.desc_01")}</strong>
                         </p>
                     </li>
                     
                     <li>
                     <p className=" text-gray-600">
-                            Memiliki latar belakang jurusan <strong>Perikanan, Teknik Mesin, Akuntansi, Ilmu Ekonomi, Manajemen, Psikologi</strong> atau <strong>ketertarikan terhadap dunia perikanan.</strong> 
+                        {t("career.qualification.desc_10")}<strong> {t("career.qualification.desc_11")}</strong> {t("career.qualification.desc_12")} <strong>{t("career.qualification.desc_13")}</strong> 
                         </p>
                     </li>
                     <li>
                     <p className=" text-gray-600">
-                            PRIBADI YANG CAK CEK SAT SET DAN CERIA.
+                        {t("career.qualification.desc_2")}
                         </p>
                     </li>
                 </ul>
@@ -61,29 +65,29 @@ export default function Mainpage() {
             {/* prosedur */}
             <div className="rounded-lg bg-yellow-100 py-14 px-8 shadow-lg">
                 <h2 className="text-lg font-spartan font-bold text-banoo pb-4">
-                    Prosedur pendaftaran:
+                    {t("career.procedure.title")}
                 </h2>
                 <ul className="list-disc font-serif-6 text-base pl-6 space-y-2 text-banoo">
                     <li className="">
                         <p className=" text-gray-600">
-                        Mengisi formulir pendaftaran magang &nbsp;
-                        <strong className="underline cursor-pointer text-yellow-600 hover:text-banoo" onClick={btnScroll}>di bawah.</strong>
+                        {t("career.procedure.desc_00")}&nbsp;
+                        <strong className="underline cursor-pointer text-yellow-600 hover:text-banoo" onClick={btnScroll}>{t("career.procedure.desc_01")}</strong>
                         </p>
                     </li>
                     
                     <li>
                     <p className=" text-gray-600">
-                        Mencantumkan salah satu program yang diminati (<strong>Project Design &amp; Numerical Simulation, Project Riset &amp; Pemasaran Bidang Akuakultur, Finance,</strong> atau <strong>Human Resources Generalist) </strong> pada <strong className="italic">Cover Letter. </strong>
+                        {t("career.procedure.desc_10")} <strong> {t("career.procedure.desc_11")}</strong> {t("career.procedure.desc_12")} <strong> {t("career.procedure.desc_13")} </strong> {t("career.procedure.desc_14")} <strong className="italic">{t("career.procedure.desc_15")} </strong>
                         </p>
                     </li>
                     <li>
                     <p className=" text-gray-600">
-                        <strong>CV, <i>Cover Letter</i>, Proposal Magang,</strong> dan <strong>scan KTM </strong>dikirimkan dalam <strong> format PDF</strong> dan <strong>dapat menggunakan Bahasa Indonesia atau Bahasa Inggris.</strong>
+                        <strong>{t("career.procedure.desc_20")} <i>{t("career.procedure.desc_21")} </i>{t("career.procedure.desc_22")}</strong> {t("career.procedure.desc_23")} <strong>{t("career.procedure.desc_24")} </strong>{t("career.procedure.desc_25")} <strong> {t("career.procedure.desc_26")}</strong> {t("career.procedure.desc_23")} <strong>{t("career.procedure.desc_27")}</strong>
                         </p>
                     </li>
                     <li>
                     <p className=" text-gray-600">
-                        Setelah proses submit, tim recruitment Banoo akan menyeleksi dan menghubungi kandidat yang memenuhi syarat untuk proses selanjutnya.
+                    {t("career.procedure.desc_30")}
                         </p>
                     </li>
                 </ul>
@@ -98,7 +102,7 @@ export default function Mainpage() {
                 </h2>
                 <Link to="/internship" className="">
                     <button className="font-spartan font-bold tracking-wide bg-yellow-600 w-full md:w-4/5 lg:w-3/5 xl:w-1/2 py-8 rounded-full shadow-xl text-white hover:bg-banooDarker focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-banooDark">
-                        Isi formulir sekarang
+                    {t("career.button_apply")}
 
                     </button>
                 
@@ -109,31 +113,32 @@ export default function Mainpage() {
             {/* catatan */}
             <div className="text-gray-500 font-serif-6 py-10">
                 <h2 className="italic pb-4 font-bold text-base font-spartan">
-                    CATATAN:
+                    {t("career.notes.title")}
                 </h2>
                 <ul className="list-disc pl-6 text-sm md:text-base">
                     <li>
                         <p>
-                        Tidak ada deadline atau batas waktu untuk pendaftaran, hanya berlaku pembatasan kuota mahasiswa untuk setiap project.
+                            {t("career.notes.desc_0")}
+                        
                         </p>
                         
                     </li>
                     <li>
                         <p>
-                        Durasi KL/KP/Magang sesuai dengan kebutuhan mahasiswa atau program Banoo.
+                        {t("career.notes.desc_1")}
                         </p>
                         
                     </li>
                     <li>
                         <p>
-                        Kesempatan KL/KP/Magang bersifat sukarela atau <i>unpaid</i>. Pemagang akan mendapatkan sertifikat, pengalaman bekerja di <i>start-up</i> dan mentoring bersama founder Banoo.
+                        {t("career.notes.desc_20")} <i>{t("career.notes.desc_21")} </i>{t("career.notes.desc_22")} <i>{t("career.notes.desc_23")} </i>{t("career.notes.desc_24")}
                         </p>
                         
                     </li>
                     
                     <li>
                         <p>
-                        Apabila masih ada pertanyaan atau informasi yang kurang jelas dapat menghubungi <ins>recruitment@banoo.id</ins> atau sosial media Banoo.
+                        {t("career.notes.desc_30")} <ins>{t("career.notes.desc_31")}</ins> {t("career.notes.desc_32")} 
                         </p>
                         
                     </li>

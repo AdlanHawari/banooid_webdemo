@@ -65,7 +65,7 @@ function Home() {
                 <div className="relative h-screen bg-black bg-opacity-30">
         
                 {/* Background parallax */}
-                    <div className="absolute -z-50 top-0 inset-x-0 h-screen bg-hero-img bg-cover bg-no-repeat" style={{ 
+                    <div className="absolute -z-50 top-0 inset-x-0 h-screen bg-hero-img bg-center bg-cover bg-no-repeat" style={{ 
                             transform: `translateY(${offsetY * 0.5}px)`
                             }}/>
 
@@ -119,12 +119,12 @@ function Home() {
                 {/* Why Banoo - Section */}
                 <div className="py-20 bg-white sm:py-20 px-14 iphone7:px-10 xl:px-40">
                
-                    <h2 className="justify-center text-center font-spartan sm:text-lg xl:text-4xl text-banooGray font-extrabold">
+                    <h2 className="justify-center text-center font-spartan text-xl xl:text-4xl text-banooGray font-extrabold">
                         {t("home.why_banoo.title")}?
                         {/* {t("home.product.0.desc")} */}
                     </h2>
-                    <ul className="grid gap-y-20 md:gap-y-0 md:grid-flow-col md:grid-cols-3 pt-20">
-                        <li className="flex flex-col flex-shrink place-items-center">
+                    <ul className="grid gap-y-20 md:gap-y-0 md:grid-flow-col md:grid-cols-3 pt-10">
+                        <li className="flex flex-col flex-shrink place-items-center ">
                             <img src={productivity} alt="" className="h-24"/>
                             <h3 className="py-6 md:py-10  text-center font-spartan font-extrabold text-base xl:text-lg">
                             {/* Dissolved Oxygen Arouser */}
@@ -304,14 +304,14 @@ function Home() {
                 {/* End of Kawan Banoo Story - Section */}
 
                 {/* Awards - Section */}
-                <div className="py-10 xl:py-40 px-8 iphone7:px-20 xl:px-40 bg-white">
-                    <h2 className="flex justify-center text-center font-spartan sm:text-lg lg:text-2xl xl:text-4xl text-banooGray font-extrabold">
+                <div className="py-20 xl:py-40 px-8 iphone7:px-20 xl:px-40 bg-white">
+                    <h2 className="flex justify-center text-center font-spartan text-xl xl:text-4xl text-banooGray font-extrabold">
                         {/* Awards */}
                         {t("home.awards")}
                     </h2>
                     {/* <div className="pt-10 sm:pt-20 lg:pt-20 grid grid-rows-2 gap-y-6 sm:gap-y-10 md:grid-cols-2 gap-x-2 xl:gap-x-10 place-items-center"> */}
                     {/* <div className="pt-10 sm:pt-20 flex flex-col justify-center place-items-center xl:flex-row gap-y-6 sm:gap-10 xl:gap-20"> */}
-                    <div className="pt-10 sm:pt-20 flex flex-col justify-center place-items-center xl:flex-row space-y-6 sm:gap-10 xl:space-x-20">
+                    <div className="pt-10 xl:pt-20 flex flex-col justify-center place-items-center xl:flex-row space-y-6 sm:gap-10 xl:space-x-20">
                         <img src={cisco} alt="" className="h-20 sm:h-40"/>
                         <img src={tff} alt="" className="h-20 sm:h-40"/>
                     </div>
@@ -320,7 +320,7 @@ function Home() {
 
                 {/* Partners & Media Coverage - Section */}
                 <div className="py-10 sm:py-40 px-14 iphone7:px-20 xl:px-40">
-                    <h2 className="flex justify-center text-center font-spartan sm:text-lg xl:text-4xl text-banooGray font-extrabold">
+                    <h2 className="flex justify-center text-center font-spartan text-xl xl:text-4xl text-banooGray font-extrabold">
                         {/* Partners and Media Coverage */}
                         {t("home.partners")}
                     </h2>

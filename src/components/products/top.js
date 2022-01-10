@@ -26,12 +26,16 @@ export default function Top({t}) {
                 </div>
                 
                 <div className="block py-2">
-                    {/* <del className="text-red-500 font-spartan text-sm md:text-lg ">
-                        Rp2.299.000
-
-                    </del> */}
-                    <p className="font-bold text-lg text-banooWhite md:text-2xl font-spartan">
+                    <del className="text-red-500 font-spartan text-sm md:text-lg ">
                         Rp2.800.000
+
+                    </del>
+                    <p className="font-bold text-lg text-banooWhite md:text-2xl font-spartan">
+                        Rp2.500.000
+
+                    </p>
+                    <p className=" text-xs text-banooWhite md:text-xs font-spartan">
+                    {t("products.top.promo_period")}
 
                     </p>
                 </div>

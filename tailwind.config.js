@@ -34,7 +34,8 @@ module.exports = {
       backgroundImage: theme => ({
         // 'hero-img': "url('./images/hero.jpg')"
         'hero-img': "url('./images/wew.jpg')",
-        'hero-about': "url('./images/hero_about.jpg')"
+        // 'hero-about': "url('./images/hero_about.jpg')"
+        'hero-about': "url('./images/paksadi.jpeg')"
       })
     },
   },

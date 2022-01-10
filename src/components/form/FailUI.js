@@ -2,7 +2,7 @@ import React from 'react'
 import ergif from '../../images/form/error1.gif'
 import { ACTIONS } from '../FormIntern'
 
-export default function FailUI({dispatch, currentState}) {
+export default function FailUI({t, dispatch, currentState}) {
     const modalClicked = (e) =>{
         dispatch({ type: ACTIONS.CHANGE_FAILUI, payload: !currentState})
         // window.location.reload();
@@ -19,14 +19,15 @@ export default function FailUI({dispatch, currentState}) {
                     <div className="">
                         <p className=" text-center font-spartan text-banooGray text-base md:text-xl font-bold">
                             {/* Terimakasih atas partisipasi anda. */}
-                            Terjadi kesalahan
+                            {/* Terjadi kesalahan */}
+                            {t("internship_form.fail.title")}
                             
                         </p>
                         <p className="mx-8 md:mx-10 lg:mx-0 pt-4 text-center font-serif-6 text-banooGray text-sm md:text-base font-medium">
                         {/* Bersiaplah mengikuti petualangan bersama Kawan Banoo lainnya.  */}
                         {/* Tunggu kabar baik dari kami ya,<br/>Kawan Banoo!  */}
-                            Kirim ulang dan periksa koneksi internet anda
-                            
+                            {/* Kirim ulang dan periksa koneksi internet anda */}
+                            {t("internship_form.fail.desc")}
                         </p>
                     
                     </div>

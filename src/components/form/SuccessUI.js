@@ -1,7 +1,7 @@
 import React from 'react'
 import checkmark from '../../images/form/wew.gif'
 
-export default function SuccessUI() {
+export default function SuccessUI({t}) {
     const modalClicked = (e) =>{
         
         // window.location.reload();
@@ -19,13 +19,13 @@ export default function SuccessUI() {
                     <div className="">
                         <p className=" text-center font-spartan text-banooGray text-base md:text-xl font-bold">
                             {/* Terimakasih atas partisipasi anda. */}
-                            Berkas sudah kami terima
+                            {t("internship_form.success.title")}
                             
                         </p>
                         <p className="iphone5:mx-4 md:mx-10 lg:mx-0 pt-4 text-center font-serif-6 text-banooGray text-sm md:text-base font-medium">
                         {/* Bersiaplah mengikuti petualangan bersama Kawan Banoo lainnya.  */}
                         {/* Tunggu kabar baik dari kami ya,<br/>Kawan Banoo!  */}
-                            Bersiaplah untuk memulai petualangan bersama Banoo, good luck 😄
+                            {t("internship_form.success.desc")}
                             
                         </p>
                     

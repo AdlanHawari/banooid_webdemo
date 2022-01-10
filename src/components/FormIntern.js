@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, {  useEffect, useReducer, useRef, useState } from 'react'
+import React, { useReducer, useRef, useState } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 import Dropzone from './form/Dropzone'
 import FailUI from './form/FailUI'
@@ -44,13 +44,14 @@ function failReducer(failState, action){
 
 
 
-export default function FormIntern() {
+export default function FormIntern({t}) {
+    // const {t, i18n}  =useTranslation();
     
     const [files, dispatch] = useReducer(reducer, 
         [
             {
                 berkas:"ktm",
-                label:"Kartu Tanda Mahasiswa",
+                label:"KTM",
                 // preview:
                 content:{}
             },
@@ -61,13 +62,13 @@ export default function FormIntern() {
             },
             {
                 berkas:"motlet",
-                label:"Cover Letter",
+                label:"Motivation Letter",
                 content:{}
             },
             {
                 berkas:"prop",
-                label:"Proposal KP/KL/Magang",
-                label_add:"(beserta surat permohonan kerja praktik)",
+                // label:t("internship_form.proposal_0"),
+                // label_add:t("internship_form.proposal_1"),
                 content:{}
             }
 
@@ -271,43 +272,43 @@ export default function FormIntern() {
         <div className="bg-white pt-10">  
             <form className="space-y-6" onSubmit={handleSubmit} >
                 <div>
-                    <label htmlFor="name" className="block text-sm font-bold text-gray-700">Nama Lengkap</label>
+                    <label htmlFor="name" className="block text-sm font-bold text-gray-700">{t("internship_form.name")}</label>
                     <div className="mt-1">
-                        <input id="name" name="name" placeholder="Ketik nama lengkap anda" type="text" value={form_val.name} onChange={handleChange} autoComplete="" required className="text-base md:text-sm w-full border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark"/>
+                        <input id="name" name="name" placeholder={t("internship_form.hint_name")} type="text" value={form_val.name} onChange={handleChange} autoComplete="" required className="text-base md:text-sm w-full border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark"/>
                     </div>
                 </div>
 
                 <div>
-                    <label htmlFor="email" className="text-sm font-bold text-gray-700">Email aktif</label>       
+                    <label htmlFor="email" className="text-sm font-bold text-gray-700">{t("internship_form.email")}</label>       
                     <div className="mt-1">
-                        <input id="email" name="email" placeholder="Ketik alamat email" type="email" value={form_val.email} onChange={handleChange} autoComplete="email" required className="text-sm  w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark"/>
+                        <input id="email" name="email" placeholder={t("internship_form.hint_email")} type="email" value={form_val.email} onChange={handleChange} autoComplete="email" required className="text-sm  w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark"/>
                     </div>
                     
                 </div>
 
                 <div>
-                    <label htmlFor="phone" className="block text-sm font-bold text-gray-700">Telepon/ WA</label>
+                    <label htmlFor="phone" className="block text-sm font-bold text-gray-700">{t("internship_form.phone")}</label>
                     <div className="mt-1">
-                        <input id="phone" name="phone" placeholder="Ketik nomor WA" type="number" value={form_val.phone} onChange={handleChange} autoComplete="" required className=" text-base md:text-sm w-full border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark "/>
+                        <input id="phone" name="phone" placeholder={t("internship_form.hint_phone")} type="number" value={form_val.phone} onChange={handleChange} autoComplete="" required className=" text-base md:text-sm w-full border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark "/>
                     </div>
                 </div>
 
                 <div>
-                    <label htmlFor="univ" className="block text-sm font-bold text-gray-700">Asal Universitas</label>
+                    <label htmlFor="univ" className="block text-sm font-bold text-gray-700">{t("internship_form.univ")}</label>
                     <div className="mt-1">
-                        <input id="univ" name="univ" placeholder="Ketik nama universitas asal " type="text" value={form_val.univ} onChange={handleChange} autoComplete="" required className=" text-base md:text-sm w-full border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark"/>
+                        <input id="univ" name="univ" placeholder={t("internship_form.hint_univ")} type="text" value={form_val.univ} onChange={handleChange} autoComplete="" required className=" text-base md:text-sm w-full border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark"/>
                     </div>
                 </div>
 
                 <div> 
-                    <label htmlFor="jurusan" className="block text-sm font-bold text-gray-700">Jurusan / Departemen</label>
+                    <label htmlFor="jurusan" className="block text-sm font-bold text-gray-700">{t("internship_form.major")}</label>
                     <div className="mt-1">
-                        <input id="jurusan" name="jurusan" placeholder="Ketik jurusan/departemen" type="text" value={form_val.jurusan} onChange={handleChange} autoComplete="" required className=" text-base md:text-sm w-full border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark"/>
+                        <input id="jurusan" name="jurusan" placeholder={t("internship_form.hint_major")} type="text" value={form_val.jurusan} onChange={handleChange} autoComplete="" required className=" text-base md:text-sm w-full border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark"/>
                     </div>
                 </div>
 
                 <div>
-                    <label htmlFor="semester" className="block text-sm font-bold text-gray-700">Semester</label>
+                    <label htmlFor="semester" className="block text-sm font-bold text-gray-700">{t("internship_form.semester")}</label>
                     <div className="mt-1">
                         <input id="semester" name="semester" placeholder="" type="number"  value={form_val.semester} onChange={handleChange}autoComplete="" required className=" text-base md:text-sm w-14 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-banooDark focus:ring-1 focus:ring-banooDark "/>
                     </div>
@@ -319,8 +320,8 @@ export default function FormIntern() {
                     <div
                         key={index}>
                             <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-2">
-                            <label htmlFor={file.berkas} className="block text-sm font-bold text-gray-700">{file.label}</label>
-                            <label htmlFor={file.berkas} className="block text-xs iphone5:text-sm font-medium text-gray-700 italic">{file.label_add}</label>
+                            <label htmlFor={file.berkas} className="block text-sm font-bold text-gray-700">{t(`internship_form.file.${index}.type`)}</label>
+                            <label htmlFor={file.berkas} className="block text-xs iphone5:text-sm font-medium text-gray-700 italic">{t(`internship_form.file.${index}.add`)}</label>
 
                             </div>
                         
@@ -371,7 +372,7 @@ export default function FormIntern() {
                 <div className="">
 
                     <button className="font-spartan font-bold uppercase tracking-widest w-full py-6 sm:py-8 px-4 border border-transparent rounded-xl shadow-xl text-sm text-white bg-banooDark hover:bg-banooDarker focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-banooDark">
-                        Send
+                        {t("internship_form.button")}
                     </button>
 
                 </div>
@@ -392,12 +393,12 @@ export default function FormIntern() {
             
             {/* <SuccessUI/> */}
             {success&&(
-                <SuccessUI/>
+                <SuccessUI t={t}/>
             )}
 
             {failState&&
             (
-                <FailUI dispatch={failDispatch} currentState={failState}/>
+                <FailUI t={t} dispatch={failDispatch} currentState={failState}/>
 
             )}
             

@@ -16,7 +16,7 @@
         "hero":{
             "title_line_1" : "Investasi Teknologi untuk",
             "title_line_2" : "Kolam Budidaya Anda",
-            "subtitle" : "Sensor kualitas air IoT kami bekerja dengan generator gelembung mikro untuk memantau kualitas air kolam dan meningkatkan hasil budidaya perikanan dengan cara yang ramah lingkungan"
+            "subtitle" : "Sensor kualitas air IoT kami bekerja dengan MycroFish untuk memantau kualitas air kolam dan meningkatkan hasil budidaya perikanan dengan cara yang ramah lingkungan"
         },
         "why_banoo" : {
             "title": "Mengapa Banoo",
@@ -63,6 +63,7 @@
             "product" : "MycroFish",
             "subtitle": "Jadilah Bagian dari Perjalanan Kami Sebagai Aerator Digital Pertama",
             "desc": "Ingin tingkatkan kualitas air tanpa boros listrik dengan MycroFish?",
+            "promo_period":"*promo hingga 20 Januari 2021",
             "button": "Beli sekarang"
         },
         "feature":[
@@ -89,8 +90,8 @@
         "sec3d":{
             "title":"3D View",
             "subtitle":"MycroFish hadir dengan desain sesuai kebutuhan Anda",
-            "desc":"Dengan perhitungan dan simulasi yang matang, kami hadirkan desain 360 derajat agar Anda dapat melihat bagaimana MycroFish menjadi bagian dari kolam Anda.",
-            "click":"Lihat MycroFish dalam 360",
+            "desc":"Dengan perhitungan dan simulasi yang matang, kami hadirkan tampilan 3D agar Anda dapat melihat bagaimana MycroFish menjadi bagian dari kolam Anda.",
+            "click":"Lihat MycroFish dalam tampilan 3D",
             "note":"Catatan",
             "rotate":"Tahan dan geser klik kiri untuk memutar",
             "move":"Tahan dan geser klik kanan untuk menggeser",
@@ -167,6 +168,8 @@
         }
     },
 
+    
+
     "contact":{
         "title": "Hubungi Kami",
         "desc": "Jika Anda adalah pembudidaya, perusahaan akuakultur, institusi yang memiliki program di sektor akuakultur, atau orang yang tertarik dengan kami, jangan ragu untuk menghubungi kami, kami akan menghubungi Anda kembali secepat mungkin.",
@@ -201,6 +204,111 @@
         "read":"Selengkapnya",
         "loading":"Memuat Konten"
     },
+
+    "career":{
+        "title":"Kesempatan Magang di Banoo",
+        "subtitle":"Banoo Inovasi Indonesia membuka kesempatan Kuliah Lapangan atau Kerja Praktik atau Magang sesuai dengan kebutuhan Mahasiswa dan program Banoo yang tersedia",
+        "desc_0":"Program Magang yang sedang tersedia di Banoo yaitu",
+        "desc_1":"Project Design & Numerical Simulation, Project Riset & Pemasaran Bidang Akuakultur, Finance,",
+        "desc_conn":"dan",
+        "desc_2":"Human Resources Generalist",
+
+        "qualification":{
+            "title":"Kualifikasi yang dibutuhkan:",
+            "desc_00":"Mahasiswa aktif Perguruan Tinggi di Indonesia (diutamakan berdomisili atau sedang berada di Yogyakarta dan Klaten)",
+            "desc_01":"minimal semester 5.",
+            "desc_10":"Memiliki latar belakang jurusan",
+            "desc_11":"Perikanan, Teknik Mesin, Akuntansi, Ilmu Ekonomi, Manajemen, Psikologi",
+            "desc_12":"atau",
+            "desc_13":"ketertarikan terhadap dunia perikanan.",
+            "desc_2":"PRIBADI YANG CAK CEK SAT SET DAN CERIA."
+        },
+        "procedure":{
+            "title":"Prosedur pendaftaran:",
+            "desc_00":"Mengisi formulir pendaftaran magang",
+            "desc_01":"di bawah.",
+            "desc_10":"Mencantumkan salah satu program yang diminati",
+            "desc_11":"(Project Design & Numerical Simulation, Project Riset & Pemasaran Bidang Akuakultur, Finance,",
+            "desc_12":"atau",
+            "desc_13":"Human Resources Generalist)",
+            "desc_14":"pada",
+            "desc_15":"Cover Letter.",
+            "desc_20":"CV,",
+            "desc_21":"Cover Letter,",
+            "desc_22":"Proposal Magang,",
+            "desc_23":"dan",
+            "desc_24":"scan KTM",
+            "desc_25":"dikirimkan dalam",
+            "desc_26":"format PDF",
+            "desc_27":"dapat menggunakan Bahasa Indonesia atau Bahasa Inggris.",
+            "desc_30":"Setelah proses submit, tim recruitment Banoo akan menyeleksi dan menghubungi kandidat yang memenuhi syarat untuk proses selanjutnya."
+            
+        },
+        "button_apply":"Isi formulir sekarang",
+        "notes":{
+            "title":"CATATAN:",
+            "desc_0":"Tidak ada deadline atau batas waktu untuk pendaftaran, hanya berlaku pembatasan kuota mahasiswa untuk setiap project.",
+            "desc_1":"Durasi KL/KP/Magang sesuai dengan kebutuhan mahasiswa atau program Banoo.",
+            "desc_20":"Kesempatan KL/KP/Magang bersifat sukarela atau",
+            "desc_21":"unpaid.",
+            "desc_22":"Pemagang akan mendapatkan sertifikat, pengalaman bekerja di",
+            "desc_23":"start-up",
+            "desc_24":"dan mentoring bersama founder Banoo.",
+            "desc_30":"Apabila masih ada pertanyaan atau informasi yang kurang jelas dapat menghubungi",
+            "desc_31":"recruitment@banoo.id",
+            "desc_32":"atau sosial media Banoo."
+        }
+    },
+    "internship_form":{
+        "title":"Form Peserta Magang",
+        "name":"Nama Lengkap",
+        "hint_name":"Ketik nama lengkap anda",
+        "email":"Email aktif",
+        "hint_email":"Ketik alamat email",
+        "phone":"Telepon/ WA",
+        "hint_phone":"Ketik nomor WA",
+        "univ":"Asal Universitas",
+        "hint_univ":"Ketik nama universitas asal",
+        "major":"Jurusan/ Departemen",
+        "hint_major":"Ketik jurusan/departemen",
+        "semester":"Semester",
+        "file":[
+            {
+                "type":"Kartu Tanda Mahasiswa",
+                "add":""
+            },
+            {
+                "type":"CV",
+                "add":""
+            },
+            {
+                "type":"Cover Letter",
+                "add":""
+            },
+            {
+                "type":"Proposal KP/KL/Magang",
+                "add":"(beserta surat permohonan kerja praktik)"
+            }
+        ],
+        "file_type_0":"Hanya berkas",
+        "file_type_1":"yang diizinkan",
+        "max_size_0":"Ukuran maksimal",
+        "max_size_1":"MB",
+        "button":"Kirim",
+        "file_rejected":"Berkas ditolak",
+        "sending":"Mengirim data anda . . .",
+        "success":{
+            "title":"Berkas sudah kami terima",
+            "desc":"Bersiaplah untuk memulai petualangan bersama Banoo, good luck 😄"
+        },
+        "fail":{
+            "title":"Terjadi kesalahan",
+            "desc":"Kirim ulang dan periksa koneksi internet anda"
+        }
+    },
+
+
+
     "footer":{
         "legal":"PT Banoo Inovasi Indonesia",
         "address":{

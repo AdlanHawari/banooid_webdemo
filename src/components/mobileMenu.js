@@ -26,6 +26,11 @@ export default function MobileMenu({isOpen, toggle}) {
             to: '/about'  
         },
         {
+            title: t("navbar.career"),
+            exact: true,
+            to: '/career'  
+        },
+        {
             title: t("navbar.blog"),
             exact: true,
             to: '/blog'  
