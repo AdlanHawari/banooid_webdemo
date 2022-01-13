@@ -9,8 +9,6 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
-    "@react-three/drei": "^7.3.1",
-    "@react-three/fiber": "^7.0.6",
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^2.13.0",
     "@sanity/image-url": "^0.140.22",
@@ -39,7 +37,6 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-youtube": "^7.13.1",
-    "three": "^0.131.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
